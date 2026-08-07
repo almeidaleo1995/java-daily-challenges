@@ -1,0 +1,13 @@
+package challenges.dayNNN;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+class ChallengeNameTest {
+
+  @Test
+  void casoDeExemplo() {
+    // TODO: casos de teste do desafio
+  }
+}

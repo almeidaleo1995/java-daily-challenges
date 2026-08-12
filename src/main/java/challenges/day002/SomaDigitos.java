@@ -2,8 +2,7 @@ package challenges.day002;
 
 public final class SomaDigitos {
 
-  private SomaDigitos() {
-  }
+  private SomaDigitos() {}
 
   public static int somarDigitos(int numero) {
     int soma = 0;
@@ -13,5 +12,4 @@ public final class SomaDigitos {
     }
     return soma;
   }
-
 }

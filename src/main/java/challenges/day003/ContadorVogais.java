@@ -4,8 +4,7 @@ import java.util.List;
 
 public final class ContadorVogais {
 
-  private ContadorVogais() {
-  }
+  private ContadorVogais() {}
 
   public static int contarVogais(String texto) {
     List<Character> vogais = List.of('a', 'e', 'i', 'o', 'u');

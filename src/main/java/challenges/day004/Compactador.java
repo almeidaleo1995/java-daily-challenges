@@ -2,8 +2,7 @@ package challenges.day004;
 
 public final class Compactador {
 
-  private Compactador() {
-  }
+  private Compactador() {}
 
   public static String compactar(String texto) {
     StringBuilder resultado = new StringBuilder();

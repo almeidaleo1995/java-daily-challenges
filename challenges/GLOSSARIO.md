@@ -1,0 +1,18 @@
+# Glossário
+
+O que foi usado em cada desafio e por quê. Uma linha por conceito, nunca por
+desafio — se o conceito reaparecer com o mesmo motivo, não duplica.
+
+| Conceito | Exemplo | Por que usamos | Desafio | Teste |
+|---|---|---|---|---|
+| Ternário (`?:`) | `n % 2 == 0 ? "par" : "ímpar"` | Decidir sinal/paridade em uma linha em vez de if/else | [001](001/README.md) | [ClassificadorTest](../src/test/java/challenges/day001/ClassificadorTest.java) |
+| `%` e `/` | `numero % 10`, `numero / 10` | Separar dígitos de um número, um por vez | [002](002/README.md) | [SomaDigitosTest](../src/test/java/challenges/day002/SomaDigitosTest.java) |
+| `while` | `while (numero != 0) { ... }` | Repetir enquanto o número ainda tem dígito | [002](002/README.md) | [SomaDigitosTest](../src/test/java/challenges/day002/SomaDigitosTest.java) |
+| `charAt()` / `length()` | `texto.charAt(i)` | Percorrer uma `String` caractere a caractere | [003](003/README.md) | [ContadorVogaisTest](../src/test/java/challenges/day003/ContadorVogaisTest.java) |
+| `StringBuilder` | `new StringBuilder().append(c)` | Concatenar `String` em loop recria o objeto a cada vez; `StringBuilder` muta em memória | [004](004/README.md) | [CompactadorTest](../src/test/java/challenges/day004/CompactadorTest.java) |
+| Estado entre iterações | `anterior = atual` a cada volta do laço | Guardar caractere anterior e contagem pra comparar com o atual | [004](004/README.md) | [CompactadorTest](../src/test/java/challenges/day004/CompactadorTest.java) |
+| Array (`length`, índice) | `numeros[i - 1]` | Comparar cada posição com a anterior sem método pronto | [005](005/README.md) | [SequenciaCrescenteTest](../src/test/java/challenges/day005/SequenciaCrescenteTest.java) |
+| Acumular máximo durante o laço | `if (atual > melhor) melhor = atual;` | Manter "atual" e "melhor", atualizando os dois a cada passo | [005](005/README.md) | [SequenciaCrescenteTest](../src/test/java/challenges/day005/SequenciaCrescenteTest.java) |
+| `List` | `new ArrayList<>()` | Guardar o resultado na ordem de inserção, sem índice fixo | [006](006/README.md) | [SemRepetidosTest](../src/test/java/challenges/day006/SemRepetidosTest.java) |
+| `LinkedHashSet` | `new LinkedHashSet<>()` | Em vez de `HashSet`, manter a ordem de inserção pra saber quem apareceu primeiro | [006](006/README.md) | [SemRepetidosTest](../src/test/java/challenges/day006/SemRepetidosTest.java) |
+| for-each | `for (int n : lista) { ... }` | Percorrer a `List` sem `.get(i)` nem índice | [006](006/README.md) | [SemRepetidosTest](../src/test/java/challenges/day006/SemRepetidosTest.java) |

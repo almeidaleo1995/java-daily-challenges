@@ -97,6 +97,23 @@ Todo desafio tem testes automáticos (JUnit 5) que:
 Os testes **nunca** contêm a solução explícita nem revelam o algoritmo — eles
 verificam comportamento (entradas → saídas esperadas), não implementação.
 
+## Glossário
+
+Depois que um desafio é dado como concluído (testes passando, revisão de
+código feita), atualize `challenges/GLOSSARIO.md` com o que foi usado nele.
+
+- É uma tabela markdown, colunas: `Conceito | Exemplo | Por que usamos |
+  Desafio | Teste`.
+- Uma linha por conceito/API (`Set`, `LinkedHashSet`, `StringBuilder`...),
+  nunca por desafio. Se o conceito já está lá com o mesmo motivo, não
+  duplique.
+- `Exemplo` é um trecho curto de código (uma linha), não a solução do
+  desafio. `Desafio` e `Teste` linkam pro README (`NNN/README.md`) e pro
+  arquivo de teste (`src/test/java/challenges/dayNNN/...Test.java`).
+  `Por que usamos` é uma frase curta, direta.
+- Só o que o usuário realmente usou no código dele. Nada de explicação
+  genérica de tutorial, nada que ele não tenha escrito.
+
 ## Progressão de fases
 
 1. **Sintaxe** — variáveis, operadores, if, switch, loops, métodos, strings, arrays

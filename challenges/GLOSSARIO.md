@@ -16,3 +16,5 @@ desafio — se o conceito reaparecer com o mesmo motivo, não duplica.
 | `List` | `new ArrayList<>()` | Guardar o resultado na ordem de inserção, sem índice fixo | [006](006/README.md) | [SemRepetidosTest](../src/test/java/challenges/day006/SemRepetidosTest.java) |
 | `LinkedHashSet` | `new LinkedHashSet<>()` | Em vez de `HashSet`, manter a ordem de inserção pra saber quem apareceu primeiro | [006](006/README.md) | [SemRepetidosTest](../src/test/java/challenges/day006/SemRepetidosTest.java) |
 | for-each | `for (int n : lista) { ... }` | Percorrer a `List` sem `.get(i)` nem índice | [006](006/README.md) | [SemRepetidosTest](../src/test/java/challenges/day006/SemRepetidosTest.java) |
+| `Map` / `HashMap` | `new HashMap<>()` | Guardar cada valor como chave e a contagem de ocorrências como valor associado | [007](007/README.md) | [ContadorFrequenciaTest](../src/test/java/challenges/day007/ContadorFrequenciaTest.java) |
+| `getOrDefault` | `mapa.getOrDefault(numero, 0)` | Buscar a contagem atual sem precisar testar `containsKey` antes de somar | [007](007/README.md) | [ContadorFrequenciaTest](../src/test/java/challenges/day007/ContadorFrequenciaTest.java) |

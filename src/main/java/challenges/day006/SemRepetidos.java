@@ -7,8 +7,7 @@ import java.util.Set;
 
 public final class SemRepetidos {
 
-  private SemRepetidos() {
-  }
+  private SemRepetidos() {}
 
   public static List<Integer> semRepetidos(List<Integer> numeros) {
     Set<Integer> setAuxilEncontrados = new LinkedHashSet<>();
@@ -19,5 +18,4 @@ public final class SemRepetidos {
     List<Integer> numerosResultado = new ArrayList<>(setAuxilEncontrados);
     return numerosResultado;
   }
-
 }

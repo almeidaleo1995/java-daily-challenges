@@ -6,8 +6,7 @@ import java.util.Map;
 
 public final class MaisFrequente {
 
-  private MaisFrequente() {
-  }
+  private MaisFrequente() {}
 
   public static int maisFrequente(List<Integer> numeros) {
 

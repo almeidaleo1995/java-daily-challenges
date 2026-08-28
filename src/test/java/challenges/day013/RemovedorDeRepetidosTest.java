@@ -35,4 +35,9 @@ class RemovedorDeRepetidosTest {
   void todoOTextoEUmaUnicaSequencia() {
     assertEquals("a", RemovedorDeRepetidos.removerConsecutivosRepetidos("aaaa"));
   }
+
+  @Test
+  void umUnicoCaractere() {
+    assertEquals("a", RemovedorDeRepetidos.removerConsecutivosRepetidos("a"));
+  }
 }

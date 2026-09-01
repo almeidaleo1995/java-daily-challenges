@@ -2,8 +2,7 @@ package challenges.day014;
 
 public final class IndiceDoMenor {
 
-  private IndiceDoMenor() {
-  }
+  private IndiceDoMenor() {}
 
   public static int indiceDoMenor(int[] numeros) {
 

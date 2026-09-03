@@ -5,8 +5,7 @@ import java.util.Map;
 
 public final class ContadorDeCaracteres {
 
-  private ContadorDeCaracteres() {
-  }
+  private ContadorDeCaracteres() {}
 
   public static Map<Character, Integer> contarCaracteres(String texto) {
     Map<Character, Integer> mapa = new HashMap<>();

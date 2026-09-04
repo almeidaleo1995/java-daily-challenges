@@ -78,8 +78,9 @@ de abertura e fechamento importa — mesma base do lado "pilha" do desafio
 
 # Próximo desafio
 
-Um desafio maior, juntando várias dessas revisões (pilha, `Map`,
-`StringBuilder`) dentro de uma classe com estado.
+Uma rodada de revisão (desafios 019 a 042), reforçando loopings, arrays,
+`String`, `List`/`Set` e `Map` antes do desafio de classe com estado
+(`ContaBancaria`, agora no 043).
 
 ---
 

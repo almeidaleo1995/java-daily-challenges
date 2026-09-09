@@ -5,6 +5,12 @@ public final class SomaAtePrimeiroNegativo {
   private SomaAtePrimeiroNegativo() {}
 
   public static int somarAtePrimeiroNegativo(int[] numeros) {
-    throw new UnsupportedOperationException("TODO: implementar");
+    int soma = 0;
+    int i = 0;
+    while (i < numeros.length && numeros[i] >= 0) {
+      soma += numeros[i];
+      i++;
+    }
+    return soma;
   }
 }

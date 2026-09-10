@@ -44,7 +44,7 @@ Um `int` com a quantidade de consoantes.
 | `"aeiou"` | `0` |
 | `"Java"` | `2` |
 | `"banana"` | `3` |
-| `"Ola Mundo!"` | `5` |
+| `"Ola Mundo!"` | `4` |
 
 # Restrições
 

@@ -28,6 +28,6 @@ class ContadorDeConsoantesTest {
 
   @Test
   void ignoraEspacosEPontuacao() {
-    assertEquals(5, ContadorDeConsoantes.contarConsoantes("Ola Mundo!"));
+    assertEquals(4, ContadorDeConsoantes.contarConsoantes("Ola Mundo!"));
   }
 }

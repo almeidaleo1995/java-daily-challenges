@@ -43,6 +43,8 @@ Uma nova `String` sem espaços duplicados.
 | `"sem espaco"` | `"sem espaco"` |
 | `"a   b  c"` | `"a b c"` |
 | `"a  b"` | `"a b"` |
+| `"a1  2b"` | `"a1 2b"` |
+| `"oi!  tudo bem?"` | `"oi! tudo bem?"` |
 
 # Restrições
 

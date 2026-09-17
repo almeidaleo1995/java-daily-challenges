@@ -25,4 +25,14 @@ class ColapsarEspacosTest {
   void doisEspacosViramUm() {
     assertEquals("a b", ColapsarEspacos.colapsar("a  b"));
   }
+
+  @Test
+  void digitos() {
+    assertEquals("a1 2b", ColapsarEspacos.colapsar("a1  2b"));
+  }
+
+  @Test
+  void pontuacao() {
+    assertEquals("oi! tudo bem?", ColapsarEspacos.colapsar("oi!  tudo bem?"));
+  }
 }

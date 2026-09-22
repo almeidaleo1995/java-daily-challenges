@@ -30,4 +30,9 @@ class IndicePrimeiroDecliveTest {
         IllegalArgumentException.class,
         () -> IndicePrimeiroDeclive.indicePrimeiroDeclive(new int[] {1, 1, 1}));
   }
+
+  @Test
+  void devolvePrimeiroDeclive_naoOUltimo() {
+    assertEquals(0, IndicePrimeiroDeclive.indicePrimeiroDeclive(new int[] {5, 1, 2, 4, 3}));
+  }
 }

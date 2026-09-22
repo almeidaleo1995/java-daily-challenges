@@ -46,6 +46,7 @@ Um `int` com o índice do primeiro declive, ou uma
 | `[5, 1, 2]` | `0` |
 | `[1, 2, 3]` | lança `IllegalArgumentException` |
 | `[1, 1, 1]` | lança `IllegalArgumentException` |
+| `[5, 1, 2, 4, 3]` | `0` (primeiro declive, não o último) |
 
 # Restrições
 

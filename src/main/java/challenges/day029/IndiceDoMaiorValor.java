@@ -5,6 +5,15 @@ public final class IndiceDoMaiorValor {
   private IndiceDoMaiorValor() {}
 
   public static int indiceDoMaior(int[] numeros) {
-    throw new UnsupportedOperationException("TODO: implementar");
+    int posicaoMaior = 0;
+
+    for (int i = 0; i < numeros.length; i++) {
+      int atualValor = numeros[i];
+      int maiorValor = numeros[posicaoMaior];
+      if (atualValor > maiorValor) {
+        posicaoMaior = i;
+      }
+    }
+    return posicaoMaior;
   }
 }

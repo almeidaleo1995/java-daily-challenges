@@ -86,6 +86,13 @@ Conceitos: lista dos conceitos treinados
 Nunca pule de dificuldade. Cada desafio deve preparar para o próximo,
 seguindo a progressão de fases abaixo.
 
+## Execução de comandos
+
+Nunca rode `mvn` (test, spotless:apply, spotless:check, etc.) por conta
+própria. Isso faz parte do exercício — é o usuário quem precisa rodar e ver
+o resultado. Em vez disso, diga exatamente qual comando rodar (ex.:
+`mvn test -Dtest=ValoresComunsTest`) e espere ele trazer o resultado.
+
 ## Testes
 
 Todo desafio tem testes automáticos (JUnit 5) que:

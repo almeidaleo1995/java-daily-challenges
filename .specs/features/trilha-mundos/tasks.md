@@ -475,8 +475,8 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 6 exercícios completos; todo teste usa `@TempDir`
-- [ ] Gate check passes: `mvn -q test-compile` + checagem de links de `challenges/`
+- [x] 6 exercícios completos; todo teste usa `@TempDir`
+- [x] Gate check passes: `mvn -q test-compile` + checagem de links de `challenges/`
 
 **Tests**: unit
 **Gate**: full

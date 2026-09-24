@@ -145,6 +145,13 @@ _Desbloqueia ao vencer o chefe do mundo anterior._
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
 
+- [ ] [10.01 Linhas Úteis](m10-io/f01-linhas-uteis/README.md) ⭐☆☆☆☆ +10 XP
+- [ ] [10.02 Soma de Coluna](m10-io/f02-soma-de-coluna/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [10.03 Gravar Relatório](m10-io/f03-gravar-relatorio/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [10.04 Caçador de .txt](m10-io/f04-cacador-de-txt/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [10.05 Config com Padrão](m10-io/f05-config-com-padrao/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] 👑 [Chefe: Mercadinho v8 — Importar Estoque](m10-io/chefe-mercadinho-v8-importar-estoque/README.md) ⭐⭐⭐⭐☆ +40 XP
+
 ## Mundo 11 — Algoritmos 🔒
 
 _Desbloqueia ao vencer o chefe do mundo anterior._

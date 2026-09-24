@@ -297,9 +297,9 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 6 exercícios completos; tipos que o teste instancia existem no esqueleto só com o necessário para compilar
-- [ ] O chefe usa `Map` (M2) e `BigDecimal` (M1)
-- [ ] Gate check passes: `mvn -q test-compile`
+- [x] 6 exercícios completos; tipos que o teste instancia existem no esqueleto só com o necessário para compilar
+- [x] O chefe usa `Map` (M2) e `BigDecimal` (M1)
+- [x] Gate check passes: `mvn -q test-compile`
 
 **Tests**: unit
 **Gate**: quick

@@ -29,6 +29,14 @@ class BancoTest {
   }
 
   @Test
+  void transferirExatamenteOSaldoDisponivelFuncionaEZeraAOrigem() {
+    Banco banco = new Banco(200.0, 500.0);
+    banco.transferirAparaB(200.0);
+    assertEquals(0.0, banco.saldoA());
+    assertEquals(700.0, banco.saldoB());
+  }
+
+  @Test
   void transferenciasSimultaneasNosDoisSentidosPreservamOTotalSemDeadlock()
       throws InterruptedException {
     assertTimeoutPreemptively(

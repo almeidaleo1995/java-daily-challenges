@@ -1,5 +1,6 @@
 package challenges.m12.f08;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -23,5 +24,21 @@ class LimitadorDeChamadasTest {
   @Test
   void maximoSimultaneoNaoPositivoLancaIllegalArgumentException() {
     assertThrows(IllegalArgumentException.class, () -> new LimitadorDeChamadas(0));
+  }
+
+  @Test
+  void maximoSimultaneoNegativoTambemLancaIllegalArgumentException() {
+    assertThrows(IllegalArgumentException.class, () -> new LimitadorDeChamadas(-1));
+  }
+
+  @Test
+  void comLimiteUmOPicoObservadoEExatamenteUm() {
+    assertTimeoutPreemptively(
+        Duration.ofSeconds(10),
+        () -> {
+          LimitadorDeChamadas limitador = new LimitadorDeChamadas(1);
+          int pico = limitador.chamadasSimultaneasMaximasObservadas(10);
+          assertEquals(1, pico);
+        });
   }
 }

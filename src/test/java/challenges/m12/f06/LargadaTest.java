@@ -28,4 +28,19 @@ class LargadaTest {
   void numeroDeCorredoresInvalidoLancaIllegalArgumentException() {
     assertThrows(IllegalArgumentException.class, () -> Largada.largadaSimultanea(0));
   }
+
+  @Test
+  void numeroDeCorredoresNegativoTambemLancaIllegalArgumentException() {
+    assertThrows(IllegalArgumentException.class, () -> Largada.largadaSimultanea(-1));
+  }
+
+  @Test
+  void umUnicoCorredorAindaAssimLargaECorreto() {
+    assertTimeoutPreemptively(
+        Duration.ofSeconds(5),
+        () -> {
+          List<Integer> chegada = Largada.largadaSimultanea(1);
+          assertEquals(List.of(0), chegada);
+        });
+  }
 }

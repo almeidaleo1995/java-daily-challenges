@@ -32,4 +32,14 @@ class ContadorConcorrenteTest {
         IllegalArgumentException.class,
         () -> ContadorConcorrente.incrementarConcorrentemente(4, -1));
   }
+
+  @Test
+  void incrementosPorThreadZeroDevolveTotalZero() {
+    assertTimeoutPreemptively(
+        Duration.ofSeconds(5),
+        () -> {
+          int total = ContadorConcorrente.incrementarConcorrentemente(4, 0);
+          assertEquals(0, total);
+        });
+  }
 }

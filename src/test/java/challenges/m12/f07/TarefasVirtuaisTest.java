@@ -24,4 +24,20 @@ class TarefasVirtuaisTest {
     assertThrows(
         IllegalArgumentException.class, () -> TarefasVirtuais.executarTarefasVirtuais(0));
   }
+
+  @Test
+  void numeroDeTarefasNegativoTambemLancaIllegalArgumentException() {
+    assertThrows(
+        IllegalArgumentException.class, () -> TarefasVirtuais.executarTarefasVirtuais(-1));
+  }
+
+  @Test
+  void umaUnicaTarefaDevolveUm() {
+    assertTimeoutPreemptively(
+        Duration.ofSeconds(5),
+        () -> {
+          int total = TarefasVirtuais.executarTarefasVirtuais(1);
+          assertEquals(1, total);
+        });
+  }
 }

@@ -43,4 +43,27 @@ class CheckoutConcorrenteTest {
     CheckoutConcorrente checkout = new CheckoutConcorrente(10);
     assertThrows(IllegalArgumentException.class, () -> checkout.comprarConcorrentemente(0));
   }
+
+  @Test
+  void estoqueInicialZeroEValidoENenhumaCompraEBemSucedida() {
+    assertTimeoutPreemptively(
+        Duration.ofSeconds(10),
+        () -> {
+          CheckoutConcorrente checkout = new CheckoutConcorrente(0);
+          int vendas = checkout.comprarConcorrentemente(20);
+          assertEquals(0, vendas);
+          assertEquals(0, checkout.estoqueRestante());
+        });
+  }
+
+  @Test
+  void estoqueRestanteNuncaFicaNegativoSobDisputaIntensa() {
+    assertTimeoutPreemptively(
+        Duration.ofSeconds(10),
+        () -> {
+          CheckoutConcorrente checkout = new CheckoutConcorrente(1);
+          checkout.comprarConcorrentemente(500);
+          assertEquals(0, checkout.estoqueRestante());
+        });
+  }
 }

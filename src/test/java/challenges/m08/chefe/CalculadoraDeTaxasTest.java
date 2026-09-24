@@ -12,7 +12,9 @@ class CalculadoraDeTaxasTest {
   @Test
   void pixNaoTemTaxa() {
     assertEquals(
-        0, new BigDecimal("0.00").compareTo(CalculadoraDeTaxas.taxa(new Pix(new BigDecimal("100.00")))));
+        0,
+        new BigDecimal("0.00")
+            .compareTo(CalculadoraDeTaxas.taxa(new Pix(new BigDecimal("100.00")))));
   }
 
   @Test

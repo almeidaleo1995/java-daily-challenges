@@ -22,8 +22,7 @@ class ChamadorDinamicoTest {
   @Test
   void metodoInexistenteLancaIllegalArgumentException() {
     assertThrows(
-        IllegalArgumentException.class,
-        () -> ChamadorDinamico.chamar(new Saudador(), "naoExiste"));
+        IllegalArgumentException.class, () -> ChamadorDinamico.chamar(new Saudador(), "naoExiste"));
   }
 
   @Test

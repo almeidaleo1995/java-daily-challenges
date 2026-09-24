@@ -13,7 +13,8 @@ class HistoricoNavegacaoTest {
   @Test
   void devolveNaOrdemInversaDeInsercao() {
     LinkedHashSet<String> historico = new LinkedHashSet<>(List.of("a.com", "b.com", "c.com"));
-    assertEquals(List.of("c.com", "b.com", "a.com"), HistoricoNavegacao.maisRecentePrimeiro(historico));
+    assertEquals(
+        List.of("c.com", "b.com", "a.com"), HistoricoNavegacao.maisRecentePrimeiro(historico));
   }
 
   @Test
@@ -29,6 +30,7 @@ class HistoricoNavegacaoTest {
 
   @Test
   void historicoNuloLancaIllegalArgumentException() {
-    assertThrows(IllegalArgumentException.class, () -> HistoricoNavegacao.maisRecentePrimeiro(null));
+    assertThrows(
+        IllegalArgumentException.class, () -> HistoricoNavegacao.maisRecentePrimeiro(null));
   }
 }

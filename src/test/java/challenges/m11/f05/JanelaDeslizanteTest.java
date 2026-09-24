@@ -31,8 +31,7 @@ class JanelaDeslizanteTest {
 
   @Test
   void tamanhoDeJanelaMaiorQueArrayLancaIllegalArgumentException() {
-    assertThrows(
-        IllegalArgumentException.class, () -> JanelaDeslizante.maiorSomaJanela(VENDAS, 7));
+    assertThrows(IllegalArgumentException.class, () -> JanelaDeslizante.maiorSomaJanela(VENDAS, 7));
   }
 
   @Test

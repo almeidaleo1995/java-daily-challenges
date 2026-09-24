@@ -65,7 +65,6 @@ class RelatorioDeVendasTest {
     assertThrows(
         IllegalArgumentException.class, () -> RelatorioDeVendas.faturamentoPorCategoria(null));
     assertThrows(IllegalArgumentException.class, () -> RelatorioDeVendas.ticketMedio(null));
-    assertThrows(
-        IllegalArgumentException.class, () -> RelatorioDeVendas.produtoMaisVendido(null));
+    assertThrows(IllegalArgumentException.class, () -> RelatorioDeVendas.produtoMaisVendido(null));
   }
 }

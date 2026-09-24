@@ -35,7 +35,6 @@ class CatalogoTest {
   void produtosOuMinimoNulosLancaIllegalArgumentException() {
     assertThrows(
         IllegalArgumentException.class, () -> Catalogo.nomesAcimaDe(null, BigDecimal.ZERO));
-    assertThrows(
-        IllegalArgumentException.class, () -> Catalogo.nomesAcimaDe(List.of(), null));
+    assertThrows(IllegalArgumentException.class, () -> Catalogo.nomesAcimaDe(List.of(), null));
   }
 }

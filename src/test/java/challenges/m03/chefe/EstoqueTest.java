@@ -70,8 +70,10 @@ class EstoqueTest {
     Estoque estoque = new Estoque();
     estoque.adicionar(new ItemDeEstoque("Sabão", Categoria.LIMPEZA, 3, new BigDecimal("5.00")));
     estoque.adicionar(new ItemDeEstoque("Arroz", Categoria.ALIMENTO, 10, new BigDecimal("25.00")));
-    estoque.adicionar(new ItemDeEstoque("Detergente", Categoria.LIMPEZA, 2, new BigDecimal("3.00")));
+    estoque.adicionar(
+        new ItemDeEstoque("Detergente", Categoria.LIMPEZA, 2, new BigDecimal("3.00")));
 
-    assertEquals(java.util.List.of("Sabão", "Detergente"), estoque.nomesPorCategoria(Categoria.LIMPEZA));
+    assertEquals(
+        java.util.List.of("Sabão", "Detergente"), estoque.nomesPorCategoria(Categoria.LIMPEZA));
   }
 }

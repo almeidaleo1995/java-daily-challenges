@@ -37,8 +37,7 @@ class CupomFiscalTest {
 
   @Test
   void linhaComNumeroDeCamposErradoLancaIllegalArgumentException() {
-    assertThrows(
-        IllegalArgumentException.class, () -> CupomFiscal.gerar(List.of("Caneta;2;3.50")));
+    assertThrows(IllegalArgumentException.class, () -> CupomFiscal.gerar(List.of("Caneta;2;3.50")));
   }
 
   @Test

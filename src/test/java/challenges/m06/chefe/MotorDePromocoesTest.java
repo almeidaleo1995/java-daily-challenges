@@ -1,7 +1,7 @@
 package challenges.m06.chefe;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -66,10 +66,7 @@ class MotorDePromocoesTest {
   @Test
   void arredondamentoFinalUsaHalfEvenEmEmpateExato() {
     BigDecimal resultado =
-        MotorDePromocoes.aplicarPromocoes(
-            new BigDecimal("2.485"),
-            List.of(),
-            Optional.empty());
+        MotorDePromocoes.aplicarPromocoes(new BigDecimal("2.485"), List.of(), Optional.empty());
 
     assertEquals(0, new BigDecimal("2.48").compareTo(resultado));
   }

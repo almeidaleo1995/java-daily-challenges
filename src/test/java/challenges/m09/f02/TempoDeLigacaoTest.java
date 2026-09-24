@@ -30,7 +30,6 @@ class TempoDeLigacaoTest {
 
   @Test
   void formatoInvalidoLancaIllegalArgumentException() {
-    assertThrows(
-        IllegalArgumentException.class, () -> TempoDeLigacao.somar(List.of("1h30m")));
+    assertThrows(IllegalArgumentException.class, () -> TempoDeLigacao.somar(List.of("1h30m")));
   }
 }

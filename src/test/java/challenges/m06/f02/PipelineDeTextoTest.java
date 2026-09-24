@@ -32,7 +32,6 @@ class PipelineDeTextoTest {
   @Test
   void textoOuTransformacoesNulosLancaIllegalArgumentException() {
     assertThrows(IllegalArgumentException.class, () -> PipelineDeTexto.aplicar(null, List.of()));
-    assertThrows(
-        IllegalArgumentException.class, () -> PipelineDeTexto.aplicar("abc", null));
+    assertThrows(IllegalArgumentException.class, () -> PipelineDeTexto.aplicar("abc", null));
   }
 }

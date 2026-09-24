@@ -21,14 +21,12 @@ class TarefasVirtuaisTest {
 
   @Test
   void numeroDeTarefasInvalidoLancaIllegalArgumentException() {
-    assertThrows(
-        IllegalArgumentException.class, () -> TarefasVirtuais.executarTarefasVirtuais(0));
+    assertThrows(IllegalArgumentException.class, () -> TarefasVirtuais.executarTarefasVirtuais(0));
   }
 
   @Test
   void numeroDeTarefasNegativoTambemLancaIllegalArgumentException() {
-    assertThrows(
-        IllegalArgumentException.class, () -> TarefasVirtuais.executarTarefasVirtuais(-1));
+    assertThrows(IllegalArgumentException.class, () -> TarefasVirtuais.executarTarefasVirtuais(-1));
   }
 
   @Test

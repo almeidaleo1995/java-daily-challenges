@@ -35,7 +35,8 @@ class CheckoutTest {
   @Test
   void semItensFisicosOFreteSoConsideraADistancia() {
     Checkout checkout = new Checkout(FRETE_RODOVIARIO);
-    ResultadoCheckout resultado = checkout.finalizar(List.of(new ItemDigital("E-book", 20.0)), 100.0);
+    ResultadoCheckout resultado =
+        checkout.finalizar(List.of(new ItemDigital("E-book", 20.0)), 100.0);
     assertEquals(20.0, resultado.subtotal(), 0.0001);
     assertEquals(10.0, resultado.frete(), 0.0001);
     assertEquals(30.0, resultado.total(), 0.0001);

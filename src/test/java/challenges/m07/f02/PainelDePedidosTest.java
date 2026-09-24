@@ -13,8 +13,7 @@ class PainelDePedidosTest {
   @Test
   void contaQuantosPedidosExistemEmCadaStatus() {
     List<Pedido> pedidos =
-        List.of(
-            new Pedido("1", "ABERTO"), new Pedido("2", "ABERTO"), new Pedido("3", "FECHADO"));
+        List.of(new Pedido("1", "ABERTO"), new Pedido("2", "ABERTO"), new Pedido("3", "FECHADO"));
 
     assertEquals(Map.of("ABERTO", 2L, "FECHADO", 1L), PainelDePedidos.contarPorStatus(pedidos));
   }

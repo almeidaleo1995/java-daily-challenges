@@ -25,8 +25,7 @@ class PedidoTest {
   @Test
   void buildSemClienteLancaIllegalStateException() {
     assertThrows(
-        IllegalStateException.class,
-        () -> Pedido.builder().adicionarItem("Arroz", 20.0).build());
+        IllegalStateException.class, () -> Pedido.builder().adicionarItem("Arroz", 20.0).build());
   }
 
   @Test

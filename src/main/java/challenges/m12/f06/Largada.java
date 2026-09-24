@@ -6,7 +6,8 @@ public final class Largada {
 
   private Largada() {}
 
-  public static List<Integer> largadaSimultanea(int numeroDeCorredores) throws InterruptedException {
+  public static List<Integer> largadaSimultanea(int numeroDeCorredores)
+      throws InterruptedException {
     throw new UnsupportedOperationException("TODO: implementar");
   }
 }

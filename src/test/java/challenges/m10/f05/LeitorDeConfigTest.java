@@ -21,8 +21,7 @@ class LeitorDeConfigTest {
     Files.writeString(arquivo, "host=localhost\nport=8080\n\ntimeout=30");
 
     assertEquals(
-        Map.of("host", "localhost", "port", "8080", "timeout", "30"),
-        LeitorDeConfig.ler(arquivo));
+        Map.of("host", "localhost", "port", "8080", "timeout", "30"), LeitorDeConfig.ler(arquivo));
   }
 
   @Test

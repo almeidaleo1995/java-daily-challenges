@@ -17,8 +17,7 @@ class RetentativaTest {
         };
 
     RuntimeException excecao =
-        assertThrows(
-            RuntimeException.class, () -> Retentativa.executarComRetentativa(tarefa, 3));
+        assertThrows(RuntimeException.class, () -> Retentativa.executarComRetentativa(tarefa, 3));
 
     assertEquals("falha 1", excecao.getMessage());
     assertEquals(2, excecao.getSuppressed().length);
@@ -65,8 +64,7 @@ class RetentativaTest {
         };
 
     RuntimeException excecao =
-        assertThrows(
-            RuntimeException.class, () -> Retentativa.executarComRetentativa(tarefa, 3));
+        assertThrows(RuntimeException.class, () -> Retentativa.executarComRetentativa(tarefa, 3));
 
     assertEquals("falha 2", excecao.getSuppressed()[0].getMessage());
     assertEquals("falha 3", excecao.getSuppressed()[1].getMessage());

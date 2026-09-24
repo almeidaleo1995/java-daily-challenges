@@ -32,7 +32,6 @@ class ProdutoTest {
 
   @Test
   void precoNegativoLancaIllegalArgumentException() {
-    assertThrows(
-        IllegalArgumentException.class, () -> new Produto("Caneta", new BigDecimal("-1")));
+    assertThrows(IllegalArgumentException.class, () -> new Produto("Caneta", new BigDecimal("-1")));
   }
 }

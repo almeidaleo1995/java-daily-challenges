@@ -4,7 +4,8 @@ public final class Retentativa {
 
   private Retentativa() {}
 
-  public static void executarComRetentativa(Tarefa tarefa, int maximoDeTentativas) throws Exception {
+  public static void executarComRetentativa(Tarefa tarefa, int maximoDeTentativas)
+      throws Exception {
     throw new UnsupportedOperationException("TODO: implementar");
   }
 }

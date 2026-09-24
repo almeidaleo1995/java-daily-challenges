@@ -27,17 +27,13 @@ class FusosTest {
 
   @Test
   void argumentosNulosLancaIllegalArgumentException() {
-    assertThrows(
-        IllegalArgumentException.class, () -> Fusos.horarioEm(null, "Europe/London"));
-    assertThrows(
-        IllegalArgumentException.class,
-        () -> Fusos.horarioEm(ZonedDateTime.now(), null));
+    assertThrows(IllegalArgumentException.class, () -> Fusos.horarioEm(null, "Europe/London"));
+    assertThrows(IllegalArgumentException.class, () -> Fusos.horarioEm(ZonedDateTime.now(), null));
   }
 
   @Test
   void zonaInvalidaLancaIllegalArgumentException() {
     assertThrows(
-        IllegalArgumentException.class,
-        () -> Fusos.horarioEm(ZonedDateTime.now(), "Nao/Existe"));
+        IllegalArgumentException.class, () -> Fusos.horarioEm(ZonedDateTime.now(), "Nao/Existe"));
   }
 }

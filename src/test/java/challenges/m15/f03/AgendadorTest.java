@@ -23,8 +23,12 @@ class AgendadorTest {
     agendador.agendar("Reunião", LocalDateTime.of(2024, 1, 15, 10, 0));
     agendador.agendar("Dentista", LocalDateTime.of(2024, 1, 12, 9, 0));
 
-    assertEquals(Optional.of(new Evento("Dentista", LocalDateTime.of(2024, 1, 12, 9, 0))), agendador.proximoEvento());
-    assertEquals(Optional.of(new Evento("Dentista", LocalDateTime.of(2024, 1, 12, 9, 0))), agendador.proximoEvento());
+    assertEquals(
+        Optional.of(new Evento("Dentista", LocalDateTime.of(2024, 1, 12, 9, 0))),
+        agendador.proximoEvento());
+    assertEquals(
+        Optional.of(new Evento("Dentista", LocalDateTime.of(2024, 1, 12, 9, 0))),
+        agendador.proximoEvento());
   }
 
   @Test

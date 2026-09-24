@@ -9,8 +9,7 @@ class GeometriaTest {
 
   @Test
   void doisPontosIguaisEPontoUnico() {
-    assertEquals(
-        "ponto único", Geometria.classificar(new Linha(new Ponto(1, 1), new Ponto(1, 1))));
+    assertEquals("ponto único", Geometria.classificar(new Linha(new Ponto(1, 1), new Ponto(1, 1))));
   }
 
   @Test
@@ -20,14 +19,12 @@ class GeometriaTest {
 
   @Test
   void mesmoYEHorizontal() {
-    assertEquals(
-        "horizontal", Geometria.classificar(new Linha(new Ponto(0, 2), new Ponto(5, 2))));
+    assertEquals("horizontal", Geometria.classificar(new Linha(new Ponto(0, 2), new Ponto(5, 2))));
   }
 
   @Test
   void xEYDiferentesEInclinada() {
-    assertEquals(
-        "inclinada", Geometria.classificar(new Linha(new Ponto(0, 0), new Ponto(3, 4))));
+    assertEquals("inclinada", Geometria.classificar(new Linha(new Ponto(0, 0), new Ponto(3, 4))));
   }
 
   @Test

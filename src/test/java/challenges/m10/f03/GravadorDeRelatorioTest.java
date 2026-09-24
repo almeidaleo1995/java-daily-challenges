@@ -45,9 +45,7 @@ class GravadorDeRelatorioTest {
   @Test
   void arquivoOuLinhasNulosLancaIllegalArgumentException() {
     Path arquivo = tempDir.resolve("relatorio.txt");
-    assertThrows(
-        IllegalArgumentException.class, () -> GravadorDeRelatorio.gravar(null, List.of()));
-    assertThrows(
-        IllegalArgumentException.class, () -> GravadorDeRelatorio.gravar(arquivo, null));
+    assertThrows(IllegalArgumentException.class, () -> GravadorDeRelatorio.gravar(null, List.of()));
+    assertThrows(IllegalArgumentException.class, () -> GravadorDeRelatorio.gravar(arquivo, null));
   }
 }

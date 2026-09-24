@@ -19,8 +19,7 @@ class DiaUtilTest {
   void pulaFeriadoEFinalDeSemanaJuntos() {
     assertEquals(
         LocalDate.of(2024, 5, 20),
-        DiaUtil.proximoDiaUtil(
-            LocalDate.of(2024, 5, 16), Set.of(LocalDate.of(2024, 5, 17))));
+        DiaUtil.proximoDiaUtil(LocalDate.of(2024, 5, 16), Set.of(LocalDate.of(2024, 5, 17))));
   }
 
   @Test
@@ -31,8 +30,7 @@ class DiaUtilTest {
 
   @Test
   void dataOuFeriadosNulosLancaIllegalArgumentException() {
-    assertThrows(
-        IllegalArgumentException.class, () -> DiaUtil.proximoDiaUtil(null, Set.of()));
+    assertThrows(IllegalArgumentException.class, () -> DiaUtil.proximoDiaUtil(null, Set.of()));
     assertThrows(
         IllegalArgumentException.class, () -> DiaUtil.proximoDiaUtil(LocalDate.now(), null));
   }

@@ -75,9 +75,7 @@ class ImportadorDeEstoqueTest {
   void arquivoCsvOuDeErrosNulosLancaIllegalArgumentException() {
     Path csv = tempDir.resolve("estoque.csv");
     Path erros = tempDir.resolve("erros.txt");
-    assertThrows(
-        IllegalArgumentException.class, () -> ImportadorDeEstoque.importar(null, erros));
-    assertThrows(
-        IllegalArgumentException.class, () -> ImportadorDeEstoque.importar(csv, null));
+    assertThrows(IllegalArgumentException.class, () -> ImportadorDeEstoque.importar(null, erros));
+    assertThrows(IllegalArgumentException.class, () -> ImportadorDeEstoque.importar(csv, null));
   }
 }

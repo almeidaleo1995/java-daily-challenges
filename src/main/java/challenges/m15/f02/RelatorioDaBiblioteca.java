@@ -11,7 +11,8 @@ public final class RelatorioDaBiblioteca {
     throw new UnsupportedOperationException("TODO: implementar");
   }
 
-  public static List<String> emprestimosAtrasados(List<EmprestimoAtivo> emprestimos, LocalDate hoje) {
+  public static List<String> emprestimosAtrasados(
+      List<EmprestimoAtivo> emprestimos, LocalDate hoje) {
     throw new UnsupportedOperationException("TODO: implementar");
   }
 }

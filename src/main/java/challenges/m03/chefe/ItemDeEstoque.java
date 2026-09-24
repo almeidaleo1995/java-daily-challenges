@@ -2,7 +2,8 @@ package challenges.m03.chefe;
 
 import java.math.BigDecimal;
 
-public record ItemDeEstoque(String nome, Categoria categoria, int quantidade, BigDecimal precoUnitario) {
+public record ItemDeEstoque(
+    String nome, Categoria categoria, int quantidade, BigDecimal precoUnitario) {
 
   public ItemDeEstoque {
     if (nome == null || nome.isBlank()) {

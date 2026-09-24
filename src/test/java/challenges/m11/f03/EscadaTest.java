@@ -31,9 +31,11 @@ class EscadaTest {
 
   @Test
   void quarentaDegrausDentroDoTimeoutExigeMemoizacao() {
-    assertTimeoutPreemptively(Duration.ofMillis(500), () -> {
-      assertEquals(165580141L, Escada.formasDeSubir(40));
-    });
+    assertTimeoutPreemptively(
+        Duration.ofMillis(500),
+        () -> {
+          assertEquals(165580141L, Escada.formasDeSubir(40));
+        });
   }
 
   @Test

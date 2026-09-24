@@ -23,8 +23,7 @@ class BuscadorDeArquivosTest {
 
     List<Path> resultado = BuscadorDeArquivos.buscarPorExtensao(tempDir, "txt");
 
-    assertEquals(
-        List.of(tempDir.resolve("a.txt"), sub.resolve("c.txt")), resultado);
+    assertEquals(List.of(tempDir.resolve("a.txt"), sub.resolve("c.txt")), resultado);
   }
 
   @Test
@@ -49,7 +48,6 @@ class BuscadorDeArquivosTest {
     assertThrows(
         IllegalArgumentException.class, () -> BuscadorDeArquivos.buscarPorExtensao(null, "txt"));
     assertThrows(
-        IllegalArgumentException.class,
-        () -> BuscadorDeArquivos.buscarPorExtensao(tempDir, null));
+        IllegalArgumentException.class, () -> BuscadorDeArquivos.buscarPorExtensao(tempDir, null));
   }
 }

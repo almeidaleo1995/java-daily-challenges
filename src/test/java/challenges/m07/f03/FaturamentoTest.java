@@ -33,10 +33,12 @@ class FaturamentoTest {
   @Test
   void categoriaUnicaSomaTodasAsVendas() {
     List<Venda> vendas =
-        List.of(new Venda("Bebidas", new BigDecimal("1")), new Venda("Bebidas", new BigDecimal("2")));
+        List.of(
+            new Venda("Bebidas", new BigDecimal("1")), new Venda("Bebidas", new BigDecimal("2")));
 
     assertEquals(
-        0, new BigDecimal("3").compareTo(Faturamento.faturamentoPorCategoria(vendas).get("Bebidas")));
+        0,
+        new BigDecimal("3").compareTo(Faturamento.faturamentoPorCategoria(vendas).get("Bebidas")));
   }
 
   @Test

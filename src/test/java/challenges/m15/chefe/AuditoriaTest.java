@@ -30,7 +30,8 @@ class AuditoriaTest {
   @Test
   void semInconsistenciasDevolveListaVazia() {
     RelatorioDeAuditoria relatorio =
-        Auditoria.apurar(List.of(new Ajuste("Arroz", 10), new Venda("Arroz", 5, new BigDecimal("2.00"))));
+        Auditoria.apurar(
+            List.of(new Ajuste("Arroz", 10), new Venda("Arroz", 5, new BigDecimal("2.00"))));
 
     assertEquals(Map.of("Arroz", 5), relatorio.saldoPorProduto());
     assertEquals(List.of(), relatorio.inconsistencias());
@@ -56,8 +57,7 @@ class AuditoriaTest {
   @Test
   void devolucaoComQuantidadeNaoPositivaLancaIllegalArgumentException() {
     assertThrows(
-        IllegalArgumentException.class,
-        () -> Auditoria.apurar(List.of(new Devolucao("Arroz", 0))));
+        IllegalArgumentException.class, () -> Auditoria.apurar(List.of(new Devolucao("Arroz", 0))));
   }
 
   @Test

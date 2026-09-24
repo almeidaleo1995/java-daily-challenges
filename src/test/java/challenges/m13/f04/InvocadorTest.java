@@ -24,7 +24,6 @@ class InvocadorTest {
 
   @Test
   void calculadoraNulaLancaIllegalArgumentException() {
-    assertThrows(
-        IllegalArgumentException.class, () -> Invocador.somarViaMethodHandle(null, 1, 2));
+    assertThrows(IllegalArgumentException.class, () -> Invocador.somarViaMethodHandle(null, 1, 2));
   }
 }

@@ -32,8 +32,7 @@ class PrecoTest {
 
   @Test
   void percentualNegativoLancaIllegalArgumentException() {
-    assertThrows(
-        IllegalArgumentException.class, () -> new ComImposto(new PrecoBase(100.0), -5.0));
+    assertThrows(IllegalArgumentException.class, () -> new ComImposto(new PrecoBase(100.0), -5.0));
   }
 
   @Test

@@ -46,13 +46,11 @@ class MapeadorCsvTest {
 
   @Test
   void linhasNulasLancaIllegalArgumentException() {
-    assertThrows(
-        IllegalArgumentException.class, () -> MapeadorCsv.mapear(null, ProdutoCsv.class));
+    assertThrows(IllegalArgumentException.class, () -> MapeadorCsv.mapear(null, ProdutoCsv.class));
   }
 
   @Test
   void classeAlvoNulaLancaIllegalArgumentException() {
-    assertThrows(
-        IllegalArgumentException.class, () -> MapeadorCsv.mapear(List.of("a,1"), null));
+    assertThrows(IllegalArgumentException.class, () -> MapeadorCsv.mapear(List.of("a,1"), null));
   }
 }

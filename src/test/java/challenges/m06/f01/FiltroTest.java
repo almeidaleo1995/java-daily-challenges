@@ -21,8 +21,7 @@ class FiltroTest {
   @Test
   void mantemDuplicadosQueSatisfazemOPredicado() {
     assertEquals(
-        List.of("ana", "ana"),
-        Filtro.filtrar(List.of("ana", "bob", "ana"), s -> s.equals("ana")));
+        List.of("ana", "ana"), Filtro.filtrar(List.of("ana", "bob", "ana"), s -> s.equals("ana")));
   }
 
   @Test

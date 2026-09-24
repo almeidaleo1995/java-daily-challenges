@@ -31,7 +31,8 @@ class RelatorioDaBibliotecaTest {
     assertThrows(
         IllegalArgumentException.class,
         () ->
-            RelatorioDaBiblioteca.calcularMulta(LocalDate.of(2024, 2, 1), LocalDate.of(2024, 1, 1)));
+            RelatorioDaBiblioteca.calcularMulta(
+                LocalDate.of(2024, 2, 1), LocalDate.of(2024, 1, 1)));
   }
 
   @Test

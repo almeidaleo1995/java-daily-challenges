@@ -575,8 +575,8 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 6 exercícios completos; f05 traz a versão acoplada marcada `// Dado`, e o teste usa `Clock.fixed`
-- [ ] Gate check passes: `mvn -q test-compile`
+- [x] 6 exercícios completos; f05 traz a versão acoplada marcada `// Dado`, e o teste usa `Clock.fixed`
+- [x] Gate check passes: `mvn -q test-compile`
 
 **Tests**: unit
 **Gate**: quick

@@ -192,6 +192,13 @@ _Desbloqueia ao vencer o chefe do mundo anterior._
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
 
+- [ ] [14.01 Frete Estratégico](m14-design/f01-frete-estrategico/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [14.02 Pedido Builder](m14-design/f02-pedido-builder/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [14.03 Alerta de Estoque](m14-design/f03-alerta-de-estoque/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [14.04 Preço em Camadas](m14-design/f04-preco-em-camadas/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] [14.05 Relógio Injetado](m14-design/f05-relogio-injetado/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] 👑 [Chefe: Mercadinho v12 — Checkout Plugável](m14-design/chefe-mercadinho-v12-checkout-plugavel/README.md) ⭐⭐⭐⭐☆ +40 XP
+
 ## Mundo 15 — Chefão Final 🔒
 
 _Desbloqueia ao vencer o chefe do mundo anterior._

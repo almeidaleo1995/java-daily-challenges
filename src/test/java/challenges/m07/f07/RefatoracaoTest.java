@@ -27,6 +27,24 @@ class RefatoracaoTest {
   }
 
   @Test
+  void listaVaziaDevolveZero() {
+    List<Integer> numeros = List.of();
+    assertEquals(
+        RefatoracaoImperativa.somaDosQuadradosDosPares(numeros),
+        Refatoracao.somaDosQuadradosDosPares(numeros));
+    assertEquals(0, Refatoracao.somaDosQuadradosDosPares(numeros));
+  }
+
+  @Test
+  void numeroParNegativoTambemEQuadradoESomado() {
+    List<Integer> numeros = List.of(-2, 3);
+    assertEquals(
+        RefatoracaoImperativa.somaDosQuadradosDosPares(numeros),
+        Refatoracao.somaDosQuadradosDosPares(numeros));
+    assertEquals(4, Refatoracao.somaDosQuadradosDosPares(numeros));
+  }
+
+  @Test
   void numerosNulaLancaIllegalArgumentException() {
     assertThrows(IllegalArgumentException.class, () -> Refatoracao.somaDosQuadradosDosPares(null));
   }

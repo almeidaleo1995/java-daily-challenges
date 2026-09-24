@@ -33,6 +33,23 @@ class ControleDeValidadeTest {
   }
 
   @Test
+  void vencidosComMultiplosProdutosVemEmOrdemAlfabetica() {
+    List<LoteDeProduto> doisVencidos =
+        List.of(
+            new LoteDeProduto("Leite", LocalDate.of(2024, 5, 10)),
+            new LoteDeProduto("Arroz", LocalDate.of(2024, 5, 1)));
+
+    assertEquals(List.of("Arroz", "Leite"), ControleDeValidade.vencidos(doisVencidos, hoje));
+  }
+
+  @Test
+  void produtoQueVenceExatamenteNoLimiteDaJanelaEIncluido() {
+    List<LoteDeProduto> lote = List.of(new LoteDeProduto("Leite", hoje.plusDays(7)));
+
+    assertEquals(List.of("Leite"), ControleDeValidade.proximosDoVencimento(lote, hoje, 7));
+  }
+
+  @Test
   void diasDeAlertaNegativoLancaIllegalArgumentException() {
     assertThrows(
         IllegalArgumentException.class,

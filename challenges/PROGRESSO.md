@@ -28,10 +28,10 @@
 - [ ] [1.22 Contador de Dígitos de Texto](m01-sintaxe-strings-arrays/f22-contador-de-digitos-de-texto/README.md) ⭐☆☆☆☆ +10 XP
 - [ ] [1.23 Contador de Espaços](m01-sintaxe-strings-arrays/f23-contador-de-espacos/README.md) ⭐☆☆☆☆ +10 XP
 - [ ] [1.24 Índice Primeira Minúscula](m01-sintaxe-strings-arrays/f24-indice-primeira-minuscula/README.md) ⭐⭐☆☆☆ +20 XP
-- [ ] [1.25 Placar Sem Estouro](m01-sintaxe-strings-arrays/f25-placar-sem-estouro/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [1.25 Placar Seguro](m01-sintaxe-strings-arrays/f25-placar-seguro/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] [1.26 Preço com Desconto](m01-sintaxe-strings-arrays/f26-preco-com-desconto/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] [1.27 Tipo do Dia](m01-sintaxe-strings-arrays/f27-tipo-do-dia/README.md) ⭐☆☆☆☆ +10 XP
-- [ ] [1.28 Mesmo Código](m01-sintaxe-strings-arrays/f28-mesmo-codigo/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [1.28 Mesmo Código](m01-sintaxe-strings-arrays/f28-comparador-de-codigos/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] [1.29 Etiqueta Formatada](m01-sintaxe-strings-arrays/f29-etiqueta-formatada/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] 👑 [Chefe: Cupom Fiscal](m01-sintaxe-strings-arrays/chefe-cupom-fiscal/README.md) ⭐⭐⭐☆☆ +30 XP
 
@@ -67,13 +67,33 @@
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
 
+- [ ] [3.01 Temperatura](m03-poo/f01-temperatura/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [3.02 Produto](m03-poo/f02-produto/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [3.03 Formas](m03-poo/f03-formas/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [3.04 Calculadora de Enum](m03-poo/f04-calculadora-de-enum/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [3.05 Pedágio](m03-poo/f05-pedagio/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] 👑 [Chefe: Mercadinho v1 — Estoque](m03-poo/chefe-mercadinho-v1-estoque/README.md) ⭐⭐⭐⭐☆ +40 XP
+
 ## Mundo 4 — Exceções 🔒
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
 
+- [ ] [4.01 Saque Checado](m04-excecoes/f01-saque-checado/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [4.02 Conexão Sempre Fechada](m04-excecoes/f02-conexao-sempre-fechada/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [4.03 Leitor de Idade](m04-excecoes/f03-leitor-de-idade/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [4.04 Retentativa](m04-excecoes/f04-retentativa/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] 👑 [Chefe: Mercadinho v2 — Pedido Atômico](m04-excecoes/chefe-mercadinho-v2-pedido-atomico/README.md) ⭐⭐⭐⭐☆ +40 XP
+
 ## Mundo 5 — Generics 🔒
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
+
+- [ ] [5.01 Par](m05-generics/f01-par/README.md) ⭐☆☆☆☆ +10 XP
+- [ ] [5.02 O Maior](m05-generics/f02-o-maior/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [5.03 Caixa de Números](m05-generics/f03-caixa-de-numeros/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [5.04 PECS](m05-generics/f04-pecs/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] [5.05 Cache LRU](m05-generics/f05-cache-lru/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] 👑 [Chefe: Mercadinho v3 — Repositório](m05-generics/chefe-mercadinho-v3-repositorio/README.md) ⭐⭐⭐⭐☆ +40 XP
 
 ## Mundo 6 — Lambdas e Optional 🔒
 

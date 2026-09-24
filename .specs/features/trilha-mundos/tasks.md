@@ -350,8 +350,8 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 5 exercícios completos; as assinaturas genéricas do esqueleto já são as finais (o exercício é o corpo)
-- [ ] Gate check passes: `mvn -q test-compile` + checagem de links de `challenges/`
+- [x] 5 exercícios completos; as assinaturas genéricas do esqueleto já são as finais (o exercício é o corpo)
+- [x] Gate check passes: `mvn -q test-compile` + checagem de links de `challenges/`
 
 **Tests**: unit
 **Gate**: full

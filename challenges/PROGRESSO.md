@@ -133,6 +133,14 @@ _Desbloqueia ao vencer o chefe do mundo anterior._
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
 
+- [ ] [9.01 Idade Exata](m09-datas-regex/f01-idade-exata/README.md) ⭐☆☆☆☆ +10 XP
+- [ ] [9.02 Tempo em Ligação](m09-datas-regex/f02-tempo-em-ligacao/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [9.03 Próximo Dia Útil](m09-datas-regex/f03-proximo-dia-util/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [9.04 Reunião Global](m09-datas-regex/f04-reuniao-global/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [9.05 Placa Mercosul](m09-datas-regex/f05-placa-mercosul/README.md) ⭐☆☆☆☆ +10 XP
+- [ ] [9.06 Leitor de Log](m09-datas-regex/f06-leitor-de-log/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] 👑 [Chefe: Mercadinho v7 — Validade de Lotes](m09-datas-regex/chefe-mercadinho-v7-validade-de-lotes/README.md) ⭐⭐⭐⭐☆ +40 XP
+
 ## Mundo 10 — I/O 🔒
 
 _Desbloqueia ao vencer o chefe do mundo anterior._

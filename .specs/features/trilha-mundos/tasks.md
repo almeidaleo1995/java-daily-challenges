@@ -450,8 +450,8 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 7 exercícios completos; datas sempre recebidas por parâmetro (nunca `LocalDate.now()` no teste)
-- [ ] Gate check passes: `mvn -q test-compile`
+- [x] 7 exercícios completos; datas sempre recebidas por parâmetro (nunca `LocalDate.now()` no teste)
+- [x] Gate check passes: `mvn -q test-compile`
 
 **Tests**: unit
 **Gate**: quick

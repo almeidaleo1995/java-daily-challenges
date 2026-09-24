@@ -182,6 +182,12 @@ _Desbloqueia ao vencer o chefe do mundo anterior._
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
 
+- [ ] [13.01 Raio-X](m13-reflection/f01-raio-x/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [13.02 Chamar por Nome](m13-reflection/f02-chamador-dinamico/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [13.03 Campo Obrigatório](m13-reflection/f03-campo-obrigatorio/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] [13.04 Method Handle](m13-reflection/f04-method-handle/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] 👑 [Chefe: Mercadinho v11 — Mapeador CSV](m13-reflection/chefe-mercadinho-v11-mapeador-csv/README.md) ⭐⭐⭐⭐☆ +40 XP
+
 ## Mundo 14 — Design 🔒
 
 _Desbloqueia ao vencer o chefe do mundo anterior._

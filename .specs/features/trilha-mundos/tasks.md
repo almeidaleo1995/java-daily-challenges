@@ -550,8 +550,8 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 5 exercícios completos; em f03 a anotação `@Obrigatorio` vem **sem** `@Retention` (descobrir isso é parte do exercício)
-- [ ] Gate check passes: `mvn -q test-compile`
+- [x] 5 exercícios completos; em f03 a anotação `@Obrigatorio` vem **sem** `@Retention` (descobrir isso é parte do exercício)
+- [x] Gate check passes: `mvn -q test-compile`
 
 **Tests**: unit
 **Gate**: quick

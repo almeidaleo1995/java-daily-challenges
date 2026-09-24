@@ -110,6 +110,15 @@ _Desbloqueia ao vencer o chefe do mundo anterior._
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
 
+- [ ] [7.01 Produtos Caros](m07-streams/f01-produtos-caros/README.md) ⭐☆☆☆☆ +10 XP
+- [ ] [7.02 Pedidos por Status](m07-streams/f02-pedidos-por-status/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [7.03 Faturamento por Categoria](m07-streams/f03-faturamento-por-categoria/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [7.04 Tags Únicas](m07-streams/f04-tags-unicas/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [7.05 Boletim](m07-streams/f05-boletim/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [7.06 Estatísticas](m07-streams/f06-estatisticas/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [7.07 Refatore para Stream](m07-streams/f07-refatore-para-stream/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] 👑 [Chefe: Mercadinho v5 — Relatório de Vendas](m07-streams/chefe-mercadinho-v5-relatorio-de-vendas/README.md) ⭐⭐⭐⭐☆ +40 XP
+
 ## Mundo 8 — Pattern Matching (Java 21) 🔒
 
 _Desbloqueia ao vencer o chefe do mundo anterior._

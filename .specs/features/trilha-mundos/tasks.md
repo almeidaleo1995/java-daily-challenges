@@ -400,8 +400,8 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 8 exercícios completos; f07 traz a versão imperativa marcada `// Dado`, e o teste compara as duas saídas
-- [ ] Gate check passes: `mvn -q test-compile`
+- [x] 8 exercícios completos; f07 traz a versão imperativa marcada `// Dado`, e o teste compara as duas saídas
+- [x] Gate check passes: `mvn -q test-compile`
 
 **Tests**: unit
 **Gate**: quick

@@ -1,0 +1,10 @@
+package challenges.mNN.fNN;
+
+public final class NomeDaClasse {
+
+  private NomeDaClasse() {}
+
+  public static void metodo() {
+    throw new UnsupportedOperationException("TODO: implementar");
+  }
+}

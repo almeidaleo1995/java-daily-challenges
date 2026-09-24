@@ -53,6 +53,28 @@ class MotorDePromocoesTest {
   }
 
   @Test
+  void cupomSozinhoSemNenhumaPromocaoDescontaSobreOPrecoOriginal() {
+    BigDecimal resultado =
+        MotorDePromocoes.aplicarPromocoes(
+            new BigDecimal("100.00"),
+            List.of(),
+            Optional.of(new Cupom("SOZINHO", new BigDecimal("0.10"))));
+
+    assertEquals(0, new BigDecimal("90.00").compareTo(resultado));
+  }
+
+  @Test
+  void arredondamentoFinalUsaHalfEvenEmEmpateExato() {
+    BigDecimal resultado =
+        MotorDePromocoes.aplicarPromocoes(
+            new BigDecimal("2.485"),
+            List.of(),
+            Optional.empty());
+
+    assertEquals(0, new BigDecimal("2.48").compareTo(resultado));
+  }
+
+  @Test
   void argumentosNulosLancamIllegalArgumentException() {
     assertThrows(
         IllegalArgumentException.class,

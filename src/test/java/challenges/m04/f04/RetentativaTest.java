@@ -47,4 +47,28 @@ class RetentativaTest {
     assertThrows(
         IllegalArgumentException.class, () -> Retentativa.executarComRetentativa(tarefa, 0));
   }
+
+  @Test
+  void maximoDeTentativasNegativoTambemLancaIllegalArgumentException() {
+    Tarefa tarefa = () -> {};
+    assertThrows(
+        IllegalArgumentException.class, () -> Retentativa.executarComRetentativa(tarefa, -1));
+  }
+
+  @Test
+  void excecoesSuprimidasSaoExatamenteAsDasTentativasSeguintes() {
+    int[] chamadas = {0};
+    Tarefa tarefa =
+        () -> {
+          chamadas[0]++;
+          throw new RuntimeException("falha " + chamadas[0]);
+        };
+
+    RuntimeException excecao =
+        assertThrows(
+            RuntimeException.class, () -> Retentativa.executarComRetentativa(tarefa, 3));
+
+    assertEquals("falha 2", excecao.getSuppressed()[0].getMessage());
+    assertEquals("falha 3", excecao.getSuppressed()[1].getMessage());
+  }
 }

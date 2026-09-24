@@ -22,4 +22,19 @@ class ExecutorTest {
     assertThrows(RuntimeException.class, () -> Executor.executarComLog(log, "FALHA"));
     assertEquals(List.of("aberta", "fechada"), log);
   }
+
+  @Test
+  void excecaoQuePropagaNaoEEmbrulhadaNemTemMensagemAlterada() {
+    List<String> log = new ArrayList<>();
+    RuntimeException excecao =
+        assertThrows(RuntimeException.class, () -> Executor.executarComLog(log, "FALHA"));
+    assertEquals("comando falhou", excecao.getMessage());
+  }
+
+  @Test
+  void comandoDiferenteDeOkOuFalhaTambemEExecutadoERegistrado() {
+    List<String> log = new ArrayList<>();
+    Executor.executarComLog(log, "PING");
+    assertEquals(List.of("aberta", "executado:PING", "fechada"), log);
+  }
 }

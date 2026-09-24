@@ -47,6 +47,27 @@ class ProcessadorDePedidoTest {
   }
 
   @Test
+  void excecaoNomeiaOProdutoSemEstoqueSuficiente() {
+    Map<String, Integer> estoque = new LinkedHashMap<>(Map.of("Feijão", 5));
+
+    EstoqueInsuficienteException excecao =
+        assertThrows(
+            EstoqueInsuficienteException.class,
+            () -> ProcessadorDePedido.processar(estoque, List.of(new ItemPedido("Feijão", 10))));
+
+    assertEquals(true, excecao.getMessage().contains("Feijão"));
+  }
+
+  @Test
+  void pedidoVazioNaoAlteraOEstoque() {
+    Map<String, Integer> estoque = new LinkedHashMap<>(Map.of("Arroz", 10));
+
+    ProcessadorDePedido.processar(estoque, List.of());
+
+    assertEquals(10, estoque.get("Arroz"));
+  }
+
+  @Test
   void estoqueOuItensNulosLancaIllegalArgumentException() {
     assertThrows(
         IllegalArgumentException.class, () -> ProcessadorDePedido.processar(null, List.of()));

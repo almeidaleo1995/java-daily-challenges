@@ -323,10 +323,10 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 5 exercícios completos; código "dado" marcado `// Dado: não altere.`
-- [ ] Testes verificam o tipo da exceção, a `cause` (f03) e as suprimidas (f04)
-- [ ] O chefe testa o rollback: estado inalterado após falha
-- [ ] Gate check passes: `mvn -q test-compile`
+- [x] 5 exercícios completos; código "dado" marcado `// Dado: não altere.`
+- [x] Testes verificam o tipo da exceção, a `cause` (f03) e as suprimidas (f04)
+- [x] O chefe testa o rollback: estado inalterado após falha
+- [x] Gate check passes: `mvn -q test-compile`
 
 **Tests**: unit
 **Gate**: quick

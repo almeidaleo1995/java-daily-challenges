@@ -30,6 +30,13 @@ class PrecoComDescontoTest {
   }
 
   @Test
+  void percentualExatamenteCemEValidoEDevolveZero() {
+    assertEquals(
+        new BigDecimal("0.00"),
+        PrecoComDesconto.aplicarDesconto(new BigDecimal("100.00"), new BigDecimal("100")));
+  }
+
+  @Test
   void precoNegativoLancaIllegalArgumentException() {
     assertThrows(
         IllegalArgumentException.class,

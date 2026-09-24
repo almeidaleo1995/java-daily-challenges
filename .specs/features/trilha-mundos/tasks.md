@@ -375,8 +375,8 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 5 exercícios completos; f03 testa que o `Supplier` roda uma vez só (contador no teste)
-- [ ] Gate check passes: `mvn -q test-compile`
+- [x] 5 exercícios completos; f03 testa que o `Supplier` roda uma vez só (contador no teste)
+- [x] Gate check passes: `mvn -q test-compile`
 
 **Tests**: unit
 **Gate**: quick

@@ -99,6 +99,13 @@ _Desbloqueia ao vencer o chefe do mundo anterior._
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
 
+- [ ] [6.01 Filtro Genérico](m06-lambdas/f01-filtro-generico/README.md) ⭐☆☆☆☆ +10 XP
+- [ ] [6.02 Pipeline de Texto](m06-lambdas/f02-pipeline-de-texto/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [6.03 Valor Preguiçoso](m06-lambdas/f03-valor-preguicoso/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [6.04 E-mail do Gerente](m06-lambdas/f04-email-do-gerente/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [6.05 Regras de Crédito](m06-lambdas/f05-regras-de-credito/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] 👑 [Chefe: Mercadinho v4 — Promoções](m06-lambdas/chefe-mercadinho-v4-promocoes/README.md) ⭐⭐⭐⭐☆ +40 XP
+
 ## Mundo 7 — Streams 🔒
 
 _Desbloqueia ao vencer o chefe do mundo anterior._

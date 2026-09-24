@@ -244,10 +244,10 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 6 exercícios com README, esqueleto e teste; ≥ 4 testes por fase e ≥ 6 no chefe
-- [ ] Cada README cabe no template, tem ⭐, tempo ≤ 20 min, XP e linha Revisa
-- [ ] Testes cobrem os exemplos do README com os mesmos valores e cada caso inválido com a exceção exata
-- [ ] Gate check passes: `mvn -q test-compile`
+- [x] 6 exercícios com README, esqueleto e teste; ≥ 4 testes por fase e ≥ 6 no chefe
+- [x] Cada README cabe no template, tem ⭐, tempo ≤ 20 min, XP e linha Revisa
+- [x] Testes cobrem os exemplos do README com os mesmos valores e cada caso inválido com a exceção exata
+- [x] Gate check passes: `mvn -q test-compile`
 
 **Tests**: unit
 **Gate**: quick

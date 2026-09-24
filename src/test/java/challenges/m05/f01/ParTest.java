@@ -30,4 +30,13 @@ class ParTest {
     assertEquals("idade", par.getPrimeiro());
     assertEquals(30, par.getSegundo());
   }
+
+  @Test
+  void trocarDuasVezesDevolveOsMesmosValoresDeOrigem() {
+    Par<String, Integer> par = new Par<>("idade", 30);
+    Par<String, Integer> voltaAoNormal = par.trocar().trocar();
+
+    assertEquals("idade", voltaAoNormal.getPrimeiro());
+    assertEquals(30, voltaAoNormal.getSegundo());
+  }
 }

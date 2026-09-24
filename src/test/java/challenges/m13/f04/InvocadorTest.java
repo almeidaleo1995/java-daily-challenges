@@ -18,6 +18,11 @@ class InvocadorTest {
   }
 
   @Test
+  void somaComZerosDevolveZero() throws Throwable {
+    assertEquals(0, Invocador.somarViaMethodHandle(new Calculadora(), 0, 0));
+  }
+
+  @Test
   void calculadoraNulaLancaIllegalArgumentException() {
     assertThrows(
         IllegalArgumentException.class, () -> Invocador.somarViaMethodHandle(null, 1, 2));

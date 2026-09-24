@@ -26,6 +26,25 @@ class MapeadorCsvTest {
   }
 
   @Test
+  void mantemAOrdemDasLinhasMesmoQuandoNaoEAlfabetica() throws Exception {
+    List<ProdutoCsv> produtos =
+        MapeadorCsv.mapear(List.of("Sabão,3", "Arroz,10", "Feijão,5"), ProdutoCsv.class);
+
+    assertEquals("Sabão", produtos.get(0).nome);
+    assertEquals("Arroz", produtos.get(1).nome);
+    assertEquals("Feijão", produtos.get(2).nome);
+  }
+
+  @Test
+  void umaUnicaLinhaMapeiaParaUmaListaComUmItem() throws Exception {
+    List<ProdutoCsv> produtos = MapeadorCsv.mapear(List.of("Sabão,3"), ProdutoCsv.class);
+
+    assertEquals(1, produtos.size());
+    assertEquals("Sabão", produtos.get(0).nome);
+    assertEquals(3, produtos.get(0).quantidade);
+  }
+
+  @Test
   void linhasNulasLancaIllegalArgumentException() {
     assertThrows(
         IllegalArgumentException.class, () -> MapeadorCsv.mapear(null, ProdutoCsv.class));

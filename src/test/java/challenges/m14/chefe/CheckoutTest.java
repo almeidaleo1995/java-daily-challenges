@@ -42,6 +42,20 @@ class CheckoutTest {
   }
 
   @Test
+  void notificaTodosOsOuvintesRegistradosNaoSoOPrimeiro() {
+    Checkout checkout = new Checkout(FRETE_RODOVIARIO);
+    List<Double> ouvinte1 = new ArrayList<>();
+    List<Double> ouvinte2 = new ArrayList<>();
+    checkout.registrarOuvinte(ouvinte1::add);
+    checkout.registrarOuvinte(ouvinte2::add);
+
+    checkout.finalizar(List.of(new ItemDigital("E-book", 20.0)), 0.0);
+
+    assertEquals(List.of(20.0), ouvinte1);
+    assertEquals(List.of(20.0), ouvinte2);
+  }
+
+  @Test
   void itensNulosOuVaziosLancaIllegalArgumentException() {
     Checkout checkout = new Checkout(FRETE_RODOVIARIO);
     assertThrows(IllegalArgumentException.class, () -> checkout.finalizar(null, 10.0));

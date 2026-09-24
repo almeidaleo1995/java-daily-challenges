@@ -525,8 +525,8 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 9 exercícios completos; todo teste com `assertTimeoutPreemptively`, número fixo de tarefas e sem `Thread.sleep` como sincronização
-- [ ] Gate check passes: `mvn -q test-compile`
+- [x] 9 exercícios completos; todo teste com `assertTimeoutPreemptively`, número fixo de tarefas e sem `Thread.sleep` como sincronização
+- [x] Gate check passes: `mvn -q test-compile`
 
 **Tests**: unit
 **Gate**: quick

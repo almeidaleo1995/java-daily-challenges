@@ -168,6 +168,16 @@ _Desbloqueia ao vencer o chefe do mundo anterior._
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
 
+- [ ] [12.01 Contador Disputado](m12-concorrencia/f01-contador-disputado/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [12.02 Transferência Segura](m12-concorrencia/f02-transferencia-segura/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] [12.03 Processamento Paralelo](m12-concorrencia/f03-processamento-paralelo/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [12.04 Cotação Combinada](m12-concorrencia/f04-cotacao-combinada/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] [12.05 Contagem Paralela](m12-concorrencia/f05-contagem-paralela/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [12.06 Largada](m12-concorrencia/f06-largada/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] [12.07 Mil Tarefas Leves](m12-concorrencia/f07-mil-tarefas-leves/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [12.08 Limite de Chamadas](m12-concorrencia/f08-limite-de-chamadas/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] 👑 [Chefe: Mercadinho v10 — Checkout Concorrente](m12-concorrencia/chefe-mercadinho-v10-checkout-concorrente/README.md) ⭐⭐⭐⭐⭐ +50 XP
+
 ## Mundo 13 — Reflection e Anotações 🔒
 
 _Desbloqueia ao vencer o chefe do mundo anterior._

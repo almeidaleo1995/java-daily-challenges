@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "promote_threshold": 2,
+  "window_days": 45,
+  "quarantine_threshold": 2,
+  "next_id": 3,
+  "lessons": [
+    {
+      "id": "L-001",
+      "key": "ac_gap::when a task done when cites a numeric test count floor 4 phase 6 boss count test annotations per file before marking the task complete not just per world exercise counts",
+      "text": "When a task Done-when cites a numeric test-count floor (>=4/phase, >=6/boss), count @Test annotations per file before marking the task complete, not just per-world exercise counts.",
+      "signal": "ac_gap",
+      "scope": "test-coverage",
+      "status": "candidate",
+      "features": [
+        "trilha-mundos"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "MUN-04 (test-coverage)"
+      ],
+      "created": "2026-09-24T13:51:54Z",
+      "last_seen": "2026-09-24T13:51:54Z"
+    },
+    {
+      "id": "L-002",
+      "key": "surviving_mutant::for a numeric boundary rule stated as n throws add a test at exactly n the allowed edge not just above and below it",
+      "text": "For a numeric boundary rule stated as '> N throws', add a test at exactly N (the allowed edge), not just above and below it.",
+      "signal": "surviving_mutant",
+      "scope": "test-coverage",
+      "status": "candidate",
+      "features": [
+        "trilha-mundos"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "src/main/java/challenges/m01/f26/PrecoComDesconto.java boundary >100 vs >=100 (test-coverage)"
+      ],
+      "created": "2026-09-24T13:51:55Z",
+      "last_seen": "2026-09-24T13:51:55Z"
+    }
+  ]
+}

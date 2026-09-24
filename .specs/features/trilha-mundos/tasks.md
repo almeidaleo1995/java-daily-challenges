@@ -425,8 +425,8 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 5 exercícios completos; hierarquias `sealed` já declaradas no esqueleto
-- [ ] Gate check passes: `mvn -q test-compile`
+- [x] 5 exercícios completos; hierarquias `sealed` já declaradas no esqueleto
+- [x] Gate check passes: `mvn -q test-compile`
 
 **Tests**: unit
 **Gate**: quick

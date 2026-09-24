@@ -123,6 +123,12 @@ _Desbloqueia ao vencer o chefe do mundo anterior._
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
 
+- [ ] [8.01 Descritor](m08-pattern-matching/f01-descritor/README.md) ⭐☆☆☆☆ +10 XP
+- [ ] [8.02 Classificador com Guarda](m08-pattern-matching/f02-classificador-com-guarda/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [8.03 Formas Seladas](m08-pattern-matching/f03-formas-seladas/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [8.04 Geometria](m08-pattern-matching/f04-geometria/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] 👑 [Chefe: Mercadinho v6 — Pagamentos](m08-pattern-matching/chefe-mercadinho-v6-pagamentos/README.md) ⭐⭐⭐⭐☆ +40 XP
+
 ## Mundo 9 — Datas e Regex 🔒
 
 _Desbloqueia ao vencer o chefe do mundo anterior._

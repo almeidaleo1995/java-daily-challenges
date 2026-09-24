@@ -500,8 +500,8 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 7 exercícios completos; f03 e o chefe têm um caso grande que só passa com memoização/DP (`assertTimeoutPreemptively`)
-- [ ] Gate check passes: `mvn -q test-compile`
+- [x] 7 exercícios completos; f03 e o chefe têm um caso grande que só passa com memoização/DP (`assertTimeoutPreemptively`)
+- [x] Gate check passes: `mvn -q test-compile`
 
 **Tests**: unit
 **Gate**: quick

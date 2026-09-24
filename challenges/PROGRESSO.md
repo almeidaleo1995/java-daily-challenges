@@ -156,6 +156,14 @@ _Desbloqueia ao vencer o chefe do mundo anterior._
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
 
+- [ ] [11.01 Busca Binária](m11-algoritmos/f01-busca-binaria/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [11.02 Potência Rápida](m11-algoritmos/f02-potencia-rapida/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [11.03 Escada](m11-algoritmos/f03-escada/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [11.04 Par com Soma](m11-algoritmos/f04-par-com-soma/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [11.05 Janela de Vendas](m11-algoritmos/f05-janela-de-vendas/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] [11.06 Juntar Ordenadas](m11-algoritmos/f06-intercalador/README.md) ⭐⭐☆☆☆ +20 XP
+- [ ] 👑 [Chefe: Mercadinho v9 — Troco Mínimo](m11-algoritmos/chefe-mercadinho-v9-troco-minimo/README.md) ⭐⭐⭐⭐⭐ +50 XP
+
 ## Mundo 12 — Concorrência 🔒
 
 _Desbloqueia ao vencer o chefe do mundo anterior._

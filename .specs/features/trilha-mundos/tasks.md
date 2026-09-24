@@ -271,9 +271,9 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 6 exercícios completos; ≥ 4 testes por fase
-- [ ] f22 testa o contrato via `HashSet`/`HashMap`, não chamando `equals` direto
-- [ ] Gate check passes: `mvn -q test-compile`
+- [x] 6 exercícios completos; ≥ 4 testes por fase
+- [x] f22 testa o contrato via `HashSet`/`HashMap`, não chamando `equals` direto
+- [x] Gate check passes: `mvn -q test-compile`
 
 **Tests**: unit
 **Gate**: quick

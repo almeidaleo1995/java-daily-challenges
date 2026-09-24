@@ -203,6 +203,12 @@ _Desbloqueia ao vencer o chefe do mundo anterior._
 
 _Desbloqueia ao vencer o chefe do mundo anterior._
 
+- [ ] [15.01 Biblioteca 1: Empréstimos](m15-final/f01-biblioteca-emprestimos/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] [15.02 Biblioteca 2: Multas e Relatório](m15-final/f02-biblioteca-multas-relatorio/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] [15.03 Agendador](m15-final/f03-agendador/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] [15.04 Encurtador de URL](m15-final/f04-encurtador-de-url/README.md) ⭐⭐⭐☆☆ +30 XP
+- [ ] 👑 [Chefe Final: Mercadinho — Auditoria](m15-final/chefe-mercadinho-final-auditoria/README.md) ⭐⭐⭐⭐⭐ +50 XP
+
 ## Próximos mundos (backlog)
 
 - **Modules (JPMS)** — `module-info.java`, `exports`/`requires`, encapsulamento forte.

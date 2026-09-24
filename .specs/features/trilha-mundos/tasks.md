@@ -600,9 +600,9 @@ T17 → T18 → T19 → T20 → T21
 
 **Done when**:
 
-- [ ] 5 exercícios completos
-- [ ] Todo link de `PROGRESSO.md` aponta para arquivo existente
-- [ ] Gate check passes: `mvn -q test-compile` + checagem de links de `challenges/`
+- [x] 5 exercícios completos
+- [x] Todo link de `PROGRESSO.md` aponta para arquivo existente
+- [x] Gate check passes: `mvn -q test-compile` + checagem de links de `challenges/`
 
 **Tests**: unit
 **Gate**: full

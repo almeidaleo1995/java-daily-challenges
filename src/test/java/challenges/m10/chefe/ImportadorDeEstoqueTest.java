@@ -42,6 +42,36 @@ class ImportadorDeEstoqueTest {
   }
 
   @Test
+  void quantidadeZeroEValida() throws IOException {
+    Path csv = tempDir.resolve("estoque.csv");
+    Path erros = tempDir.resolve("erros.txt");
+    Files.writeString(csv, "Arroz,0");
+
+    List<LinhaDeEstoque> resultado = ImportadorDeEstoque.importar(csv, erros);
+
+    assertEquals(List.of(new LinhaDeEstoque("Arroz", 0)), resultado);
+  }
+
+  @Test
+  void linhaComFormatoErradoVaiParaOArquivoDeErros() throws IOException {
+    Path csv = tempDir.resolve("estoque.csv");
+    Path erros = tempDir.resolve("erros.txt");
+    Files.writeString(csv, "Arroz,10\nSoUmCampo");
+
+    List<LinhaDeEstoque> resultado = ImportadorDeEstoque.importar(csv, erros);
+
+    assertEquals(List.of(new LinhaDeEstoque("Arroz", 10)), resultado);
+    assertEquals("SoUmCampo", Files.readString(erros));
+  }
+
+  @Test
+  void arquivoCsvQueNaoExisteDeixaAIOExceptionSubir() {
+    Path csv = tempDir.resolve("nao-existe.csv");
+    Path erros = tempDir.resolve("erros.txt");
+    assertThrows(IOException.class, () -> ImportadorDeEstoque.importar(csv, erros));
+  }
+
+  @Test
   void arquivoCsvOuDeErrosNulosLancaIllegalArgumentException() {
     Path csv = tempDir.resolve("estoque.csv");
     Path erros = tempDir.resolve("erros.txt");

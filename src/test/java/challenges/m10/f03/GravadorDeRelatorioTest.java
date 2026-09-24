@@ -34,6 +34,15 @@ class GravadorDeRelatorioTest {
   }
 
   @Test
+  void listaVaziaGravaArquivoVazio() throws IOException {
+    Path arquivo = tempDir.resolve("relatorio.txt");
+
+    GravadorDeRelatorio.gravar(arquivo, List.of());
+
+    assertEquals("", Files.readString(arquivo));
+  }
+
+  @Test
   void arquivoOuLinhasNulosLancaIllegalArgumentException() {
     Path arquivo = tempDir.resolve("relatorio.txt");
     assertThrows(

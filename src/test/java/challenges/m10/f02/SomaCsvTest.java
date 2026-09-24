@@ -30,6 +30,12 @@ class SomaCsvTest {
   }
 
   @Test
+  void arquivoQueNaoExisteDeixaAIOExceptionSubir() {
+    Path inexistente = tempDir.resolve("nao-existe.csv");
+    assertThrows(IOException.class, () -> SomaCsv.somarColuna(inexistente, 0));
+  }
+
+  @Test
   void arquivoNuloOuIndiceNegativoLancaIllegalArgumentException() {
     Path arquivo = tempDir.resolve("qualquer.csv");
     assertThrows(IllegalArgumentException.class, () -> SomaCsv.somarColuna(null, 0));

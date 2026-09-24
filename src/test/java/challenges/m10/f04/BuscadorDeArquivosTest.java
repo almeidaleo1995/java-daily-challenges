@@ -35,6 +35,16 @@ class BuscadorDeArquivosTest {
   }
 
   @Test
+  void ignoraDiretorioCujoNomeTerminaComAExtensao() throws IOException {
+    Files.createDirectory(tempDir.resolve("pasta.txt"));
+    Files.writeString(tempDir.resolve("a.txt"), "a");
+
+    List<Path> resultado = BuscadorDeArquivos.buscarPorExtensao(tempDir, "txt");
+
+    assertEquals(List.of(tempDir.resolve("a.txt")), resultado);
+  }
+
+  @Test
   void diretorioOuExtensaoNulosLancaIllegalArgumentException() {
     assertThrows(
         IllegalArgumentException.class, () -> BuscadorDeArquivos.buscarPorExtensao(null, "txt"));

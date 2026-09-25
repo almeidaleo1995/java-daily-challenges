@@ -1,36 +1,126 @@
 # java-daily-challenges
 
-Repositório de desafios diários de Java. Cada desafio é pensado para ~20
-minutos e serve para treinar raciocínio e domínio da linguagem — não para
-decorar soluções.
+Trilha de desafios diários de Java, pensados pra treinar raciocínio e domínio
+da linguagem — não pra decorar soluções. O Claude atua como **mentor**: nunca
+escreve a solução, guia com perguntas e dicas. As regras completas desse
+mentorado estão em [`CLAUDE.md`](CLAUDE.md).
 
-As regras de como o Claude deve mentorar (o que pode/não pode fazer, níveis
-de ajuda, progressão de fases) estão em [`CLAUDE.md`](CLAUDE.md).
+## Como a trilha funciona
+
+```
+Mundo 1 ──▶ Mundo 2 ──▶ Mundo 3 ──▶ ... ──▶ Mundo 15
+(tema)      (tema)      (tema)              (Chefão Final)
+
+dentro de cada mundo:
+
+  fase 1 ─▶ fase 2 ─▶ fase 3 ─▶ ... ─▶ 👑 chefe do mundo
+  (~20 min cada)                        (mistura o mundo atual com
+                                         ≥2 mundos anteriores, a partir
+                                         do Mundo 3)
+
+  vencer o chefe 👑 desbloqueia o próximo mundo 🔒
+```
+
+O mapa completo, XP e título atual vivem em
+[`challenges/PROGRESSO.md`](challenges/PROGRESSO.md).
+
+| # | Mundo |
+|---|---|
+| 1 | Sintaxe, Strings e Arrays |
+| 2 | Collections |
+| 3 | POO |
+| 4 | Exceções |
+| 5 | Generics |
+| 6 | Lambdas e Optional |
+| 7 | Streams |
+| 8 | Pattern Matching (Java 21) |
+| 9 | Datas e Regex |
+| 10 | I/O |
+| 11 | Algoritmos |
+| 12 | Concorrência |
+| 13 | Reflection e Anotações |
+| 14 | Design |
+| 15 | Chefão Final |
+
+## Como o Claude ajuda (escada de dicas)
+
+Quando você trava, o Claude nunca pula direto pra resposta — sobe um nível
+de ajuda por vez, só se o anterior não bastar:
+
+| Nível | O que é | Exemplo |
+|---|---|---|
+| 1 | Pergunta | "O que essa variável representa?" |
+| 2 | Dica conceitual | "Talvez uma Collection seja útil aqui." |
+| 3 | Indicação de API | "Existe um método da classe String que faz isso." |
+| 4 | Pseudocódigo (nunca Java completo) | passos em texto, sem sintaxe |
+| 5 | Algoritmo em português (nunca implementado) | descreve o raciocínio, não escreve o código |
+
+Detalhes completos (o que o Claude pode e não pode fazer, revisão com
+perguntas, progressão de XP) em [`CLAUDE.md`](CLAUDE.md).
+
+## Fluxo de uma fase
+
+```
+1. Você pede ajuda/revisão   ──▶   2. Claude só faz perguntas
+   ("travei no X")                    e dá dicas — nunca a solução
+                                              │
+                                              ▼
+4. mvn test -Dtest=Classe   ◀──   3. Você implementa e testa
+   (só você roda, é parte           sozinho
+   do exercício)
+        │
+        ▼
+5. Testes verdes → Claude revisa com perguntas de confirmação
+        │
+        ▼
+6. Fase aprovada → XP somado em PROGRESSO.md + conceitos
+   registrados em GLOSSARIO.md
+```
+
+## Estrutura
+
+```
+code-challenges-java/
+├── CLAUDE.md                        regras do mentor (Claude)
+├── pom.xml                          build Maven único pra tudo
+├── src/
+│   ├── main/java/challenges/mNN/fNN/    código de cada fase
+│   └── test/java/challenges/mNN/fNN/    testes de cada fase
+└── challenges/
+    ├── PROGRESSO.md                 mapa da trilha, XP, título
+    ├── GLOSSARIO.md                 conceitos usados, por que, onde
+    ├── templates/                   modelos pra criar mundo/fase novos
+    └── mNN-slug/
+        ├── README.md                 1 frase + o que o mundo cobre
+        ├── fNN-slug/README.md        enunciado da fase
+        └── chefe-slug/README.md      enunciado do chefe do mundo
+```
+
+Um chefe usa `mNN/chefe` no código em vez de `mNN/fNN`.
+
+Exemplo real, a fase 1.22 (Mundo 1, fase 22):
+
+```
+challenges/m01-sintaxe-strings-arrays/f22-contador-de-digitos-de-texto/
+└── README.md                                     enunciado da fase
+
+src/main/java/challenges/m01/f22/
+└── ContadorDeDigitos.java                        esqueleto (você implementa)
+
+src/test/java/challenges/m01/f22/
+└── ContadorDeDigitosTest.java                     testes prontos (JUnit 5)
+```
+
+Cada `README.md` de fase segue sempre a mesma seção:
+Missão → Implemente → Regras → Exemplos → Dica (opcional, dentro de um
+`<details>`) → Revisa → Rodar. Os testes validam **comportamento**
+(entrada → saída esperada), nunca revelam o algoritmo.
 
 ## Requisitos
 
 - JDK 21+ (`java -version`)
 - Maven 3.9+ (`mvn -version`)
 - VS Code com o [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) (sugerido automaticamente ao abrir a pasta)
-
-## Estrutura
-
-```
-java-daily-challenges/
-├── CLAUDE.md                    regras do mentor
-├── pom.xml                      build Maven único para todo o repositório
-├── src/
-│   ├── main/java/challenges/    código de cada desafio (challenges.dayNNN)
-│   └── test/java/challenges/    testes de cada desafio (challenges.dayNNN)
-└── challenges/
-    ├── NNN/README.md            enunciado do desafio NNN
-    ├── templates/                modelos para criar um novo desafio
-    └── archive/                  desafios descontinuados
-```
-
-Todos os desafios vivem num único projeto Maven (um `pom.xml`), organizados
-por pacote (`challenges.day001`, `challenges.day002`, ...). Veja
-[`challenges/README.md`](challenges/README.md) para o detalhe da convenção.
 
 ## Comandos
 
@@ -40,23 +130,6 @@ Rodar a partir da raiz do repositório.
 |---|---|
 | Compilar | `mvn compile` |
 | Rodar todos os testes | `mvn test` |
-| Rodar o teste de um desafio | `mvn test -Dtest=NomeDaClasseTest` |
-| Rodar uma classe com `main` | `mvn compile exec:java -Dexec.mainClass=challenges.dayNNN.NomeDaClasse` |
+| Rodar o teste de uma fase | `mvn test -Dtest=NomeDaClasseTest` |
 | Verificar formatação | `mvn spotless:check` |
 | Aplicar formatação | `mvn spotless:apply` |
-
-## Fluxo de um desafio novo
-
-1. Peça um novo desafio.
-2. É criada a pasta `challenges/NNN/README.md` com o enunciado (a partir de
-   `challenges/templates/README.template.md`) e o esqueleto de código/teste
-   em `src/main/java/challenges/dayNNN/` e `src/test/java/challenges/dayNNN/`.
-3. Implemente em `src/main/java/challenges/dayNNN/`.
-4. Rode `mvn test -Dtest=*dayNNN*` (ou o nome da classe de teste) até passar.
-5. `mvn spotless:apply` antes de considerar concluído.
-
-## Sanity check
-
-`challenges.Welcome` e seu teste (`WelcomeTest`) existem só para confirmar
-que compilação, testes, execução e formatação estão funcionando. Pode
-apagá-los quando o primeiro desafio de verdade for criado.

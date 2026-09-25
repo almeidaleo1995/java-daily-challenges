@@ -25,4 +25,9 @@ class ContadorDeDigitosTest {
   void digitosIntercalados() {
     assertEquals(3, ContadorDeDigitos.contarDigitos("1a2b3c"));
   }
+
+  @Test
+  void digitosForaDaEscala0_9() {
+    assertEquals(4, ContadorDeDigitos.contarDigitos("1234abc:/"));
+  }
 }

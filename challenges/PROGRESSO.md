@@ -1,6 +1,6 @@
 # Progresso
 
-**Título:** Estagiário · **XP:** 720 · **Chefes:** 0/15
+**Título:** Estagiário · **XP:** 730 · **Chefes:** 0/15
 
 ## Mundo 1 — Sintaxe, Strings e Arrays ▶ em andamento
 
@@ -25,7 +25,7 @@
 - [x] [1.19 Segundo Maior Valor](m01-sintaxe-strings-arrays/f19-segundo-maior-valor/README.md) ⭐⭐⭐☆☆ +30 XP
 - [x] [1.20 Índice do Maior Valor](m01-sintaxe-strings-arrays/f20-indice-do-maior-valor/README.md) ⭐⭐☆☆☆ +20 XP
 - [x] [1.21 Índice do Primeiro Declive](m01-sintaxe-strings-arrays/f21-indice-do-primeiro-declive/README.md) ⭐⭐⭐☆☆ +30 XP
-- [ ] [1.22 Contador de Dígitos de Texto](m01-sintaxe-strings-arrays/f22-contador-de-digitos-de-texto/README.md) ⭐☆☆☆☆ +10 XP
+- [x] [1.22 Contador de Dígitos de Texto](m01-sintaxe-strings-arrays/f22-contador-de-digitos-de-texto/README.md) ⭐☆☆☆☆ +10 XP
 - [ ] [1.23 Contador de Espaços](m01-sintaxe-strings-arrays/f23-contador-de-espacos/README.md) ⭐☆☆☆☆ +10 XP
 - [ ] [1.24 Índice Primeira Minúscula](m01-sintaxe-strings-arrays/f24-indice-primeira-minuscula/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] [1.25 Placar Seguro](m01-sintaxe-strings-arrays/f25-placar-seguro/README.md) ⭐⭐☆☆☆ +20 XP

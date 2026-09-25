@@ -5,6 +5,13 @@ public final class ContadorDeDigitos {
   private ContadorDeDigitos() {}
 
   public static int contarDigitos(String texto) {
-    throw new UnsupportedOperationException("TODO: implementar");
+    int contador = 0;
+    for (int i = 0; i < texto.length(); i++) {
+      char current = texto.charAt(i);
+      if (Character.isDigit(current)){
+        contador++;
+      }
+    }
+    return  contador;
   }
 }

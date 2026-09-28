@@ -23,6 +23,6 @@ class ContadorDeEspacosTest {
 
   @Test
   void variosEspacos() {
-    assertEquals(4, ContadorDeEspacos.contarEspacos("a  b   c"));
+    assertEquals(4, ContadorDeEspacos.contarEspacos("a  b  c"));
   }
 }

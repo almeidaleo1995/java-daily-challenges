@@ -44,6 +44,20 @@ class PrecoComDescontoTest {
   }
 
   @Test
+  void precoNuloLancaIllegalArgumentException() {
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> PrecoComDesconto.aplicarDesconto(null, new BigDecimal("10")));
+  }
+
+  @Test
+  void percentualNuloLancaIllegalArgumentException() {
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> PrecoComDesconto.aplicarDesconto(new BigDecimal("100"), null));
+  }
+
+  @Test
   void percentualAcimaDeCemLancaIllegalArgumentException() {
     assertThrows(
         IllegalArgumentException.class,

@@ -7,6 +7,11 @@ public final class TipoDoDia {
   private TipoDoDia() {}
 
   public static String classificar(DayOfWeek dia) {
-    throw new UnsupportedOperationException("TODO: implementar");
+    return switch (dia) {
+      case MONDAY -> "Início de semana";
+      case FRIDAY -> "Sexta";
+      case SATURDAY, SUNDAY -> "Fim de semana";
+      default -> "Meio de semana";
+    };
   }
 }

@@ -1,6 +1,6 @@
 # Progresso
 
-**Título:** Estagiário · **XP:** 810 · **Chefes:** 0/15
+**Título:** Estagiário · **XP:** 830 · **Chefes:** 0/15
 
 ## Mundo 1 — Sintaxe, Strings e Arrays ▶ em andamento
 
@@ -31,7 +31,7 @@
 - [x] [1.25 Placar Seguro](m01-sintaxe-strings-arrays/f25-placar-seguro/README.md) ⭐⭐☆☆☆ +20 XP
 - [x] [1.26 Preço com Desconto](m01-sintaxe-strings-arrays/f26-preco-com-desconto/README.md) ⭐⭐☆☆☆ +20 XP
 - [x] [1.27 Tipo do Dia](m01-sintaxe-strings-arrays/f27-tipo-do-dia/README.md) ⭐☆☆☆☆ +10 XP
-- [ ] [1.28 Mesmo Código](m01-sintaxe-strings-arrays/f28-comparador-de-codigos/README.md) ⭐⭐☆☆☆ +20 XP
+- [x] [1.28 Mesmo Código](m01-sintaxe-strings-arrays/f28-comparador-de-codigos/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] [1.29 Etiqueta Formatada](m01-sintaxe-strings-arrays/f29-etiqueta-formatada/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] 👑 [Chefe: Cupom Fiscal](m01-sintaxe-strings-arrays/chefe-cupom-fiscal/README.md) ⭐⭐⭐☆☆ +30 XP
 

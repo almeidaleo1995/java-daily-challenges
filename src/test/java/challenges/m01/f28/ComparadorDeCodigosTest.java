@@ -10,6 +10,7 @@ class ComparadorDeCodigosTest {
   @Test
   void ignoraEspacosNasPontasECaixa() {
     assertTrue(ComparadorDeCodigos.saoEquivalentes(" ABC123 ", "abc123"));
+    assertTrue(ComparadorDeCodigos.saoEquivalentes("abc123", " ABC123 "));
   }
 
   @Test

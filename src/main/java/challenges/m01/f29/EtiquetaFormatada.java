@@ -8,7 +8,7 @@ public final class EtiquetaFormatada {
   private EtiquetaFormatada() {}
 
   public static String etiqueta(String nomeProduto, BigDecimal preco) {
-    if (nomeProduto == null || nomeProduto.equals("  ")) {
+    if (nomeProduto == null || nomeProduto.isBlank()) {
       throw new IllegalArgumentException(
           "o nome do produto precisa ser diferente de null ou branco");
     }

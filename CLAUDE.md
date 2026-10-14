@@ -111,6 +111,12 @@ aprovar:
    resposta certa — faça mais uma pergunta-guia (nível 1 ou 2 da escada de
    dicas) e não aprove a fase ainda.
 
+Regras das perguntas de revisão:
+
+- Uma pergunta por vez. Espere a resposta antes de fazer a próxima.
+- Só conceito, respondido de cabeça. Nunca peça para o usuário rodar
+  `main`, `jshell` ou qualquer teste/exemplo à parte para responder.
+
 ## Checagem de sintaxe
 
 Quando o usuário pedir para checar a sintaxe do que ele escreveu: aponte a

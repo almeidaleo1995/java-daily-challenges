@@ -1,6 +1,6 @@
 # Progresso
 
-**Título:** Estagiário · **XP:** 1010 · **Chefes:** 1/15
+**Título:** Estagiário · **XP:** 1030 · **Chefes:** 1/15
 
 ## Mundo 1 — Sintaxe, Strings e Arrays ✅ concluído
 
@@ -56,7 +56,7 @@
 - [x] [2.17 Produto Com Menor Estoque](m02-collections/f17-produto-com-menor-estoque/README.md) ⭐⭐☆☆☆ +20 XP
 - [x] [2.18 Produto Mais Caro](m02-collections/f18-produto-mais-caro/README.md) ⭐⭐⭐☆☆ +30 XP
 - [x] [2.19 Ranking de Jogadores](m02-collections/f19-ranking-de-jogadores/README.md) ⭐⭐☆☆☆ +20 XP
-- [ ] [2.20 Próximo Ônibus](m02-collections/f20-proximo-onibus/README.md) ⭐⭐☆☆☆ +20 XP
+- [x] [2.20 Próximo Ônibus](m02-collections/f20-proximo-onibus/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] [2.21 Pronto-Socorro](m02-collections/f21-pronto-socorro/README.md) ⭐⭐⭐☆☆ +30 XP
 - [ ] [2.22 Coordenada no Mapa](m02-collections/f22-coordenada-no-mapa/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] [2.23 Lista Congelada](m02-collections/f23-lista-congelada/README.md) ⭐⭐☆☆☆ +20 XP

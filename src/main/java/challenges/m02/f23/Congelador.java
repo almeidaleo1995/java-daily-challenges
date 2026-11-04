@@ -7,6 +7,11 @@ public final class Congelador {
   private Congelador() {}
 
   public static List<Integer> congelar(List<Integer> original) {
-    throw new UnsupportedOperationException("TODO: implementar");
+
+    if (original == null) {
+      throw new IllegalArgumentException("A lista original nao pode ser nula");
+    }
+
+    return List.copyOf(original);
   }
 }

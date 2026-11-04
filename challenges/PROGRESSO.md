@@ -1,6 +1,6 @@
 # Progresso
 
-**Título:** Estagiário · **XP:** 1080 · **Chefes:** 1/15
+**Título:** Estagiário · **XP:** 1100 · **Chefes:** 1/15
 
 ## Mundo 1 — Sintaxe, Strings e Arrays ✅ concluído
 
@@ -59,7 +59,7 @@
 - [x] [2.20 Próximo Ônibus](m02-collections/f20-proximo-onibus/README.md) ⭐⭐☆☆☆ +20 XP
 - [x] [2.21 Pronto-Socorro](m02-collections/f21-pronto-socorro/README.md) ⭐⭐⭐☆☆ +30 XP
 - [x] [2.22 Coordenada no Mapa](m02-collections/f22-coordenada-no-mapa/README.md) ⭐⭐☆☆☆ +20 XP
-- [ ] [2.23 Lista Congelada](m02-collections/f23-lista-congelada/README.md) ⭐⭐☆☆☆ +20 XP
+- [x] [2.23 Lista Congelada](m02-collections/f23-lista-congelada/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] [2.24 Histórico de Navegação](m02-collections/f24-historico-de-navegacao/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] 👑 [Chefe: Conta Bancária com Extrato](m02-collections/chefe-conta-bancaria/README.md) ⭐⭐⭐⭐⭐ +50 XP
 

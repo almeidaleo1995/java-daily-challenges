@@ -1,26 +1,34 @@
 package challenges.m02.f22;
 
+import java.util.Objects;
+
 public final class Coordenada {
+  private final int x;
+  private final int y;
 
   public Coordenada(int x, int y) {
-    throw new UnsupportedOperationException("TODO: implementar");
+    this.x = x;
+    this.y = y;
   }
 
   public int getX() {
-    throw new UnsupportedOperationException("TODO: implementar");
+    return x;
   }
 
   public int getY() {
-    throw new UnsupportedOperationException("TODO: implementar");
+    return y;
   }
 
   @Override
   public boolean equals(Object outro) {
-    throw new UnsupportedOperationException("TODO: implementar");
+    if (outro instanceof Coordenada coordenada) {
+      return coordenada.getX() == x && coordenada.getY() == y;
+    }
+    return false;
   }
 
   @Override
   public int hashCode() {
-    throw new UnsupportedOperationException("TODO: implementar");
+    return Objects.hash(getX(), getY());
   }
 }

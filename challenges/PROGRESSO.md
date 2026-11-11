@@ -1,6 +1,6 @@
 # Progresso
 
-**Título:** Estagiário · **XP:** 1120 · **Chefes:** 1/15
+**Título:** Júnior · **XP:** 1170 · **Chefes:** 2/15
 
 ## Mundo 1 — Sintaxe, Strings e Arrays ✅ concluído
 
@@ -35,7 +35,7 @@
 - [x] [1.29 Etiqueta Formatada](m01-sintaxe-strings-arrays/f29-etiqueta-formatada/README.md) ⭐⭐☆☆☆ +20 XP
 - [x] 👑 [Chefe: Cupom Fiscal](m01-sintaxe-strings-arrays/chefe-cupom-fiscal/README.md) ⭐⭐⭐☆☆ +30 XP
 
-## Mundo 2 — Collections ▶ em andamento
+## Mundo 2 — Collections ✅ concluído
 
 - [x] [2.01 Sem Repetidos](m02-collections/f01-sem-repetidos/README.md) ⭐☆☆☆☆ +10 XP
 - [x] [2.02 Contador de Frequência](m02-collections/f02-contador-de-frequencia/README.md) ⭐⭐☆☆☆ +20 XP
@@ -61,11 +61,9 @@
 - [x] [2.22 Coordenada no Mapa](m02-collections/f22-coordenada-no-mapa/README.md) ⭐⭐☆☆☆ +20 XP
 - [x] [2.23 Lista Congelada](m02-collections/f23-lista-congelada/README.md) ⭐⭐☆☆☆ +20 XP
 - [x] [2.24 Histórico de Navegação](m02-collections/f24-historico-de-navegacao/README.md) ⭐⭐☆☆☆ +20 XP
-- [ ] 👑 [Chefe: Conta Bancária com Extrato](m02-collections/chefe-conta-bancaria/README.md) ⭐⭐⭐⭐⭐ +50 XP
+- [x] 👑 [Chefe: Conta Bancária com Extrato](m02-collections/chefe-conta-bancaria/README.md) ⭐⭐⭐⭐⭐ +50 XP
 
-## Mundo 3 — POO 🔒
-
-_Desbloqueia ao vencer o chefe do mundo anterior._
+## Mundo 3 — POO ▶ em andamento
 
 - [ ] [3.01 Temperatura](m03-poo/f01-temperatura/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] [3.02 Produto](m03-poo/f02-produto/README.md) ⭐⭐☆☆☆ +20 XP

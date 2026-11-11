@@ -2,7 +2,10 @@ package challenges.m02.chefe;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 import org.junit.jupiter.api.Test;
 
 class ContaBancariaTest {
@@ -120,5 +123,14 @@ class ContaBancariaTest {
   @Test
   void saldoInicialNegativoLancaExcecao() {
     assertThrows(IllegalArgumentException.class, () -> new ContaBancaria("Ana", -10.0));
+  }
+
+  @Test
+  void todosOsCamposSaoPrivados() {
+    for (Field campo : ContaBancaria.class.getDeclaredFields()) {
+      assertTrue(
+          Modifier.isPrivate(campo.getModifiers()),
+          "O campo '" + campo.getName() + "' precisa ser private (nada de campo público).");
+    }
   }
 }

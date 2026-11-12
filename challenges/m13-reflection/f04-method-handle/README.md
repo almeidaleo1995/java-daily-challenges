@@ -2,6 +2,19 @@
 
 **Missão:** Chamar um método usando `MethodHandles`, a alternativa mais moderna à reflection clássica para invocar métodos.
 
+**O que vamos trabalhar:** **`MethodHandles`** — a alternativa moderna à reflection clássica para chamar métodos; mais rápida (a JVM otimiza) e mais "tipada". Aqui: localizar o método e invocá-lo por um *handle*.
+
+**Na prática:** o fluxo é: obter um `Lookup`, descrever o método (classe, nome e **tipo**: retorno + parâmetros) com `MethodType`, achar o `MethodHandle` e chamar `invoke`. Muito vocabulário novo, então comece lendo um exemplo mínimo na documentação e adapte.
+
+**Glossário rápido**
+- **`MethodHandles.lookup()`** — "porta de entrada"; só enxerga o que o código atual pode acessar.
+- **`MethodType.methodType(retorno, params...)`** — descreve a assinatura (`int` e dois `int`).
+- **`findVirtual(classe, nome, tipo)`** — acha método de instância.
+- **`MethodHandle.invoke` / `invokeExact`** — executa; o handle de instância recebe o objeto como 1º argumento.
+- **`Throwable`** — o `invoke` pode lançar qualquer coisa, daí o `throws Throwable`.
+
+**Pesquise sobre:** `java MethodHandles lookup findVirtual` · `java MethodType exemplo` · `java MethodHandle vs reflection`
+
 **Implemente:** `challenges.m13.f04.Invocador` (`Calculadora` já vem pronta no esqueleto — não altere)
 
 ```java

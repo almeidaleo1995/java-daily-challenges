@@ -8,5 +8,7 @@
 - **Enum com comportamento por constante** — cada valor do enum pode ter sua própria implementação de um método.
 - **Método `default` em interface** — comportamento compartilhado que um tipo implementador pode herdar ou sobrescrever.
 
+**Pesquise sobre:** `java orientação a objetos conceitos` · `java record` · `java interface default method` · `java enum`
+
 **Chefe:** Mercadinho v1: Estoque — modelar itens de estoque com `record`, agrupar por categoria com `enum`, calcular valor total com `BigDecimal` guardado num `Map`.
 **Fonte:** https://dev.java/learn/language/oop/

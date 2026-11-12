@@ -2,6 +2,18 @@
 
 **Missão:** Separar os produtos já vencidos dos que estão perto de vencer, a partir dos lotes em estoque.
 
+**O que vamos trabalhar:** datas na prática — **comparar** datas, **contar dias** entre elas e **filtrar/ordenar** lotes com Stream (Mundos 7 e 9).
+
+**Na prática:** dois filtros sobre a mesma lista. `vencidos`: validade **antes** de hoje. `proximosDoVencimento`: dias entre hoje e a validade entre 0 e `diasDeAlerta` (inclusive). Atenção: "vencido" e "vence hoje" **não** são a mesma coisa — veja os limites.
+
+**Glossário rápido**
+- **`ChronoUnit.DAYS.between(a, b)`** — número de dias entre duas datas (negativo se `b` < `a`).
+- **`LocalDate.isBefore`** — compara datas.
+- **`Comparator.comparing(...)`** — ordena por um campo (aqui, a validade).
+- **Inclusivo** — o limite faz parte do intervalo (`>= 0 && <= diasDeAlerta`).
+
+**Pesquise sobre:** `java ChronoUnit DAYS between` · `java LocalDate isBefore isAfter` · `java Comparator comparing LocalDate`
+
 **Implemente:** `challenges.m09.chefe.ControleDeValidade` (`LoteDeProduto` já vem pronto no esqueleto — não altere)
 
 ```java

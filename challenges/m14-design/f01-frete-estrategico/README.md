@@ -2,6 +2,18 @@
 
 **Missão:** Trocar o jeito de calcular frete sem `if (tipo.equals("aereo"))` — cada forma de calcular é uma classe que implementa o mesmo contrato.
 
+**O que vamos trabalhar:** padrão **Strategy** — em vez de um `if/else` escolhendo o algoritmo, cada algoritmo vira uma classe que implementa a mesma interface, e quem usa recebe a que quiser.
+
+**Na prática:** `EstrategiaDeFrete` já existe. Você escreve duas implementações (rodoviário, aéreo) e a `CalculadoraDeFrete`, que **guarda** a estratégia recebida no construtor e só **delega**. Se amanhã surgir frete marítimo, é uma classe nova, e nada do que já existe muda.
+
+**Glossário rápido**
+- **Design pattern** — solução reutilizável para um problema recorrente de projeto.
+- **Strategy** — encapsular "como calcular" atrás de uma interface, trocável em tempo de execução.
+- **Delegar** — repassar a chamada para outro objeto em vez de fazer o trabalho.
+- **Injeção por construtor** — a dependência chega pelo construtor, não é criada dentro da classe.
+
+**Pesquise sobre:** `padrão strategy java` · `design patterns strategy exemplo` · `injeção de dependência por construtor`
+
 **Implemente:** `challenges.m14.f01.FreteRodoviario`, `FreteAereo` e `CalculadoraDeFrete` (`EstrategiaDeFrete` já vem pronta no esqueleto — não altere)
 
 ```java

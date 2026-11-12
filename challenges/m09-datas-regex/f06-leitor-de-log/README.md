@@ -2,6 +2,18 @@
 
 **Missão:** Extrair data, hora, nível e mensagem de uma linha de log, nomeando cada pedaço em vez de contar posições de grupo.
 
+**O que vamos trabalhar:** regex com **grupos nomeados** — "capturar" pedaços do texto e acessá-los pelo **nome** (`data`, `hora`, `nivel`, `mensagem`), em vez de por posição.
+
+**Na prática:** escreva um padrão em que cada pedaço é um grupo `(?<nome>...)`. Se casar, leia cada grupo com `matcher.group("nome")` e monte o `LinhaDeLog`; se não, devolva `Optional.empty()`. Cuidado com o fim: a mensagem é "o resto da linha".
+
+**Glossário rápido**
+- **`Pattern.compile(regex)`** — compila o padrão (reaproveitável, mais eficiente que recompilar).
+- **`Matcher`** — objeto que aplica o padrão a um texto (`matches()`, `find()`, `group(...)`).
+- **Grupo nomeado `(?<data>\d{4}-\d{2}-\d{2})`** — captura com nome.
+- **`.+`** — "um ou mais de qualquer caractere" (para a mensagem).
+
+**Pesquise sobre:** `java regex grupos nomeados` · `java Pattern Matcher group` · `regex capturar parte do texto`
+
 **Implemente:** `challenges.m09.f06.LeitorDeLog` (`LinhaDeLog` já vem pronto no esqueleto — não altere)
 
 ```java

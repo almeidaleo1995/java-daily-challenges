@@ -2,6 +2,18 @@
 
 **Missão:** Juntar duas listas já ordenadas numa única lista ordenada, sem reordenar tudo no final.
 
+**O que vamos trabalhar:** o passo de **merge** do *merge sort* — juntar duas listas **já ordenadas** em uma terceira ordenada, em uma passada só.
+
+**Na prática:** use **um ponteiro por lista**. Pergunte-se: em cada passo, qual elemento vai para o resultado e qual ponteiro anda? Quando uma das listas acaba, o que fazer com o resto da outra? Qual condição do laço cobre esse caso?
+
+**Glossário rápido**
+- **Merge** — intercalar duas sequências ordenadas mantendo a ordem.
+- **Merge sort** — algoritmo que divide, ordena as metades e as une com este passo.
+- **Estável** — em empate, o elemento de `a` vem antes (decisão sua).
+- **O(n + m)** — cada elemento é visitado uma vez.
+
+**Pesquise sobre:** `merge sort passo merge` · `juntar duas listas ordenadas java` · `algoritmo estável ordenação`
+
 **Implemente:** `challenges.m11.f06.Intercalador`
 
 ```java

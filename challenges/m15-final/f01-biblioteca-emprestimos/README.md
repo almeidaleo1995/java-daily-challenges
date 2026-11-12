@@ -2,6 +2,18 @@
 
 **Missão:** Controlar quais livros de um catálogo estão emprestados, pra quem, e desde quando.
 
+**O que vamos trabalhar:** **modelar um domínio do zero** — decidir quais dados guardar, em qual estrutura, e quais regras cada método impõe. Aqui não há técnica nova: é escolher bem entre o que você já aprendeu.
+
+**Na prática:** antes de escrever código, responda no papel: *que informação preciso lembrar sobre cada livro emprestado?* (quem pegou, quando). *Que estrutura me dá "dado o título, ache essa informação" rápido?* E liste as regras de erro (livro fora do catálogo, já emprestado, devolver sem estar emprestado) com a exceção certa para cada uma.
+
+**Glossário rápido**
+- **Modelagem** — escolher como representar o problema em classes/estruturas.
+- **Estado do objeto** — o que a classe "lembra" entre uma chamada e outra.
+- **`Map<K, V>`** — a estrutura natural para "associar título → empréstimo".
+- **`IllegalArgumentException` vs `IllegalStateException`** — argumento inválido vs operação inválida no estado atual (fase 14.02).
+
+**Pesquise sobre:** `java modelagem de domínio orientado a objetos` · `java Map put remove containsKey` · `IllegalStateException quando usar`
+
 **Implemente:** `challenges.m15.f01.Biblioteca`
 
 ```java

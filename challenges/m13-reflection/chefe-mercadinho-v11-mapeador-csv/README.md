@@ -2,6 +2,19 @@
 
 **Missão:** Transformar linhas de texto separadas por vírgula em objetos, usando anotação pra dizer qual coluna vai em qual campo.
 
+**O que vamos trabalhar:** juntar **anotação + reflection** num mini-framework: uma classe qualquer descreve seu formato com `@Coluna`, e o seu mapeador a preenche a partir de uma linha CSV. É a ideia básica por trás de bibliotecas como Jackson e Hibernate.
+
+**Na prática:** para cada linha: (1) crie uma instância da classe pedida **sem saber qual é** (construtor sem argumentos por reflection); (2) percorra os campos, ache os que têm `@Coluna`, leia o `indice`; (3) pegue o texto daquela posição, converta para o tipo do campo (`String` ou `int`) e atribua com `field.set`. Perguntas-guia: como obter o `indice` da anotação? Como decidir entre `String` e `int` para um `Field`?
+
+**Glossário rápido**
+- **`getDeclaredConstructor().newInstance()`** — cria objeto de uma `Class<T>`.
+- **`field.getAnnotation(Coluna.class).indice()`** — lê um atributo da anotação.
+- **`field.getType()`** — tipo do campo (`int.class`, `String.class`).
+- **`field.set(objeto, valor)`** — grava o valor no campo.
+- **`Class<T>` como parâmetro** — "me diga qual tipo você quer", mantendo o retorno `List<T>` tipado (Mundo 5).
+
+**Pesquise sobre:** `java reflection newInstance construtor` · `java getAnnotation valor do atributo` · `java Field set int String`
+
 **Implemente:** `challenges.m13.chefe.MapeadorCsv` (`@Coluna` e `ProdutoCsv` já vêm prontos no esqueleto — não altere)
 
 ```java

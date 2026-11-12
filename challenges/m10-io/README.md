@@ -8,5 +8,7 @@
 - **`Files.walk`** — percorrer uma árvore de diretórios sem recursão manual.
 - **`@TempDir`** — o teste cria e destrói seus próprios arquivos, sem sujar o disco real.
 
+**Pesquise sobre:** `java Files Path NIO.2` · `java Files.lines try-with-resources` · `java ler e escrever arquivo`
+
 **Chefe:** Mercadinho v8: Importar Estoque — ler um CSV de produtos, separando as linhas válidas das que vão para um arquivo de erros.
 **Fonte:** https://dev.java/learn/api/io/

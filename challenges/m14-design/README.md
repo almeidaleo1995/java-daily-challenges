@@ -7,5 +7,7 @@
 - **Decorator** — empilhar comportamento (imposto, desconto) sem alterar a classe original.
 - **SRP/DIP** — uma classe faz uma coisa, e depende de uma abstração (`Clock`) em vez de uma chamada fixa (`LocalDate.now()`).
 
+**Pesquise sobre:** `design patterns strategy builder observer decorator` · `injeção de dependência java` · `java Clock testes`
+
 **Chefe:** Mercadinho v12: Checkout Plugável — junta Strategy, Observer e Builder num fluxo de checkout só.
 **Fonte:** CLAUDE.md, fase 7 (Design) — sem seção própria no dev.java/learn.

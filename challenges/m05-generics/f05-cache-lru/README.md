@@ -2,6 +2,18 @@
 
 **Missão:** Construir um cache com tamanho fixo que descarta automaticamente o item usado há mais tempo (*Least Recently Used*) quando fica cheio — reaproveitando uma classe do próprio JDK.
 
+**O que vamos trabalhar:** **herdar de uma classe genérica do JDK** e usar um recurso escondido do `LinkedHashMap`: ordenar por **acesso** (não só inserção) e remover o mais antigo automaticamente.
+
+**Na prática:** não há laço nem lógica de lista. Você estende `LinkedHashMap<K, V>`, chama o construtor certo da superclasse (com um flag de ordem de acesso) e sobrescreve **um** método que o `LinkedHashMap` consulta depois de cada `put` para decidir se remove o mais velho.
+
+**Glossário rápido**
+- **LRU (Least Recently Used)** — política de cache: sai quem foi usado há mais tempo.
+- **`LinkedHashMap` com `accessOrder`** — flag do construtor que reordena a cada `get`/`put`.
+- **`removeEldestEntry`** — método *protected* chamado após inserir; se devolver `true`, o mais antigo é removido.
+- **`super(...)`** — chama o construtor da classe pai.
+
+**Pesquise sobre:** `java LinkedHashMap accessOrder` · `java LinkedHashMap removeEldestEntry` · `java implementar cache LRU`
+
 **Implemente:** `challenges.m05.f05.CacheLru<K, V>`
 
 ```java

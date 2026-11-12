@@ -2,6 +2,18 @@
 
 **Missão:** Manter uma fila de eventos futuros ordenada por horário, e saber quais já deveriam ter acontecido.
 
+**O que vamos trabalhar:** **fila de prioridade** (`PriorityQueue`) + **relógio injetado** (`Clock`, fase 14.05). Uma estrutura que sempre entrega o "menor" elemento (aqui, o evento mais cedo) sem você reordenar a lista toda vez.
+
+**Na prática:** `PriorityQueue` precisa saber como comparar eventos: passe um `Comparator` por horário. `proximoEvento` só **espia** (`peek`); `eventosVencidos` **remove** (`poll`) enquanto o primeiro da fila já passou, comparando com `LocalDateTime.now(relogio)`. Pergunta-guia: quando o laço de remoção deve parar?
+
+**Glossário rápido**
+- **`PriorityQueue`** — fila em que sai sempre o menor segundo o critério (heap).
+- **`peek()` vs `poll()`** — `peek` olha sem remover; `poll` remove e devolve (`null` se vazia).
+- **`Comparator.comparing(Evento::horario)`** — critério por horário.
+- **`LocalDateTime.now(clock)`** — "agora" segundo o relógio injetado.
+
+**Pesquise sobre:** `java PriorityQueue Comparator` · `java PriorityQueue peek poll` · `java LocalDateTime now Clock`
+
 **Implemente:** `challenges.m15.f03.Agendador` (`Evento` já vem pronto no esqueleto — não altere)
 
 ```java

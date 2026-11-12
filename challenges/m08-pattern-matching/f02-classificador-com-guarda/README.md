@@ -2,6 +2,18 @@
 
 **Missão:** Classificar um valor por tipo **e** por condição, num único `switch`.
 
+**O que vamos trabalhar:** **`switch` com pattern** — escolher por tipo no `switch`, e refinar com uma **guarda** (`when`) quando só o tipo não basta (ex.: `Integer` negativo vs positivo). Também: `case null`.
+
+**Na prática:** cada `case` é um tipo + nome de variável (`case Integer i when i < 0 -> ...`). **A ordem importa**: o `switch` vai de cima para baixo e usa o primeiro que casar. Pergunta-guia: o `case Integer i` genérico (sem guarda) fica antes ou depois dos específicos?
+
+**Glossário rápido**
+- **`switch` expression** — `switch` que devolve valor, com `->` (sem `break`).
+- **Guarda (`when`)** — condição extra num `case`.
+- **`case null`** — trata `null` explicitamente (sem isso, o `switch` lança `NullPointerException`).
+- **`default`** — caso final para "qualquer outro tipo".
+
+**Pesquise sobre:** `java switch pattern matching when` · `java 21 case null switch` · `java switch expression`
+
 **Implemente:** `challenges.m08.f02.ClassificadorDeValor`
 
 ```java

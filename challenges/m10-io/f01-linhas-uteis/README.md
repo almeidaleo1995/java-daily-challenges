@@ -2,6 +2,18 @@
 
 **Missão:** Contar quantas linhas um arquivo de texto tem.
 
+**O que vamos trabalhar:** o primeiro contato com **arquivos** em Java moderno: `Path` (o endereço do arquivo) e `Files` (as operações). Sem `File`/`FileReader` antigos.
+
+**Na prática:** você recebe um `Path` e precisa saber quantas linhas o arquivo tem. A pergunta é: ler tudo para uma lista e contar, ou contar sem guardar nada? Para esta fase, qualquer um serve; as próximas mostram por que a escolha importa.
+
+**Glossário rápido**
+- **`Path`** — caminho de um arquivo/pasta (`Path.of("dados.txt")`).
+- **`Files`** — classe utilitária com métodos estáticos (`readAllLines`, `lines`, `write`, `walk`).
+- **`IOException`** — exceção **checked** de I/O (o `throws IOException` já está na assinatura; você não captura aqui).
+- **`NoSuchFileException`** — subtipo de `IOException` para arquivo inexistente.
+
+**Pesquise sobre:** `java Files readAllLines` · `java Path.of` · `java NoSuchFileException`
+
 **Implemente:** `challenges.m10.f01.ContadorDeLinhas`
 
 ```java

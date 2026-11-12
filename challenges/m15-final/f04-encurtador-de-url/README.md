@@ -2,6 +2,18 @@
 
 **Missão:** Gerar um código curto pra cada URL, reaproveitando o mesmo código se a URL já foi encurtada antes.
 
+**O que vamos trabalhar:** um sistema **bidirecional** (URL → código e código → URL), um **contador** e a conversão de número para **base 62** — o mesmo truque usado pelos encurtadores de verdade.
+
+**Na prática:** três perguntas. (1) Como achar rápido "esta URL já foi encurtada?" e "que URL é este código?" (dois `Map`s, um em cada direção). (2) Como transformar o número `0, 1, 2, ...` em texto usando 62 símbolos (`0-9`, `a-z`, `A-Z`)? Pense em como se converte para base 2 ou 16: divisão e resto. (3) Onde validar o `http://`/`https://`?
+
+**Glossário rápido**
+- **Base 62** — sistema numérico com 62 símbolos (10 dígitos + 26 minúsculas + 26 maiúsculas).
+- **Conversão de base** — dividir repetidamente pela base e juntar os restos (de trás para frente).
+- **Mapa bidirecional** — dois `Map` espelhados para buscar nos dois sentidos.
+- **`StringBuilder`** — monta texto aos poucos; tem `reverse()` e `insert(0, ...)`.
+
+**Pesquise sobre:** `converter número para base 62 java` · `como funciona encurtador de url` · `java StringBuilder reverse`
+
 **Implemente:** `challenges.m15.f04.Encurtador`
 
 ```java

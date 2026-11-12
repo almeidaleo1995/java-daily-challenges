@@ -2,6 +2,18 @@
 
 **Missão:** Primeira versão do Mercadinho — controlar o estoque de uma loja, com dados imutáveis (`record`), categorias (`enum`) e valores acumulados com `BigDecimal` guardados num `Map`.
 
+**O que vamos trabalhar:** juntar tudo do Mundo 3 num sistema só — dados imutáveis (`record`), categorias fixas (`enum`) e um `Map` guardando o estoque, com `BigDecimal` para o dinheiro. Também revisa `Map` do Mundo 2.
+
+**Na prática:** `Estoque` é a classe que você escreve; `ItemDeEstoque` (record) e `Categoria` (enum) já vêm prontos. Pense em três perguntas: *onde guardo os itens?* (um `Map` por nome), *como combino item repetido?* (`merge`) e *como mantenho a ordem de entrada?* (qual `Map` preserva inserção?).
+
+**Glossário rápido**
+- **`Map.merge`** — "se a chave existe, combina os valores; senão, insere" numa chamada só.
+- **`LinkedHashMap`** — `Map` que lembra a ordem de inserção (o `HashMap` não garante ordem).
+- **`BigDecimal`** — decimal exato para dinheiro; some com `add`, multiplique com `multiply`.
+- **Item "desaparece"** — remova a chave do `Map` quando a quantidade chega a zero.
+
+**Pesquise sobre:** `java Map merge exemplo` · `java LinkedHashMap ordem de inserção` · `java BigDecimal add multiply`
+
 **Implemente:** `challenges.m03.chefe.Estoque` (`Categoria` e `ItemDeEstoque` já vêm prontos no esqueleto)
 
 ```java

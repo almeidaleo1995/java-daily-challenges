@@ -2,6 +2,17 @@
 
 **Missão:** De várias listas de tags, uma por produto, montar uma única lista sem repetição.
 
+**O que vamos trabalhar:** **`flatMap`** — "achatar" uma lista de listas em um stream só — e **`distinct`** para tirar repetidos mantendo a ordem da primeira aparição.
+
+**Na prática:** você tem `List<List<String>>`. O `flatMap` transforma **cada lista interna em um stream** e junta todos num único fluxo de `String`. Depois `distinct` e `toList`.
+
+**Glossário rápido**
+- **`map` vs `flatMap`** — `map` troca 1 elemento por 1; `flatMap` troca 1 elemento por *vários* (um stream) e funde tudo.
+- **`distinct()`** — remove duplicatas usando `equals`/`hashCode`; preserva ordem em stream ordenado.
+- **`List::stream`** — referência de método que vira "lista → stream".
+
+**Pesquise sobre:** `java stream flatMap exemplo` · `java stream distinct` · `java lista de listas para lista`
+
 **Implemente:** `challenges.m07.f04.Tags`
 
 ```java

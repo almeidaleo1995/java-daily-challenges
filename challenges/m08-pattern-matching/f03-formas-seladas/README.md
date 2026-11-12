@@ -2,6 +2,18 @@
 
 **Missão:** Calcular a área de uma forma geométrica cobrindo **todos** os tipos possíveis, sem um `default` que esconderia um tipo esquecido.
 
+**O que vamos trabalhar:** **classes/interfaces `sealed`** — você declara *exatamente* quais tipos podem implementá-las. Com isso, o `switch` com pattern é **exaustivo** e dispensa `default`: se alguém criar uma forma nova, o código para de compilar até tratá-la.
+
+**Na prática:** `FormaSelada` já lista `Circulo`, `Retangulo` e `Triangulo`. Seu `switch` precisa de um `case` por tipo, com a conta de área de cada um, e nenhum `default`.
+
+**Glossário rápido**
+- **`sealed` / `permits`** — restringe quais classes podem estender/implementar.
+- **Exaustivo** — o compilador confirma que todos os casos possíveis foram cobertos.
+- **Por que sem `default`?** — um `default` "engoliria" tipos novos esquecidos; sem ele o compilador te avisa.
+- **`record`** — usado aqui para as formas (dados + desestruturação, próxima fase).
+
+**Pesquise sobre:** `java sealed interface permits` · `java switch exaustivo sealed` · `java 17 sealed classes`
+
 **Implemente:** `challenges.m08.f03.Calculadora` (`FormaSelada`, `Circulo`, `Retangulo` e `Triangulo` já vêm prontos no esqueleto — não altere)
 
 ```java

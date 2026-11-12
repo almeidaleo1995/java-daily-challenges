@@ -2,6 +2,19 @@
 
 **Missão:** Converter um horário de referência para o horário local de outro fuso, formatado para exibição.
 
+**O que vamos trabalhar:** **fusos horários**. O mesmo *instante* aparece com horas diferentes em cada fuso. `ZonedDateTime` guarda data, hora **e** fuso; você troca o fuso sem mudar o instante.
+
+**Na prática:** receba um horário em um fuso (São Paulo), peça "o mesmo instante, visto em Londres" e **formate** como `dd/MM/yyyy HH:mm`. Fuso inválido: o Java lança uma exceção na hora de criar o `ZoneId`; você a traduz.
+
+**Glossário rápido**
+- **`ZoneId`** — identificador de fuso (`"America/Sao_Paulo"`, `"Europe/London"`).
+- **`ZonedDateTime`** — data + hora + fuso.
+- **`withZoneSameInstant`** — muda o fuso **mantendo o instante** (a hora local muda). Não confunda com `withZoneSameLocal`.
+- **`DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")`** — formatador; cuidado com maiúsculas/minúsculas (`MM` mês, `mm` minuto).
+- **Horário de verão** — por isso Londres está em UTC+1 em maio.
+
+**Pesquise sobre:** `java ZonedDateTime withZoneSameInstant` · `java DateTimeFormatter ofPattern` · `java ZoneId lista de fusos`
+
 **Implemente:** `challenges.m09.f04.Fusos`
 
 ```java

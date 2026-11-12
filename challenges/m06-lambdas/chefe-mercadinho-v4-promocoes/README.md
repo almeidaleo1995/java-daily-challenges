@@ -2,6 +2,18 @@
 
 **Missão:** Aplicar uma lista de promoções (cada uma uma função de preço → preço) e, por cima, um cupom opcional — sem nunca deixar o preço final negativo.
 
+**O que vamos trabalhar:** juntar **`Function`** (promoções em cadeia), **`Optional`** (cupom que pode não existir) e **`BigDecimal`** (dinheiro com arredondamento controlado).
+
+**Na prática:** três passos em ordem: (1) aplicar cada promoção sobre o preço, uma depois da outra; (2) se houver cupom, aplicar o desconto sobre o resultado **já promocionado**; (3) travar em zero se negativo e arredondar para 2 casas. Repare que a ordem importa (cupom não incide sobre o preço original).
+
+**Glossário rápido**
+- **`Optional.isPresent` / `ifPresent` / `map`** — formas de usar o cupom só se existir.
+- **`BigDecimal.multiply` / `subtract`** — contas exatas (não mudam o original: devolvem novo).
+- **`setScale(2, RoundingMode.HALF_EVEN)`** — fixa 2 casas decimais, arredondando "para o par mais próximo" (arredondamento bancário).
+- **`BigDecimal.ZERO`** — constante de zero; use `compareTo` (não `equals`) para comparar valores.
+
+**Pesquise sobre:** `java BigDecimal setScale RoundingMode HALF_EVEN` · `java BigDecimal compareTo vs equals` · `java Optional ifPresent`
+
 **Implemente:** `challenges.m06.chefe.MotorDePromocoes` (`Cupom` já vem pronto no esqueleto — não altere)
 
 ```java

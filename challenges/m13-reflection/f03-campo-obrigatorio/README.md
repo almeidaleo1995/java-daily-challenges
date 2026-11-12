@@ -2,6 +2,19 @@
 
 **Missão:** Ler uma anotação própria em tempo de execução pra descobrir quais campos de um objeto estão faltando.
 
+**O que vamos trabalhar:** **anotações** em tempo de execução — marcar campos com `@Obrigatorio` e **ler essa marca por reflection** para validar um objeto sem escrever `if (campo == null)` para cada campo.
+
+**Na prática:** duas pontas. (1) A anotação precisa estar visível em **tempo de execução** (a que vem no esqueleto pode precisar de ajuste — veja as Regras). (2) O validador percorre os campos do objeto, vê quais têm a anotação, lê o valor e verifica `null`. Campos `private` exigem permissão extra.
+
+**Glossário rápido**
+- **Anotação (`@interface`)** — metadado que você coloca em classe/campo/método.
+- **`@Retention(RetentionPolicy.RUNTIME)`** — mantém a anotação disponível em execução; sem isso a reflection não a enxerga.
+- **`field.isAnnotationPresent(X.class)`** — testa se o campo tem a anotação.
+- **`setAccessible(true)`** — permite ler/escrever campo `private` por reflection.
+- **`Field.get(objeto)`** — lê o valor do campo naquele objeto.
+
+**Pesquise sobre:** `java criar anotação personalizada` · `java @Retention RUNTIME` · `java Field setAccessible get`
+
 **Implemente:** `challenges.m13.f03.Validador` (`Cadastro` já vem pronto no esqueleto — não altere; `@Obrigatorio` também está no esqueleto, mas pode **precisar de ajuste** — veja as Regras)
 
 ```java

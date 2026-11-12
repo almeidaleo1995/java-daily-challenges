@@ -2,6 +2,18 @@
 
 **Missão:** Copiar números de uma lista de origem para uma lista de destino, aceitando o máximo de combinações de tipo possível — a origem pode ser mais específica que `Number`, o destino pode ser mais genérico.
 
+**O que vamos trabalhar:** **curingas (wildcards)** e a regra **PECS** — *Producer Extends, Consumer Super*: quem só **entrega** dados usa `? extends`, quem só **recebe** usa `? super`.
+
+**Na prática:** `origem` só será lida → `? extends Number`. `destino` só receberá → `? super Number`. Isso permite `List<Integer>` como origem e `List<Object>` como destino. A assinatura já está pronta; o desafio é entender *por quê* ela funciona.
+
+**Glossário rápido**
+- **`?` (curinga)** — "algum tipo, não sei qual".
+- **`? extends T`** — qualquer subtipo de `T`; pode **ler** como `T`, não pode adicionar.
+- **`? super T`** — qualquer supertipo de `T`; pode **adicionar** `T`, ao ler só vem `Object`.
+- **Invariância** — `List<Integer>` **não** é `List<Number>`, por isso os curingas existem.
+
+**Pesquise sobre:** `java generics PECS producer extends consumer super` · `java wildcard extends super` · `java List<Integer> não é List<Number>`
+
 **Implemente:** `challenges.m05.f04.Copiador`
 
 ```java

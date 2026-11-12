@@ -2,6 +2,17 @@
 
 **Missão:** Tentar executar uma tarefa várias vezes antes de desistir, sem perder o registro de nenhuma das falhas anteriores.
 
+**O que vamos trabalhar:** padrão de **retry** (tentar de novo) e **exceções suprimidas** — guardar as falhas das tentativas seguintes dentro da primeira exceção, sem perdê-las.
+
+**Na prática:** um laço chama `tarefa.executar()` até `maximoDeTentativas` vezes. Deu certo? Sai. Todas falharam? Lança a **primeira** capturada, com as outras anexadas via `addSuppressed`. Reflita: o que você precisa guardar entre uma volta e outra do laço?
+
+**Glossário rápido**
+- **Retry** — repetir uma operação que pode falhar por motivo temporário (rede, timeout).
+- **Suppressed exception** — exceção secundária anexada a outra; `addSuppressed(e)` e `getSuppressed()`.
+- **`throws Exception`** — a assinatura aceita qualquer exceção checked da tarefa.
+
+**Pesquise sobre:** `java addSuppressed getSuppressed` · `java padrão retry tentativas` · `java laço for com try catch`
+
 **Implemente:** `challenges.m04.f04.Retentativa` (`Tarefa` já vem pronta no esqueleto — não altere)
 
 ```java

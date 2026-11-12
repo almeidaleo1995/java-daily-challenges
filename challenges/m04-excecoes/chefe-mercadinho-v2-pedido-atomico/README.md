@@ -2,6 +2,18 @@
 
 **Missão:** Processar um pedido com várias linhas de forma **atômica**: ou o pedido inteiro é aplicado ao estoque, ou nenhuma linha é — nunca um resultado pela metade.
 
+**O que vamos trabalhar:** **atomicidade** — "tudo ou nada". Ou o pedido inteiro é aplicado ao estoque, ou nada muda. Junta exceção própria (f01/f03) e `Map` (Mundo 2).
+
+**Na prática:** a ordem importa. **Primeiro** percorra *todas* as linhas só **verificando**; se alguma falhar, lance a exceção sem ter alterado nada. **Depois** (só se tudo passou) percorra de novo subtraindo. Duas passadas: uma para checar, outra para aplicar.
+
+**Glossário rápido**
+- **Atômico** — operação indivisível: não existe resultado "pela metade".
+- **Validar antes de aplicar** — padrão que evita ter que "desfazer" alterações.
+- **`Map.getOrDefault`** — lê o valor ou devolve um padrão (útil para produto que não existe).
+- **`Map` mutável** — o `estoque` vem de fora e é alterado no lugar; não crie uma cópia.
+
+**Pesquise sobre:** `java operação atômica tudo ou nada validar antes` · `java Map getOrDefault` · `java Map merge subtrair`
+
 **Implemente:** `challenges.m04.chefe.EstoqueInsuficienteException` e `challenges.m04.chefe.ProcessadorDePedido` (`ItemPedido` já vem pronto no esqueleto)
 
 ```java

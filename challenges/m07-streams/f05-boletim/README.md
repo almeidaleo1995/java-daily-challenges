@@ -2,6 +2,18 @@
 
 **Missão:** Separar uma turma em aprovados e reprovados, e montar um boletim em texto com as duas listas.
 
+**O que vamos trabalhar:** **`partitioningBy`** (divide em dois grupos: `true`/`false`) e **`joining`** (junta strings com separador) — e como montar um texto final a partir dos dois.
+
+**Na prática:** primeiro particione os alunos pelo teste `nota >= corte`. Depois, para cada grupo, extraia os nomes e junte com `", "`. Por fim monte `"Aprovados: ...\nReprovados: ..."`. Cuidado com o caso de grupo vazio (o texto não some, só fica sem nomes).
+
+**Glossário rápido**
+- **`Collectors.partitioningBy(predicado)`** — devolve `Map<Boolean, List<T>>`, sempre com as duas chaves.
+- **`Collectors.joining(sep)`** — concatena `CharSequence`s; funciona em streams de `String`.
+- **`\n`** — quebra de linha dentro da string.
+- **`map.get(true)`** — acessa o grupo dos que passaram no teste.
+
+**Pesquise sobre:** `java Collectors partitioningBy` · `java Collectors joining` · `java stream nomes separados por vírgula`
+
 **Implemente:** `challenges.m07.f05.Boletim` (`Aluno` já vem pronto no esqueleto — não altere)
 
 ```java

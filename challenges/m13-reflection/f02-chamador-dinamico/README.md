@@ -2,6 +2,18 @@
 
 **Missão:** Chamar um método de um objeto sabendo só o nome dele, como texto.
 
+**O que vamos trabalhar:** **invocar método por nome** com `Method.invoke`, e um detalhe importante: a reflection **embrulha** exceções em `InvocationTargetException` — você precisa "desembrulhar" para não esconder o erro real de quem chama.
+
+**Na prática:** descubra os **tipos** dos argumentos recebidos (`getClass()`), peça à classe do alvo o método com aquele nome e tipos, e invoque. Se o método lançar exceção, extraia a causa (`getCause()`) e relance. Pergunta-guia: o que acontece com argumentos `int` (primitivos) e a busca pelo método?
+
+**Glossário rápido**
+- **`getMethod(nome, tipos...)`** — acha método **público** pelo nome e tipos dos parâmetros.
+- **`Method.invoke(objeto, args...)`** — executa o método no objeto.
+- **`InvocationTargetException`** — "embrulho" da exceção lançada pelo método chamado; a original está em `getCause()`.
+- **Varargs (`Object...`)** — aceita zero ou mais argumentos, chega como array.
+
+**Pesquise sobre:** `java reflection Method invoke` · `java InvocationTargetException getCause` · `java varargs Object...`
+
 **Implemente:** `challenges.m13.f02.ChamadorDinamico` (`Saudador` já vem pronto no esqueleto — não altere)
 
 ```java

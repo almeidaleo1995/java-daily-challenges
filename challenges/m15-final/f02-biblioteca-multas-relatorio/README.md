@@ -2,6 +2,18 @@
 
 **Missão:** Calcular multa por atraso e listar quem está com livro atrasado, do mais atrasado para o menos.
 
+**O que vamos trabalhar:** juntar **datas** (Mundo 9) e **Streams** (Mundo 7): calcular dias de atraso e montar um relatório ordenado.
+
+**Na prática:** duas contas pequenas e uma lista. (1) Data de vencimento = empréstimo + 14 dias. (2) Dias de atraso = diferença entre hoje e o vencimento, **nunca negativa**. (3) Para o relatório: calcule o atraso de cada empréstimo, mantenha só os positivos e ordene do maior para o menor. Pergunta-guia: o que é "atraso" no dia exato do vencimento?
+
+**Glossário rápido**
+- **`plusDays`** — soma dias a uma data.
+- **`ChronoUnit.DAYS.between(a, b)`** — dias entre duas datas.
+- **`Comparator.reverseOrder()` / `.reversed()`** — ordem decrescente.
+- **Regra de negócio** — aqui: prazo de 14 dias e multa de `0.5` por dia.
+
+**Pesquise sobre:** `java ChronoUnit DAYS between` · `java stream sorted Comparator reversed` · `java LocalDate plusDays`
+
 **Implemente:** `challenges.m15.f02.RelatorioDaBiblioteca` (`EmprestimoAtivo` já vem pronto no esqueleto — não altere)
 
 ```java

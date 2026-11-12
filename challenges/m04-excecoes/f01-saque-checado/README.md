@@ -2,6 +2,18 @@
 
 **Missão:** Criar uma exceção *checked* própria — o compilador obriga quem chama `sacar` a lidar com a possibilidade de saldo insuficiente, em vez de descobrir isso só em produção.
 
+**O que vamos trabalhar:** exceção **checked** — um erro que o compilador *obriga* quem chama o método a tratar (ou repassar). Serve para falhas "esperadas" do negócio, como saldo insuficiente.
+
+**Na prática:** você cria `SaldoInsuficienteException` (herda de `Exception`) e a classe `CaixaEletronico`. O método `sacar` declara `throws SaldoInsuficienteException`. Atenção ao detalhe: valor inválido (≤ 0) é erro de **uso** (`IllegalArgumentException`); saldo curto é erro de **negócio** (a checked).
+
+**Glossário rápido**
+- **Checked exception** — herda de `Exception` (e não de `RuntimeException`); o compilador exige `try/catch` ou `throws`.
+- **Unchecked exception** — herda de `RuntimeException`; o compilador não obriga a tratar.
+- **`throw`** — dispara a exceção. **`throws`** — avisa na assinatura que o método pode disparar.
+- **Validar antes de alterar** — se vai lançar, lance *antes* de mexer no saldo.
+
+**Pesquise sobre:** `java checked vs unchecked exception` · `java criar exceção personalizada` · `java throw vs throws`
+
 **Implemente:** `challenges.m04.f01.SaldoInsuficienteException` e `challenges.m04.f01.CaixaEletronico`
 
 ```java

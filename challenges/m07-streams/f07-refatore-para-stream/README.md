@@ -2,6 +2,18 @@
 
 **Missão:** Reescrever um laço imperativo como um pipeline de Stream, chegando exatamente ao mesmo resultado.
 
+**O que vamos trabalhar:** **refatorar** — transformar um laço `for` com `if` e acumulador num pipeline de Stream **sem mudar o resultado**. Treina a leitura: "o que esse laço faz, em etapas?"
+
+**Na prática:** abra `RefatoracaoImperativa` e descreva em português o que ela faz, em passos (*pegue só os pares → eleve ao quadrado → some*). Cada passo vira uma etapa do stream. Os mesmos testes devem passar para as duas versões.
+
+**Glossário rápido**
+- **Imperativo** — você descreve *como* fazer (laço, variável acumuladora).
+- **Declarativo** — você descreve *o quê* (filtre, transforme, some).
+- **`mapToInt`** — transforma `Stream<Integer>` em `IntStream` para poder usar `sum()`.
+- **Refatoração** — mudar a estrutura do código sem mudar o comportamento (os testes garantem isso).
+
+**Pesquise sobre:** `java refatorar for para stream` · `java mapToInt sum` · `java imperativo vs declarativo`
+
 **Implemente:** `challenges.m07.f07.Refatoracao` (`RefatoracaoImperativa` já vem pronta no esqueleto — não altere; é o código a refatorar, só para referência)
 
 ```java

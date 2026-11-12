@@ -2,6 +2,18 @@
 
 **Missão:** Escrever um único método que encontra o maior valor de uma lista, funcionando para `Integer`, `String`, ou qualquer outro tipo que saiba comparar a si mesmo.
 
+**O que vamos trabalhar:** **método genérico com limite (bound)** — "funciona para qualquer `T`, *desde que* `T` saiba se comparar". Assim `Integer` e `String` entram, mas um tipo sem `compareTo` não.
+
+**Na prática:** a assinatura já vem pronta. Seu trabalho é o laço: guardar o "maior até agora" e comparar com `compareTo` (que devolve negativo, zero ou positivo). Primeira pergunta: com qual valor você começa o "maior até agora"?
+
+**Glossário rápido**
+- **Método genérico** — `<T> T metodo(...)`: o tipo é definido por chamada.
+- **Bound `T extends Comparable<...>`** — restringe `T` a tipos que implementam `Comparable`.
+- **`compareTo`** — `a.compareTo(b)` < 0 se `a < b`, 0 se iguais, > 0 se `a > b`.
+- **`? super T`** — curinga que deixa a assinatura mais flexível (aqui você só *lê* via `compareTo`; a próxima fase explica melhor).
+
+**Pesquise sobre:** `java método genérico extends Comparable` · `java compareTo como funciona` · `java generics bounded type`
+
 **Implemente:** `challenges.m05.f02.Maior`
 
 ```java

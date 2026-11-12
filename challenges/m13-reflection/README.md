@@ -7,5 +7,7 @@
 - **Anotação própria** — `@interface`, e por que `@Retention(RUNTIME)` decide se ela sobrevive até a reflection conseguir lê-la.
 - **`MethodHandles`** — uma alternativa mais rápida e tipada à reflection clássica para invocar métodos.
 
+**Pesquise sobre:** `java reflection API` · `java anotações customizadas` · `java MethodHandles`
+
 **Chefe:** Mercadinho v11: Mapeador CSV — preencher objetos a partir de linhas de texto, usando anotação pra dizer qual coluna vai em qual campo.
 **Fonte:** https://dev.java/learn/api/reflection-method-handles/

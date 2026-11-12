@@ -2,6 +2,18 @@
 
 **Missão:** Validar se um texto tem exatamente o formato de uma placa Mercosul.
 
+**O que vamos trabalhar:** **expressão regular (regex)** — uma "mini-linguagem" para descrever o formato de um texto. Aqui: 3 letras, 1 dígito, 1 letra, 2 dígitos.
+
+**Na prática:** você monta **um padrão** e pergunta se o texto inteiro casa com ele. Monte aos pedaços (letras maiúsculas, dígito, letra, dígitos) e depois junte. No Java, `String.matches` já exige que o texto **inteiro** case, então não precisa de âncoras (`^`, `$`).
+
+**Glossário rápido**
+- **Classe de caracteres `[A-Z]`, `\d`** — um caractere de um conjunto / um dígito (em string Java: `"\\d"`).
+- **Quantificador `{n}`** — "exatamente `n` vezes".
+- **`String.matches(regex)`** — `true` se o texto **inteiro** casa.
+- **Escape duplo** — em Java a barra precisa de duas: `\\d`.
+
+**Pesquise sobre:** `regex classes de caracteres e quantificadores` · `java String matches regex` · `regex placa mercosul`
+
 **Implemente:** `challenges.m09.f05.ValidadorDePlaca`
 
 ```java

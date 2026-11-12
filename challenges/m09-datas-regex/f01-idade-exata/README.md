@@ -2,6 +2,18 @@
 
 **Missão:** Calcular a idade em anos completos entre duas datas, sem contar dias na mão.
 
+**O que vamos trabalhar:** a API moderna de datas (`java.time`): `LocalDate` (data sem hora) e `Period` (diferença em anos/meses/dias). Esqueça `Date` e `Calendar`.
+
+**Na prática:** idade = anos **completos** entre duas datas. Se o aniversário ainda não chegou este ano, a pessoa não fez a idade cheia. Em vez de comparar mês e dia na mão, existe uma classe que já calcula a diferença entre duas `LocalDate`.
+
+**Glossário rápido**
+- **`LocalDate`** — data sem hora e sem fuso (`2024-05-15`). Imutável.
+- **`Period`** — diferença entre datas em anos, meses e dias (`getYears()`).
+- **`Period.between(a, b)`** — calcula o período de `a` até `b`.
+- **`isAfter` / `isBefore`** — comparam datas sem usar `compareTo`.
+
+**Pesquise sobre:** `java LocalDate Period between` · `java calcular idade LocalDate` · `java.time LocalDate isAfter`
+
 **Implemente:** `challenges.m09.f01.CalculadoraDeIdade`
 
 ```java

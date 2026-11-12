@@ -8,5 +8,7 @@
 - **Janela deslizante** — manter uma soma parcial em vez de somar tudo de novo a cada posição.
 - **Programação dinâmica** — construir a resposta de baixo para cima, guardando os passos intermediários.
 
+**Pesquise sobre:** `complexidade Big O` · `busca binária` · `programação dinâmica` · `técnica dois ponteiros`
+
 **Chefe:** Mercadinho v9: Troco Mínimo — a menor quantidade de moedas para fechar um valor.
 **Fonte:** CLAUDE.md, fase 5 (Algoritmos) — sem seção própria no dev.java/learn.

@@ -2,6 +2,18 @@
 
 **Missão:** Gravar uma lista de linhas num arquivo, sobrescrevendo qualquer conteúdo anterior.
 
+**O que vamos trabalhar:** **escrever** arquivo com `Files` e controlar a política: criar se não existir, **sobrescrever** se existir. Também o cuidado com `\n` entre linhas, sem linha vazia sobrando no fim.
+
+**Na prática:** junte as linhas num único texto com `\n` entre elas e grave. Alternativamente há um método que grava uma lista de linhas, mas adiciona uma quebra no final — compare com o que o teste exige.
+
+**Glossário rápido**
+- **`Files.writeString` / `Files.write`** — gravam texto/linhas num arquivo.
+- **`StandardOpenOption`** — opções de abertura: `CREATE`, `TRUNCATE_EXISTING`, `APPEND`.
+- **`String.join("\n", linhas)`** — junta as linhas com separador, sem separador no final.
+- **Sobrescrever vs. acrescentar** — `TRUNCATE_EXISTING` apaga o anterior; `APPEND` adiciona ao fim.
+
+**Pesquise sobre:** `java Files.writeString StandardOpenOption` · `java String.join` · `java sobrescrever vs append arquivo`
+
 **Implemente:** `challenges.m10.f03.GravadorDeRelatorio`
 
 ```java

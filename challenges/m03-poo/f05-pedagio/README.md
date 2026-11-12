@@ -2,6 +2,17 @@
 
 **Missão:** Cobrar pedágio por eixo, com uma regra padrão compartilhada e casos que fogem dela.
 
+**O que vamos trabalhar:** método **`default`** em interface — comportamento padrão que quem implementa herda de graça e só sobrescreve quando foge da regra.
+
+**Na prática:** a interface `Veiculo` já traz `valorPedagio()` pronto (eixos × 5). Você escreve `Carro` (usa o padrão), `Moto` (sobrescreve e devolve `0.0`) e `Caminhao` (usa o padrão, mas com eixos variáveis).
+
+**Glossário rápido**
+- **Método `default`** — método de interface com corpo; as classes herdam sem escrever nada.
+- **Sobrescrever (`@Override`)** — a classe troca a implementação herdada por uma própria.
+- **Método abstrato** — só assinatura, sem corpo; cada classe concreta é obrigada a implementar (aqui, `eixos()`).
+
+**Pesquise sobre:** `java interface default method` · `java @Override o que faz` · `java herança vs interface`
+
 **Implemente:** `challenges.m03.f05.Veiculo` (interface, já pronta), `Carro`, `Moto` e `Caminhao`
 
 ```java

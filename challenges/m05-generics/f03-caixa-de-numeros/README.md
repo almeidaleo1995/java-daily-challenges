@@ -2,6 +2,17 @@
 
 **Missão:** Guardar qualquer tipo numérico (`Integer`, `Double`, `Long`...) na mesma classe genérica, mas impedir que alguém a use com um tipo que não seja número.
 
+**O que vamos trabalhar:** **limite superior de tipo em classe** — `T extends Number` aceita `Integer`, `Double`, `Long`..., e proíbe `String`.
+
+**Na prática:** como `T` é um `Number`, você pode chamar métodos de `Number` dentro da classe sem saber qual número é (existe um método que converte para `double`). Isso é o que permite `dobro()`.
+
+**Glossário rápido**
+- **`T extends Number`** — `T` é `Number` ou subclasse dele.
+- **`Number`** — superclasse de `Integer`, `Double`, `Long` etc.; define `doubleValue()`, `intValue()`...
+- **Erro de compilação como proteção** — `new CaixaNumerica<>("oi")` nem compila; esse é o ganho.
+
+**Pesquise sobre:** `java generics extends Number` · `java classe Number doubleValue` · `java bounded type parameter`
+
 **Implemente:** `challenges.m05.f03.CaixaNumerica<T extends Number>`
 
 ```java

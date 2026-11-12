@@ -2,6 +2,18 @@
 
 **Missão:** Contar de quantas formas diferentes dá pra subir uma escada de `degraus` degraus, subindo 1 ou 2 por vez.
 
+**O que vamos trabalhar:** **memoização** — guardar resultados de subproblemas já resolvidos para não recalcular. É a porta de entrada da **programação dinâmica**.
+
+**Na prática:** pense no **último passo** dado para chegar no degrau `n`: de onde você pode ter vindo? Isso leva a uma relação entre `n` e valores menores. Escrita direto em recursão, ela repete cálculos; o desafio é guardar o que já foi calculado. Perguntas-guia: quais são os casos base? Onde mora o `Map` para sobreviver entre as chamadas?
+
+**Glossário rápido**
+- **Subproblema sobreposto** — o mesmo cálculo aparecendo várias vezes na recursão.
+- **Memoização** — cache dos resultados dos subproblemas (`Map<Integer, Long>`).
+- **Programação dinâmica** — resolver problemas combinando soluções de subproblemas guardadas.
+- **Fibonacci** — essa sequência é a mesma da escada (com outros valores iniciais).
+
+**Pesquise sobre:** `memoização java` · `programação dinâmica para iniciantes` · `problema da escada climbing stairs`
+
 **Implemente:** `challenges.m11.f03.Escada`
 
 ```java

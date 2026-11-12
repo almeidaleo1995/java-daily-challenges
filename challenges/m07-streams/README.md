@@ -8,5 +8,7 @@
 - **`partitioningBy`** — um `groupingBy` de exatamente duas chaves: `true` e `false`.
 - **`IntStream`/`summaryStatistics`** — estatísticas de uma coleção numérica sem acumular na mão.
 
+**Pesquise sobre:** `java stream API tutorial` · `java Collectors groupingBy` · `java stream map filter reduce`
+
 **Chefe:** Mercadinho v5: Relatório de Vendas — top 3 produtos, faturamento por categoria e ticket médio a partir da mesma lista de vendas.
 **Fonte:** https://dev.java/learn/api/collections-and-streams/

@@ -2,6 +2,18 @@
 
 **Missão:** Calcular área e perímetro de formas diferentes através do mesmo contrato — quem chama não precisa saber se é um círculo ou um retângulo.
 
+**O que vamos trabalhar:** **interface** e **polimorfismo** — vários tipos diferentes (`Circulo`, `Retangulo`) respondendo ao mesmo contrato (`Forma`), e quem usa não precisa saber qual é qual.
+
+**Na prática:** a interface `Forma` já está pronta. Você cria duas classes que a `implements` e escrevem `area()` e `perimetro()` cada uma do seu jeito. Os testes chamam `forma.area()` sem saber o tipo concreto.
+
+**Glossário rápido**
+- **Interface** — contrato: lista de métodos que uma classe se compromete a ter.
+- **`implements`** — a classe declara que cumpre o contrato (e é obrigada a escrever os métodos).
+- **Polimorfismo** — mesma chamada (`forma.area()`), comportamento diferente conforme o objeto real.
+- **`Math.PI`** — constante de π da biblioteca padrão.
+
+**Pesquise sobre:** `java interface implements exemplo` · `java polimorfismo` · `java Math.PI`
+
 **Implemente:** `challenges.m03.f03.Forma` (interface, já pronta no esqueleto), `Circulo` e `Retangulo`
 
 ```java

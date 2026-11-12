@@ -7,5 +7,7 @@
 - **`sealed`/`permits`** — declarar de antemão toda a família de tipos possível, para o `switch` cobrir todos sem `default`.
 - **Record pattern** — desestruturar um `record` (e um `record` dentro dele) direto no `case`.
 
+**Pesquise sobre:** `java pattern matching switch` · `java sealed classes` · `java record patterns`
+
 **Chefe:** Mercadinho v6: Pagamentos — calcular a taxa de cada forma de pagamento por uma hierarquia `sealed`.
 **Fonte:** https://dev.java/learn/language/fp/

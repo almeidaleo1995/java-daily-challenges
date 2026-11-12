@@ -2,6 +2,18 @@
 
 **Missão:** Classificar uma linha (vertical, horizontal, inclinada ou um único ponto) desestruturando os dois pontos que a formam direto no `case`.
 
+**O que vamos trabalhar:** **record pattern** — "abrir" um `record` direto no `case`/`instanceof`, extraindo os campos para variáveis, até **aninhado** (uma `Linha` contendo dois `Ponto`).
+
+**Na prática:** em vez de `linha.inicio().x()`, você escreve o padrão `Linha(Ponto(var x1, var y1), Ponto(var x2, var y2))` e já ganha `x1, y1, x2, y2` prontos. Depois é lógica de comparação: pontos iguais? mesmo `x`? mesmo `y`? A **ordem** das verificações importa (ponto único antes de vertical/horizontal).
+
+**Glossário rápido**
+- **Record pattern** — padrão que desestrutura um `record` pelos seus componentes.
+- **Padrão aninhado** — um record pattern dentro de outro.
+- **`var` no padrão** — deixa o compilador inferir o tipo do componente.
+- **Desestruturação** — extrair partes de um objeto em variáveis separadas.
+
+**Pesquise sobre:** `java record pattern` · `java 21 record patterns aninhados` · `java desestruturar record`
+
 **Implemente:** `challenges.m08.f04.Geometria` (`Ponto` e `Linha` já vêm prontos no esqueleto — não altere)
 
 ```java

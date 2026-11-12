@@ -2,6 +2,18 @@
 
 **Missão:** Elevar cada número de uma lista ao quadrado usando um pool de threads, devolvendo o resultado na mesma ordem da entrada.
 
+**O que vamos trabalhar:** **pool de threads** (`ExecutorService`) e **`Future`** — entregue tarefas a um grupo de threads reaproveitadas e receba um "recibo" (`Future`) para pegar o resultado depois.
+
+**Na prática:** crie o pool, para cada valor `submit` uma tarefa (que devolve um resultado) e guarde o `Future` numa lista **na mesma ordem**. Depois percorra a lista chamando `get()`. Por fim, **desligue o pool** (`shutdown`), senão o programa pode não encerrar.
+
+**Glossário rápido**
+- **`ExecutorService`** — gerencia um conjunto de threads executando tarefas.
+- **`Callable<T>`** — tarefa que **devolve** valor (como `Runnable`, mas com retorno).
+- **`Future<T>`** — promessa de um resultado futuro; `get()` espera e entrega.
+- **`shutdown()`** — para de aceitar tarefas novas e deixa as pendentes terminarem.
+
+**Pesquise sobre:** `java ExecutorService newFixedThreadPool` · `java Future get Callable` · `java executor shutdown awaitTermination`
+
 **Implemente:** `challenges.m12.f03.ProcessadorParalelo`
 
 ```java

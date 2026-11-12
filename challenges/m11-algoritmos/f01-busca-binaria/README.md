@@ -2,6 +2,18 @@
 
 **Missão:** Achar o índice de um valor num array ordenado sem varrer posição por posição.
 
+**O que vamos trabalhar:** **busca binária** — em um array **ordenado**, olhar o meio, descartar a metade que não pode conter o alvo e repetir. Em vez de `n` passos, são cerca de `log₂ n`.
+
+**Na prática:** o desafio é descobrir **como o intervalo onde o alvo ainda pode estar vai encolhendo**. Pergunte-se: que informação o elemento do meio me dá? O que eu posso descartar depois de olhar para ele? Quando o intervalo fica vazio, o que isso significa?
+
+**Glossário rápido**
+- **O(log n)** — o trabalho cresce devagar: dobrar o array só soma **1** passo.
+- **Pré-condição** — a busca binária só funciona se o array estiver ordenado.
+- **Intervalo de busca** — a faixa `[inicio, fim]` onde o alvo ainda pode estar.
+- **Overflow no meio** — `(inicio + fim) / 2` pode estourar `int` em arrays enormes; `inicio + (fim - inicio) / 2` evita.
+
+**Pesquise sobre:** `busca binária explicação` · `java busca binária iterativa` · `complexidade O(log n)`
+
 **Implemente:** `challenges.m11.f01.BuscaBinaria`
 
 ```java

@@ -2,6 +2,18 @@
 
 **Missão:** Transferir dinheiro entre duas contas com transferências acontecendo nos dois sentidos ao mesmo tempo, sem perder dinheiro e sem travar (deadlock).
 
+**O que vamos trabalhar:** **locks** (`ReentrantLock`) para proteger dois recursos ao mesmo tempo, e o **deadlock** — duas threads esperando uma pela outra para sempre.
+
+**Na prática:** transferir exige mexer em duas contas "como se fosse uma operação só". Trave as duas, verifique, mova o dinheiro, destrave (sempre no `finally`!). O truque anti-deadlock: **toda** operação trava as contas **na mesma ordem fixa**, não "origem e depois destino".
+
+**Glossário rápido**
+- **`ReentrantLock`** — trava explícita: `lock()` / `unlock()`.
+- **Seção crítica** — trecho de código que só uma thread pode executar por vez.
+- **Deadlock** — A espera B, B espera A; ninguém avança.
+- **`try { ... } finally { lock.unlock(); }`** — garante liberar o lock mesmo com exceção (fase 4.02).
+
+**Pesquise sobre:** `java ReentrantLock lock unlock finally` · `java deadlock como evitar ordem dos locks` · `java synchronized vs ReentrantLock`
+
 **Implemente:** `challenges.m12.f02.Banco`
 
 ```java

@@ -2,6 +2,18 @@
 
 **Missão:** Somar várias durações no formato `HH:mm:ss` numa duração total.
 
+**O que vamos trabalhar:** `Duration` (tempo em horas/minutos/segundos) e como **ler** um texto `HH:mm:ss` validando o formato. É a hora de decidir: dividir a string na mão ou usar uma API de data/hora?
+
+**Na prática:** cada texto vira uma `Duration`; some todas. Formato inválido deve virar `IllegalArgumentException`, então pense em **onde** o erro estoura (qual exceção o Java lança ao falhar a conversão, e como você a traduz — Mundo 4).
+
+**Glossário rápido**
+- **`Duration`** — quantidade de tempo (horas, minutos, segundos), não uma data.
+- **`Duration.ZERO`** — duração vazia; elemento neutro da soma.
+- **`plus`** — soma duas durações (devolve nova; é imutável).
+- **`LocalTime.parse`** — converte `"HH:mm:ss"` em horário; outra rota possível.
+
+**Pesquise sobre:** `java Duration plus somar` · `java LocalTime parse HH:mm:ss` · `java DateTimeParseException`
+
 **Implemente:** `challenges.m09.f02.TempoDeLigacao`
 
 ```java

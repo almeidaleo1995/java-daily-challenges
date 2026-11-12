@@ -5,5 +5,7 @@
 - **Tudo que já foi treinado** — records, `Map`, exceções, `LocalDate`, `PriorityQueue`, `Clock`, regex, `ConcurrentHashMap`, `sealed`, streams, `BigDecimal`.
 - **Decisão de design própria** — menos dica de "qual API usar", mais "monte a solução".
 
+**Pesquise sobre:** `modelagem de domínio java` · `java PriorityQueue` · `java projeto pequeno do zero`
+
 **Chefe:** Mercadinho Final: Auditoria — o mercadinho de quinze mundos fecha o caixa.
 **Fonte:** CLAUDE.md, fase 8 (Mini projetos) — sem seção própria no dev.java/learn.

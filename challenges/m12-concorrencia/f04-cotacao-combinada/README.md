@@ -2,6 +2,19 @@
 
 **Missão:** Buscar duas cotações em paralelo e somá-las, sem travar esperando uma antes de pedir a outra.
 
+**O que vamos trabalhar:** **`CompletableFuture`** — encadear tarefas assíncronas ("quando A e B terminarem, faça isto") sem bloquear esperando uma antes de iniciar a outra. Estilo parecido com `Optional`/Streams, mas para o **tempo**.
+
+**Na prática:** dispare A e B com `supplyAsync` (os dois já correm em paralelo). Combine os resultados com `thenCombine`. Trate falha com `exceptionally` (devolver `-1.0`). Só **no final** chame `join()` para obter o valor. Pergunta-guia: o que acontece se você chamar `join()` em A antes de disparar B?
+
+**Glossário rápido**
+- **Assíncrono** — a chamada retorna na hora; o trabalho acontece em segundo plano.
+- **`supplyAsync(supplier)`** — roda um `Supplier` em outra thread.
+- **`thenCombine(outro, funcao)`** — junta dois resultados quando ambos ficam prontos.
+- **`exceptionally(fn)`** — define o que devolver se algo lançou exceção.
+- **`join()`** — espera o resultado (como `get`, sem exceção checked).
+
+**Pesquise sobre:** `java CompletableFuture supplyAsync thenCombine` · `java CompletableFuture exceptionally` · `java programação assíncrona`
+
 **Implemente:** `challenges.m12.f04.Cotacao`
 
 ```java

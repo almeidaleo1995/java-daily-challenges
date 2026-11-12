@@ -2,6 +2,18 @@
 
 **Missão:** Fazer várias threads começarem a "correr" exatamente no mesmo instante, não uma depois da outra.
 
+**O que vamos trabalhar:** **sincronizar o início** de várias threads com um `CountDownLatch` — uma "trava de largada" que as threads esperam abrir.
+
+**Na prática:** cada thread chega no latch e **espera** (`await`); quando todas estão prontas, quem coordena libera (`countDown`) e todas saem juntas. A lista compartilhada tem que ser segura para threads. Pergunta-guia: como saber que **todas** já estão esperando antes de liberar? (pense num segundo latch).
+
+**Glossário rápido**
+- **`CountDownLatch(n)`** — contador que começa em `n`; `await()` bloqueia até chegar a `0`; `countDown()` decrementa.
+- **Barreira / sincronização** — ponto onde threads esperam umas pelas outras.
+- **Lista thread-safe** — `Collections.synchronizedList` ou `CopyOnWriteArrayList`.
+- **Por que não `sleep`?** — dormir "um tempinho" não prova que todos estão prontos; é torcer pela sorte.
+
+**Pesquise sobre:** `java CountDownLatch await countDown` · `java CopyOnWriteArrayList` · `java Collections synchronizedList`
+
 **Implemente:** `challenges.m12.f06.Largada`
 
 ```java

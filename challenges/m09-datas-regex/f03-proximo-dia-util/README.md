@@ -2,6 +2,18 @@
 
 **Missão:** Achar o próximo dia que não é fim de semana nem feriado, a partir de uma data.
 
+**O que vamos trabalhar:** **navegar** entre datas (`plusDays`) e consultar o dia da semana (`DayOfWeek`), mais um `Set` de feriados para consultar rápido.
+
+**Na prática:** comece no dia seguinte e **ande** dia a dia enquanto o dia "não servir" (fim de semana ou feriado). Pergunta-guia: qual estrutura de laço repete "enquanto uma condição for verdadeira"?
+
+**Glossário rápido**
+- **`plusDays(n)`** — devolve a data `n` dias depois (imutável: não altera a original).
+- **`DayOfWeek`** — enum de `MONDAY` a `SUNDAY`; `data.getDayOfWeek()`.
+- **`Set.contains`** — consulta rápida "está no conjunto?" (vantagem sobre `List`).
+- **Dia útil** — aqui: não é sábado, não é domingo e não está nos feriados.
+
+**Pesquise sobre:** `java LocalDate plusDays` · `java DayOfWeek SATURDAY SUNDAY` · `java while loop`
+
 **Implemente:** `challenges.m09.f03.DiaUtil`
 
 ```java

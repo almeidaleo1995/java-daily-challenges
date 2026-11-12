@@ -2,6 +2,18 @@
 
 **Missão:** Ler um arquivo de configuração `chave=valor`, linha por linha, num `Map`.
 
+**O que vamos trabalhar:** **parsear** um arquivo `chave=valor` para um `Map`, ignorando linhas em branco e tratando linha malformada como erro.
+
+**Na prática:** para cada linha: em branco? ignore. Sem `=`? lance `IllegalArgumentException`. Senão, parta **na primeira** ocorrência de `=` (o valor pode, em tese, conter `=`) e guarde no `Map`. Pense em `split` com limite.
+
+**Glossário rápido**
+- **`String.isBlank()`** — verdadeiro para vazio ou só com espaços.
+- **`split(regex, limite)`** — limita o número de partes (`split("=", 2)`).
+- **`indexOf`** — alternativa: achar a posição do `=` e usar `substring`.
+- **`Map<String, String>`** — estrutura natural para configuração.
+
+**Pesquise sobre:** `java String split limite` · `java String isBlank` · `java ler arquivo properties chave valor`
+
 **Implemente:** `challenges.m10.f05.LeitorDeConfig`
 
 ```java

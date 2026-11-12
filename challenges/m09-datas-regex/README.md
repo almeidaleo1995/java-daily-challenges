@@ -7,5 +7,7 @@
 - **`ZonedDateTime`/`ZoneId`** — o mesmo instante, em horários locais diferentes.
 - **`Pattern`/`Matcher`** — validar formato e extrair pedaços de um texto com grupos nomeados.
 
+**Pesquise sobre:** `java java.time LocalDate Duration` · `java ZonedDateTime fusos` · `regex java Pattern Matcher`
+
 **Chefe:** Mercadinho v7: Validade de Lotes — separar produtos vencidos dos que estão perto de vencer.
 **Fonte:** https://dev.java/learn/api/date-time-regex/

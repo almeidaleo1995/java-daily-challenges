@@ -2,6 +2,18 @@
 
 **Missão:** Vender um produto para várias pessoas comprando ao mesmo tempo, sem nunca vender mais do que o estoque tem.
 
+**O que vamos trabalhar:** juntar **threads** + **operação atômica** num problema real: nunca vender mais do que o estoque, mesmo com centenas de compradores simultâneos ("overselling").
+
+**Na prática:** o erro clássico é `if (estoque > 0) estoque--;` — entre o `if` e o `--` outra thread pode passar. A "checagem + decremento" tem que ser **uma operação só**. Opções: um laço de tentativa com `compareAndSet`, ou `decrementAndGet` e desfazer se passou de zero. Pense em qual é mais simples de provar correta. Depois: disparar as threads, `join`, e contar quantas compraram.
+
+**Glossário rápido**
+- **Check-then-act** — "verifica e depois age": padrão que gera race condition se não for atômico.
+- **`compareAndSet(esperado, novo)`** — troca o valor só se ainda for o esperado (CAS); devolve se conseguiu.
+- **Overselling** — vender mais do que existe.
+- **Invariante** — regra que nunca pode ser violada (`estoque >= 0`).
+
+**Pesquise sobre:** `java AtomicInteger compareAndSet` · `java check-then-act race condition` · `java estoque concorrente overselling`
+
 **Implemente:** `challenges.m12.chefe.CheckoutConcorrente`
 
 ```java

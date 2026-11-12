@@ -2,6 +2,18 @@
 
 **Missão:** Guardar dois valores de tipos possivelmente diferentes numa única classe genérica, reutilizável para qualquer combinação de tipos.
 
+**O que vamos trabalhar:** **classe genérica** — uma classe com "buracos de tipo" (`A`, `B`) preenchidos por quem a usa. Escreve-se uma vez, serve para `Par<String,Integer>`, `Par<Double,Double>`, etc.
+
+**Na prática:** `Par<A, B>` guarda dois valores. `trocar()` devolve `Par<B, A>` — repare que os tipos também se invertem. Nada de `Object` nem cast.
+
+**Glossário rápido**
+- **Generics** — parametrizar uma classe/método por tipo, com checagem pelo compilador.
+- **Parâmetro de tipo (`<A, B>`)** — nome provisório de um tipo, definido na hora de usar.
+- **Diamante `<>`** — `new Par<>(...)` deixa o compilador inferir os tipos.
+- **Imutável** — `trocar()` cria um objeto novo (mesma ideia do wither da fase 3.02).
+
+**Pesquise sobre:** `java generics classe genérica` · `java generics dois parâmetros de tipo` · `java diamond operator`
+
 **Implemente:** `challenges.m05.f01.Par<A, B>`
 
 ```java

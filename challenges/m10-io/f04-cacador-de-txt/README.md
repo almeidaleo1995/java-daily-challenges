@@ -2,6 +2,18 @@
 
 **Missão:** Encontrar todos os arquivos de uma extensão específica dentro de uma árvore de pastas, sem escrever a recursão na mão.
 
+**O que vamos trabalhar:** **percorrer uma árvore de pastas** com `Files.walk` (que já faz a recursão por você), filtrando **arquivos** por extensão.
+
+**Na prática:** `Files.walk` devolve um `Stream<Path>` com **tudo** (pastas e arquivos, em qualquer profundidade). Você filtra só arquivos regulares cujo nome termina na extensão e ordena pelo nome do arquivo (não pelo caminho completo!). Fechar o stream: `try-with-resources`.
+
+**Glossário rápido**
+- **`Files.walk(dir)`** — `Stream<Path>` recursivo; precisa ser fechado.
+- **`Files.isRegularFile(p)`** — `true` para arquivo (não pasta).
+- **`path.getFileName()`** — só o nome do arquivo, sem as pastas.
+- **`String.endsWith`** — testa o final do nome.
+
+**Pesquise sobre:** `java Files.walk` · `java Path getFileName toString` · `java Files.isRegularFile`
+
 **Implemente:** `challenges.m10.f04.BuscadorDeArquivos`
 
 ```java

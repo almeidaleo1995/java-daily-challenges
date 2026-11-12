@@ -2,6 +2,18 @@
 
 **Missão:** Achar dois números num array ordenado cuja soma bate com um alvo, sem comparar todo par com todo par.
 
+**O que vamos trabalhar:** técnica dos **dois ponteiros** — um em cada ponta de um array ordenado, andando em direção ao centro. Troca o O(n²) (todo par com todo par) por O(n).
+
+**Na prática:** a ideia é usar **dois índices**, um em cada ponta. Pergunte-se: se a soma dos dois passou do alvo, qual ponteiro faz sentido mexer, e por quê? E se ficou abaixo? Quando o laço deve parar?
+
+**Glossário rápido**
+- **Dois ponteiros** — dois índices percorrendo a mesma estrutura.
+- **Array ordenado** — a propriedade que garante que cada movimento descarta candidatos com segurança.
+- **O(n)** — uma única passada.
+- **`new int[0]`** — array vazio, o "não achei" desta fase.
+
+**Pesquise sobre:** `técnica dois ponteiros two pointers` · `two sum array ordenado` · `complexidade O(n) vs O(n²)`
+
 **Implemente:** `challenges.m11.f04.ParComSoma`
 
 ```java

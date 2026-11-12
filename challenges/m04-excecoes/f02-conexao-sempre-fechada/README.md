@@ -2,6 +2,18 @@
 
 **Missão:** Garantir que um recurso (aqui, uma conexão simulada) é sempre fechado, mesmo quando o código que a usa lança uma exceção no meio.
 
+**O que vamos trabalhar:** garantir a **limpeza de recursos** (fechar conexão, arquivo, etc.) mesmo quando algo dá errado no meio do caminho.
+
+**Na prática:** `Conexao` já existe. Você abre uma, manda executar o comando e precisa que `fechar` seja chamado **sempre** — com sucesso ou com exceção — sem engolir a exceção. Existem duas formas clássicas em Java; pesquise as duas e escolha qual usar.
+
+**Glossário rápido**
+- **`try / finally`** — o bloco `finally` roda sempre, dando certo ou errado.
+- **`try-with-resources`** — `try (var r = ...) { }`: o Java chama `close()` sozinho no fim, mesmo com erro.
+- **`AutoCloseable`** — interface que um tipo precisa implementar para ser usado em `try-with-resources`.
+- **Propagar exceção** — deixar o erro seguir para quem chamou, em vez de capturá-lo.
+
+**Pesquise sobre:** `java try-with-resources` · `java AutoCloseable close` · `java try finally ordem de execução`
+
 **Implemente:** `challenges.m04.f02.Executor` (`Conexao` já vem pronta no esqueleto — não altere)
 
 ```java

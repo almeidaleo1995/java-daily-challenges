@@ -2,6 +2,18 @@
 
 **Missão:** Dos produtos acima de um preço mínimo, listar os nomes do mais caro para o mais barato.
 
+**O que vamos trabalhar:** o básico de **Stream** — um "cano" de etapas (`filter` → `sorted` → `map` → `toList`) que substitui o laço com `if` e lista temporária.
+
+**Na prática:** pense em três verbos: *mantenha* só os caros, *ordene* do maior para o menor preço, *troque* cada produto pelo nome. Cada verbo é uma etapa do stream. A grande dúvida costuma ser o `sorted`: como passar um critério de ordenação? (dica: `Comparator`).
+
+**Glossário rápido**
+- **Stream** — sequência de elementos processada em etapas, sem alterar a lista original.
+- **Operação intermediária** — devolve outro stream (`filter`, `map`, `sorted`); só roda quando há uma terminal.
+- **Operação terminal** — dispara tudo e produz resultado (`toList`, `count`, `sum`).
+- **`Comparator.comparing(...)` / `.reversed()`** — monta um critério de ordenação a partir de um campo.
+
+**Pesquise sobre:** `java stream filter map sorted toList` · `java Comparator comparing reversed` · `java stream operação intermediária terminal`
+
 **Implemente:** `challenges.m07.f01.Catalogo` (`Produto` já vem pronto no esqueleto — não altere)
 
 ```java

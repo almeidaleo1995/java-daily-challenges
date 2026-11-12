@@ -2,6 +2,18 @@
 
 **Missão:** Montar um `Pedido` passo a passo, e só checar se ele está completo no final.
 
+**O que vamos trabalhar:** padrão **Builder** — construir objeto complexo em passos (`.cliente(...).adicionarItem(...)`), validando **cada passo** e conferindo se está completo só no `build()`.
+
+**Na prática:** `Pedido` tem um construtor privado e uma classe interna estática `Builder`. Os métodos do Builder devolvem `this` (por isso encadeiam). `build()` verifica o que falta e cria o `Pedido`. Pergunta-guia: que erro cada situação merece, `IllegalArgumentException` (argumento ruim) ou `IllegalStateException` (estado incompleto)?
+
+**Glossário rápido**
+- **Builder** — objeto auxiliar que monta outro, passo a passo.
+- **Interface fluente** — métodos que devolvem `this` para encadear chamadas.
+- **Classe interna estática (`static class Builder`)** — classe aninhada que não precisa de instância da externa.
+- **`IllegalStateException`** — "o objeto não está em estado válido para esta operação".
+
+**Pesquise sobre:** `padrão builder java` · `java classe interna estática nested class` · `java IllegalStateException vs IllegalArgumentException`
+
 **Implemente:** `challenges.m14.f02.Pedido` (e sua classe interna `Pedido.Builder`)
 
 ```java

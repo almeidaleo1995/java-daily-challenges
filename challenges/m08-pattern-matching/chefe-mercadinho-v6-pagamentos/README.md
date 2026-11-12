@@ -2,6 +2,18 @@
 
 **Missão:** Calcular a taxa de cada forma de pagamento aceita pela loja — cada uma com sua própria regra — e somar a taxa de um lote de pagamentos.
 
+**O que vamos trabalhar:** combinar **sealed + record + switch com pattern + guarda** num caso real (taxas de pagamento), terminando num **Stream** para somar o lote.
+
+**Na prática:** `Pagamento` é `sealed` com 3 records. `taxa` é um `switch` com um `case` por tipo (sem `default`); o `Boleto` precisa de dois cases com `when` (prazo > 30 e o resto). `taxaTotal` = `stream` → `map(taxa)` → `reduce` somando `BigDecimal`. Lembre da escala 2 + `HALF_EVEN` em toda taxa.
+
+**Glossário rápido**
+- **Exaustividade** — como `Pagamento` é `sealed`, o `switch` cobre tudo sem `default`.
+- **Guarda `when`** — escolhe entre dois cenários do mesmo tipo (`Boleto`).
+- **`reduce(BigDecimal.ZERO, BigDecimal::add)`** — soma uma sequência de `BigDecimal`.
+- **`setScale(2, RoundingMode.HALF_EVEN)`** — padrão de arredondamento desta fase.
+
+**Pesquise sobre:** `java stream reduce BigDecimal soma` · `java switch pattern sealed when` · `java BigDecimal setScale`
+
 **Implemente:** `challenges.m08.chefe.CalculadoraDeTaxas` (`Pagamento`, `Pix`, `Cartao` e `Boleto` já vêm prontos no esqueleto — não altere)
 
 ```java

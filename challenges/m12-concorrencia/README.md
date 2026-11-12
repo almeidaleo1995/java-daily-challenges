@@ -9,5 +9,7 @@
 - **`CountDownLatch` / `Semaphore`** — sincronizar uma largada simultânea ou limitar quantas threads entram ao mesmo tempo.
 - **Virtual threads** — milhares de tarefas leves sem o custo de uma `Thread` de SO cada.
 
+**Pesquise sobre:** `java threads concorrência` · `java ExecutorService CompletableFuture` · `java virtual threads` · `race condition deadlock`
+
 **Chefe:** Mercadinho v10: Checkout Concorrente — vender sem nunca passar do estoque, mesmo com todo mundo comprando ao mesmo tempo.
 **Fonte:** https://dev.java/learn/api/virtual-threads/

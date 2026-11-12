@@ -2,6 +2,19 @@
 
 **Missão:** Da mesma lista de linhas de venda, extrair quatro visões diferentes: os 3 produtos que mais faturaram, o faturamento por categoria, o ticket médio e o produto campeão de vendas.
 
+**O que vamos trabalhar:** usar tudo do Mundo 7 em quatro relatórios sobre a mesma lista: **agrupar e somar** (`groupingBy` + `reducing`), **ordenar e limitar** (`sorted`, `limit`), **média** e **`Optional`** (máximo).
+
+**Na prática:** `top3Produtos` e `produtoMaisVendido` partem do **mesmo** primeiro passo: somar o `valor` por produto num `Map`. A partir do `Map`, um ordena e corta em 3; o outro pega o maior. `faturamentoPorCategoria` é a fase 7.03. `ticketMedio` é soma ÷ quantidade de **linhas**, com escala 2 (cuidado com lista vazia). Atenção ao desempate por nome no top 3.
+
+**Glossário rápido**
+- **`Map.Entry`** — par chave/valor de um `Map`; use `map.entrySet().stream()` para ordenar um mapa.
+- **`Map.Entry.comparingByValue()`** — critério pronto de ordenação por valor.
+- **`limit(n)`** — corta o stream nos primeiros `n`.
+- **`max(comparator)`** — devolve `Optional` (pode ser vazio se não há elementos).
+- **`BigDecimal.divide(x, escala, RoundingMode)`** — divisão com arredondamento definido (sem isso pode lançar exceção).
+
+**Pesquise sobre:** `java Map entrySet stream sorted` · `java Comparator thenComparing desempate` · `java BigDecimal divide RoundingMode`
+
 **Implemente:** `challenges.m07.chefe.RelatorioDeVendas` (`LinhaDeVenda` já vem pronta no esqueleto — não altere)
 
 ```java

@@ -2,6 +2,18 @@
 
 **Missão:** Achar a maior soma de `tamanhoJanela` dias seguidos de vendas, sem somar o intervalo inteiro de novo a cada posição.
 
+**O que vamos trabalhar:** **janela deslizante** — em vez de somar `k` elementos de novo a cada posição, atualize a soma: entra um elemento, sai outro.
+
+**Na prática:** somar `k` elementos de novo a cada posição repete trabalho. Pergunte-se: ao deslizar a janela uma posição, **o que mudou** em relação à janela anterior? Dá para atualizar a soma sem somar tudo outra vez? Qual variável guarda o melhor resultado até agora?
+
+**Glossário rápido**
+- **Janela deslizante (sliding window)** — um intervalo de tamanho fixo que "anda" pelo array.
+- **Soma incremental** — atualizar o valor anterior em vez de recalcular tudo.
+- **O(n)** vs **O(n·k)** — a ideia da janela remove o fator `k`.
+- **Máximo corrente** — variável que guarda a melhor soma até agora.
+
+**Pesquise sobre:** `janela deslizante sliding window` · `maximum sum subarray of size k` · `complexidade O(n·k)`
+
 **Implemente:** `challenges.m11.f05.JanelaDeslizante`
 
 ```java

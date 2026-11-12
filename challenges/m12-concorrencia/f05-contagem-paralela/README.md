@@ -2,6 +2,18 @@
 
 **Missão:** Contar ocorrências de palavras dividindo a lista entre várias threads, todas somando no mesmo mapa.
 
+**O que vamos trabalhar:** **coleções concorrentes** — um `Map` que várias threads atualizam ao mesmo tempo sem corromper (`ConcurrentHashMap`), e o `merge` atômico para contar.
+
+**Na prática:** repartir a lista em pedaços (cada thread pega uma faixa de índices) e cada thread faz `mapa.merge(palavra, 1, Integer::sum)`. Depois, `join` em todas. Por que não `HashMap`? Porque escritas simultâneas podem perder dados ou até travar. Por que não `get` + `put`? Porque não é atômico (race condition da f01).
+
+**Glossário rápido**
+- **`ConcurrentHashMap`** — `Map` seguro para acesso de várias threads.
+- **`merge(chave, 1, Integer::sum)`** — "se não existe, coloca 1; se existe, soma 1" — atomicamente.
+- **Particionar** — dividir o trabalho em faixas (`subList` ou índices).
+- **Thread-safe** — pode ser usada por várias threads ao mesmo tempo com segurança.
+
+**Pesquise sobre:** `java ConcurrentHashMap merge` · `java HashMap thread safe problema` · `java dividir lista em partes subList`
+
 **Implemente:** `challenges.m12.f05.ContagemParalela`
 
 ```java

@@ -2,6 +2,18 @@
 
 **Missão:** Trocar uma exceção técnica e genérica (`NumberFormatException`) por uma exceção que faz sentido no seu domínio — sem perder o rastro do erro original.
 
+**O que vamos trabalhar:** **traduzir exceções** — capturar uma exceção técnica (`NumberFormatException`) e relançar uma do seu domínio (`IdadeInvalidaException`), guardando a original como "causa" para não perder o rastro.
+
+**Na prática:** converter texto em número pode falhar por formato ("abc"). Depois, mesmo sendo número, pode falhar por regra de negócio (fora de 0–130). Cada falha lança a **mesma** exceção sua, mas só a primeira leva uma `cause`.
+
+**Glossário rápido**
+- **`cause`** — exceção original embutida na nova; lida com `getCause()`.
+- **`Integer.parseInt`** — converte `String` em `int`; lança `NumberFormatException` se não der.
+- **Exceção de domínio** — exceção com nome que faz sentido no problema (`IdadeInvalida`, não `NumberFormat`).
+- **Construtor `(String, Throwable)`** — jeito padrão de passar mensagem e causa à superclasse (`super(msg, causa)`).
+
+**Pesquise sobre:** `java exception chaining getCause` · `java Integer.parseInt NumberFormatException` · `java super construtor exceção causa`
+
 **Implemente:** `challenges.m04.f03.IdadeInvalidaException` e `challenges.m04.f03.LeitorDeIdade`
 
 ```java

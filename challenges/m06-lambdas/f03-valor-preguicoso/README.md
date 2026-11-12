@@ -2,6 +2,18 @@
 
 **Missão:** Adiar um cálculo caro até que alguém realmente precise do resultado — e nunca refazer esse cálculo depois.
 
+**O que vamos trabalhar:** **`Supplier<T>`** e **avaliação preguiçosa (lazy)** — adiar um cálculo até o primeiro uso e **guardar** o resultado para nunca refazer.
+
+**Na prática:** a classe guarda o `Supplier` sem chamá-lo. No primeiro `obter()` você chama `get()` e memoriza o valor; nos seguintes devolve o memorizado. Cuidado: se o valor calculado for `null`, "já calculei?" não pode ser decidido olhando só o valor. O que mais você precisa guardar?
+
+**Glossário rápido**
+- **`Supplier<T>`** — não recebe nada, devolve `T` (método `get`).
+- **Lazy (preguiçoso)** — só calcula quando alguém pede.
+- **Memoização / cache de valor** — guardar o resultado para reaproveitar.
+- **Flag (`boolean`)** — variável de controle de estado ("já foi calculado").
+
+**Pesquise sobre:** `java Supplier get` · `java lazy initialization` · `java memoização`
+
 **Implemente:** `challenges.m06.f03.Preguicoso<T>`
 
 ```java

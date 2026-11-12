@@ -2,6 +2,19 @@
 
 **Missão:** Fechar o caixa do mercadinho: passar por todo o histórico de vendas, devoluções e ajustes, e apontar quais produtos ficaram com saldo negativo — um erro de estoque que já aconteceu.
 
+**O que vamos trabalhar:** o chefão: **sealed + pattern matching + Streams + BigDecimal + validação**, tudo no mesmo problema — percorrer uma lista de eventos de estoque e apurar saldo por produto, total vendido e inconsistências.
+
+**Na prática:** uma única passada pelos eventos pode alimentar duas coisas: o **saldo por produto** (um `Map`) e o **total vendido** (uma soma de `BigDecimal`). Cada tipo de evento mexe no saldo de um jeito (`Venda` subtrai, `Devolucao` soma, `Ajuste` soma o delta). Depois, das entradas do mapa, filtre os saldos negativos e ordene por produto. Valide **antes** de apurar (quantidade ≤ 0 etc.).
+
+**Glossário rápido**
+- **`switch` sobre `sealed`** — um `case` por tipo de evento, sem `default`.
+- **`Map.merge(produto, delta, Integer::sum)`** — acumula saldo por chave.
+- **`BigDecimal.multiply(BigDecimal.valueOf(qtd))`** — total de uma venda.
+- **`TreeMap`** — `Map` que mantém as chaves em ordem alfabética (atalho para o relatório).
+- **Auditoria** — verificar se o histórico é consistente (saldo nunca deveria ficar negativo).
+
+**Pesquise sobre:** `java TreeMap ordenado por chave` · `java Map merge Integer sum` · `java BigDecimal multiply valueOf`
+
 **Implemente:** `challenges.m15.chefe.Auditoria` (`EventoDeEstoque`/`Venda`/`Devolucao`/`Ajuste`/`RelatorioDeAuditoria` já vêm prontos no esqueleto — não altere)
 
 ```java

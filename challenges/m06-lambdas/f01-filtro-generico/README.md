@@ -2,6 +2,18 @@
 
 **Missão:** Filtrar qualquer lista, de qualquer tipo, sem escrever um laço específico para cada regra.
 
+**O que vamos trabalhar:** **lambda** + **`Predicate<T>`** — passar uma *regra* (função que responde sim/não) como parâmetro, em vez de escrever um laço novo para cada critério.
+
+**Na prática:** `filtrar` é um laço comum que, para cada elemento, pergunta `predicado.test(elemento)`. Quem *chama* `filtrar` decide a regra com uma lambda, como `n -> n % 2 == 0`.
+
+**Glossário rápido**
+- **Lambda** — função anônima curta: `(parametros) -> expressao`.
+- **Interface funcional** — interface com **um** único método abstrato; é onde uma lambda "encaixa".
+- **`Predicate<T>`** — interface funcional: recebe `T`, devolve `boolean` (método `test`).
+- **`<T>` no método** — o mesmo `filtrar` serve para lista de `Integer`, `String`, etc.
+
+**Pesquise sobre:** `java lambda expressão sintaxe` · `java Predicate test` · `java interface funcional`
+
 **Implemente:** `challenges.m06.f01.Filtro`
 
 ```java

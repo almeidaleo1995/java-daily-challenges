@@ -7,5 +7,7 @@
 - **`Optional<T>`** — um valor que pode não existir, sem usar `null` para dizer isso.
 - **Method reference** — `Classe::metodo` no lugar de uma lambda que só chama um método.
 
+**Pesquise sobre:** `java lambda expressões` · `java interfaces funcionais Predicate Function Supplier` · `java Optional`
+
 **Chefe:** Mercadinho v4: Promoções — compor descontos como funções e aplicar um cupom opcional.
 **Fonte:** https://dev.java/learn/language/fp/

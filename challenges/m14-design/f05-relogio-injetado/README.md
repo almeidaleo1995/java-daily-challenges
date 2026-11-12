@@ -2,6 +2,19 @@
 
 **Missão:** Refatorar um código que chama `LocalDate.now()` direto (impossível de testar de forma determinística) pra receber o relógio de fora.
 
+**O que vamos trabalhar:** **testabilidade** — código que chama `LocalDate.now()` direto depende do relógio do computador, então o resultado muda a cada dia e fica impossível de testar com valor fixo. A solução: **injetar** um `Clock` de fora.
+
+**Na prática:** em vez de `LocalDate.now()`, use a versão que recebe um `Clock` e guarde esse `Clock` no construtor. Em produção você passa o relógio do sistema; no teste passa um relógio **fixo** — o teste fica determinístico.
+
+**Glossário rápido**
+- **`Clock`** — abstração do "relógio" do `java.time`; `LocalDate.now(clock)`.
+- **`Clock.fixed(instant, zona)`** — relógio parado, perfeito para testes.
+- **`Clock.systemDefaultZone()`** — relógio real (o que você usaria em produção).
+- **Determinístico** — mesma entrada, mesmo resultado, sempre.
+- **Injeção de dependência** — receber o que você usa em vez de criá-lo dentro da classe.
+
+**Pesquise sobre:** `java Clock fixed teste` · `java LocalDate now clock` · `injeção de dependência testabilidade`
+
 **Implemente:** `challenges.m14.f05.GeradorDeBoleto` (`GeradorDeBoletoAcoplado` já vem pronto no esqueleto, só pra você ver o problema — não altere, e note que ele **não tem teste**: é impossível testar de forma determinística com `LocalDate.now()` fixo direto no código)
 
 ```java

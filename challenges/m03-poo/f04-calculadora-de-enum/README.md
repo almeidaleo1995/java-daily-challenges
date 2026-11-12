@@ -2,6 +2,18 @@
 
 **Missão:** Fazer cada operação de uma calculadora se comportar de um jeito diferente, sem um `switch`/`if` gigante decidindo qual conta fazer.
 
+**O que vamos trabalhar:** `enum` com **comportamento por constante** — cada valor (`SOMA`, `DIVISAO`...) carrega a sua própria conta, no lugar de um `switch` central decidindo tudo.
+
+**Na prática:** `Operacao` é um enum com um método `abstract aplicar(a, b)`. Cada constante escreve a implementação logo após o nome, entre `{ }`. Um segundo método, `porSimbolo`, percorre as constantes e acha a que tem o símbolo pedido.
+
+**Glossário rápido**
+- **`enum`** — conjunto fixo de constantes nomeadas; em Java, cada uma é um objeto e pode ter campos e métodos.
+- **Método `abstract` no enum** — obriga cada constante a fornecer sua implementação.
+- **`values()`** — método estático de todo enum: devolve um array com todas as constantes.
+- **`ArithmeticException`** — exceção padrão do Java para contas inválidas (ex.: divisão inteira por zero).
+
+**Pesquise sobre:** `java enum com método abstrato` · `java enum campos e construtor` · `java enum values()`
+
 **Implemente:** `challenges.m03.f04.Operacao`
 
 ```java

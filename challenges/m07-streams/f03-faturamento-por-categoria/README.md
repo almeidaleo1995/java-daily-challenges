@@ -2,6 +2,18 @@
 
 **Missão:** Somar o valor de cada venda, agrupado por categoria, num `Map`.
 
+**O que vamos trabalhar:** agrupar **e somar** `BigDecimal`. Não existe `summingBigDecimal`, então você vai usar `Collectors.reducing` com `BigDecimal.ZERO` como ponto de partida.
+
+**Na prática:** mesma ideia da fase anterior (`groupingBy` pela categoria), mas o collector de dentro agora extrai o `valor` de cada venda e **soma** tudo, começando do zero. Pergunta-guia: o que é uma "redução"? (combinar muitos valores em um só).
+
+**Glossário rápido**
+- **`reducing(identidade, mapeador, operador)`** — collector que mapeia cada item e combina os resultados com um operador.
+- **Identidade** — valor inicial que não altera a soma (`BigDecimal.ZERO`).
+- **`BigDecimal::add`** — referência de método que serve de operador de soma.
+- **`Collectors.mapping`** — alternativa: mapeia antes de reduzir.
+
+**Pesquise sobre:** `java Collectors reducing BigDecimal` · `java stream somar BigDecimal` · `java groupingBy reducing`
+
 **Implemente:** `challenges.m07.f03.Faturamento` (`Venda` já vem pronto no esqueleto — não altere)
 
 ```java

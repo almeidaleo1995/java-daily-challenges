@@ -2,6 +2,18 @@
 
 **Missão:** Importar um CSV de produtos para o estoque, separando as linhas válidas das inválidas — sem que uma linha ruim derrube a importação inteira.
 
+**O que vamos trabalhar:** juntar **leitura**, **validação** e **escrita** num fluxo só: ler um CSV, separar linhas boas e ruins, e gravar as ruins num arquivo de erros — a importação nunca para por causa de uma linha ruim.
+
+**Na prática:** percorra as linhas **uma a uma**. Para cada uma, decida se é válida (tem 2 partes, produto não vazio, quantidade inteira ≥ 0). Válida → vai para a lista de retorno. Inválida → guarde o texto original numa lista de erros. No fim, grave a lista de erros (vazia também cria o arquivo!). Pergunta-guia: onde a conversão em número pode falhar, e como você trata isso sem derrubar tudo?
+
+**Glossário rápido**
+- **Importação tolerante** — erros por linha são coletados, não interrompem o processo.
+- **`NumberFormatException`** — o que `Integer.parseInt` lança para texto não numérico.
+- **`Files.readAllLines` / `Files.write`** — ler e gravar listas de linhas.
+- **Arquivo vazio ainda existe** — gravar lista vazia cria o arquivo sem conteúdo.
+
+**Pesquise sobre:** `java importar CSV validar linhas` · `java Integer.parseInt NumberFormatException try catch` · `java Files.write lista de strings`
+
 **Implemente:** `challenges.m10.chefe.ImportadorDeEstoque` (`LinhaDeEstoque` já vem pronto no esqueleto — não altere)
 
 ```java

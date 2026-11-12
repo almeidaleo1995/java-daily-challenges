@@ -2,6 +2,18 @@
 
 **Missão:** Buscar o e-mail do gerente de um funcionário numa cadeia com três pontos de falha, sem nenhum `if` explícito de `null`.
 
+**O que vamos trabalhar:** **`Optional<T>`** — um "pacote" que pode ou não ter um valor, para encadear etapas que podem falhar **sem** vários `if (x != null)`.
+
+**Na prática:** três coisas podem faltar (funcionário, gerente, e-mail do gerente). Em vez de `if` aninhado, você começa com um `Optional`, e usa `map`/`flatMap` para seguir a cadeia: se qualquer elo vier vazio, o resultado inteiro fica vazio.
+
+**Glossário rápido**
+- **`Optional.empty()` / `Optional.of(x)` / `Optional.ofNullable(x)`** — formas de criar.
+- **`map`** — transforma o conteúdo se existir; senão continua vazio.
+- **`flatMap`** — igual ao `map`, mas quando a função **já devolve** um `Optional` (evita `Optional<Optional<...>>`).
+- **`null`** — "ausência" sem aviso; o `Optional` torna a ausência explícita no tipo.
+
+**Pesquise sobre:** `java Optional map flatMap diferença` · `java Optional ofNullable` · `java Optional evitar null`
+
 **Implemente:** `challenges.m06.f04.Diretorio` (`Funcionario` já vem pronto no esqueleto — não altere)
 
 ```java

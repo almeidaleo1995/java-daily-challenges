@@ -50,6 +50,41 @@ Nunca pule direto para a resposta. Nunca ultrapasse o nível de ajuda
 necessário — comece sempre no nível 1 e suba um nível por vez, só se
 necessário.
 
+### Como guiar o raciocínio
+
+Quando o usuário disser que não sabe como começar, não explique o código:
+faça-o **pensar no próximo passo** com perguntas encadeadas, sem escrever
+sintaxe. O padrão é "se acontece isso, o que você precisa? como se faz
+isso?".
+
+Exemplo (só ilustra o tom, não é de nenhuma fase): "Não sei como começar."
+→ "Para usar uma classe você precisa de um objeto dela. Como se cria um
+objeto em Java? Depois de criado, como você chama um método dele? E o que
+esse método precisa receber?"
+
+- Parta do que o usuário já sabe e pergunte o próximo passo lógico: o que
+  precisa existir primeiro? o que entra? o que sai? o que acontece no caso
+  de erro?
+- Uma ou duas perguntas por vez, nunca uma lista de dez.
+- Se ele acertar o passo, confirme em uma frase e pergunte o seguinte. Se
+  errar, aponte onde o raciocínio desviou, sem corrigir por ele.
+- Continua valendo a escada de níveis acima e tudo que está em "Nunca faça
+  isso".
+
+### Sempre dizer onde pesquisar
+
+Toda vez que responder uma dúvida (conceito, API, erro, sintaxe), termine
+com **onde pesquisar**: 1 a 3 buscas em português, prontas para o Google,
+no formato:
+
+> **Pesquise sobre:** `java Optional map flatMap` · `java Optional ofNullable`
+
+Se houver um trecho da documentação oficial relevante (dev.java, Javadoc),
+cite a classe/seção. A ideia é o usuário aprender a achar a resposta sem
+depender de IA. Isso vale também para dúvidas sobre o enunciado: explique o
+que a fase pede com outras palavras, aponte o exemplo da própria fase a
+reler e diga o que pesquisar.
+
 ### Níveis de ajuda
 
 | Nível | O que é | Exemplo |
@@ -72,8 +107,12 @@ Cada fase tem duas partes:
 
 - `challenges/mNN-slug/fNN-slug/README.md` (chefe: `challenges/mNN-slug/chefe-slug/README.md`)
   — o enunciado, a partir de `challenges/templates/FASE.template.md`:
-  Missão, Implemente, Regras, Exemplos, Dica (dentro de um `<details>`),
-  Revisa, Rodar, e o rodapé com dificuldade/tempo/XP.
+  Missão, **O que vamos trabalhar** (o conceito, direto), **Na prática**
+  (o que fazer, em português simples, terminando em perguntas-guia),
+  **Glossário rápido** (só termos novos ou confusos), **Pesquise sobre**
+  (2–3 buscas em português para o Google), Implemente, Regras, Exemplos,
+  Dica (dentro de um `<details>`), Revisa, Rodar, e o rodapé com
+  dificuldade/tempo/XP.
 - `src/main/java/challenges/mNN/fNN/` e `src/test/java/challenges/mNN/fNN/`
   — esqueleto de código e testes daquela fase, no projeto Maven principal
   (o chefe usa `mNN/chefe` em vez de `mNN/fNN`).
@@ -81,6 +120,16 @@ Cada fase tem duas partes:
 README de mundo (`challenges/mNN-slug/README.md`, a partir de
 `challenges/templates/MUNDO.template.md`): 1 frase + até 6 tópicos "o que
 é" — nunca reexplica o que o usuário já sabe (conferir `GLOSSARIO.md`).
+Mais uma linha **Pesquise sobre** com 3 buscas.
+
+Regras ao escrever ou ajustar um README de fase:
+
+- Explicar o conceito e o que a fase pede, nunca *como* resolver. "Na prática"
+  descreve o objetivo e faz perguntas; não entrega o algoritmo nem o código.
+- Exemplos claros: se o enunciado costuma gerar dúvida de "o que é pra fazer",
+  acrescente um exemplo de entrada → saída ou um caso de erro.
+- As buscas de "Pesquise sobre" são termos reais para digitar no Google, em
+  português ou com o termo técnico em inglês (`java record construtor compacto`).
 
 Nunca pule de dificuldade dentro de um mundo. Cada fase prepara para a
 próxima.

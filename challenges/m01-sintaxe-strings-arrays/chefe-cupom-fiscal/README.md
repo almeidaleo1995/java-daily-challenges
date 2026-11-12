@@ -2,6 +2,18 @@
 
 **Missão:** Fechar o Mundo 1 juntando tudo: parsear texto (`split`), fazer contas de dinheiro certas (`BigDecimal`), decidir um desconto por tipo (`switch`) e montar o recibo (`StringBuilder` + `String.format`).
 
+**O que vamos trabalhar:** juntar tudo do Mundo 1 num programa só: **dividir texto** (`split`), **dinheiro certo** (`BigDecimal`), **decisão por tipo** (`switch`) e **formatar o recibo** (`StringBuilder` + `String.format`).
+
+**Na prática:** quebre o problema em etapas, uma por vez: (1) ler uma linha e separar os 4 campos; (2) validar; (3) calcular o subtotal do item com o desconto do tipo; (4) formatar a linha do recibo; (5) acumular o total. Cada etapa já apareceu numa fase anterior. Pergunte-se: em que ordem você valida? Onde o total fica guardado enquanto percorre as linhas?
+
+**Glossário rápido**
+- **`String.split(";")`** — divide o texto em um array de partes.
+- **`Integer.parseInt` / `new BigDecimal(String)`** — convertem texto em número.
+- **`BigDecimal.add`** — acumula o total.
+- **`StringBuilder`** — monta o recibo linha a linha, com `\n` entre elas.
+
+**Pesquise sobre:** `java String split` · `java Integer.parseInt` · `java StringBuilder append recibo`
+
 **Implemente:** `challenges.m01.chefe.CupomFiscal`
 
 ```java

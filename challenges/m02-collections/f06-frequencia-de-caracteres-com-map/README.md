@@ -15,6 +15,24 @@ Você quer saber quantas vezes cada caractere aparece num texto — inclusive
 espaços e pontuação —, por exemplo pra montar um contador de frequência
 usado em compressão de texto.
 
+# O que vamos trabalhar
+
+O mesmo padrão de contagem da fase 2.02, agora com **caracteres** como chave (`Map<Character, Integer>`).
+
+# Na prática
+
+Percorra o texto e, para cada caractere, atualize a contagem dele. Pergunte-se: por que a chave é `Character` (com `C` maiúsculo) e não `char`? O que acontece com maiúscula e minúscula como chaves?
+
+# Glossário rápido
+
+- **`Character`** — versão "objeto" do `char`, exigida em genéricos.
+- **Autoboxing** — conversão automática `char` ↔ `Character`.
+- **`getOrDefault`** — leitura com valor padrão.
+
+# Pesquise sobre
+
+`java Map Character Integer contar letras` · `java autoboxing char Character` · `java Map put getOrDefault`
+
 # Regras
 
 Implemente o método:

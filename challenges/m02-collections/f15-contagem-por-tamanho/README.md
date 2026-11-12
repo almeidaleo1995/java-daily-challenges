@@ -14,6 +14,24 @@ Reforçar `Map` e `getOrDefault`, como no desafio 007 — dessa vez a chave do
 Você quer um raio-x rápido do tamanho das palavras de um texto: quantas
 palavras têm 1 letra, quantas têm 2, e assim por diante.
 
+# O que vamos trabalhar
+
+A **chave do `Map` não é o dado**, e sim algo **calculado** dele (o tamanho da palavra).
+
+# Na prática
+
+O padrão de contagem é o mesmo, mas antes de ler/atualizar o `Map` você calcula a chave. Pergunte-se: qual é a chave aqui? Que tipo ela tem (`Integer`)?
+
+# Glossário rápido
+
+- **Chave derivada** — calculada a partir do elemento (`palavra.length()`).
+- **`String.length()`** — tamanho do texto.
+- **Agrupar** — colocar no mesmo "balde" tudo o que tem a mesma chave.
+
+# Pesquise sobre
+
+`java agrupar por tamanho de string Map` · `java String length` · `java Map chave calculada`
+
 # Regras
 
 Implemente o método:

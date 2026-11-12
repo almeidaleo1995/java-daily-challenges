@@ -14,6 +14,23 @@ em vez de somá-los.
 Você precisa saber quantos dígitos um número tem, sem transformá-lo em
 `String`.
 
+# O que vamos trabalhar
+
+A mesma técnica de `%` e `/` da fase 1.02, mas agora **contando** dígitos em vez de somá-los. Atenção ao caso do `0`, que tem 1 dígito.
+
+# Na prática
+
+Pergunte-se: quantas vezes você consegue dividir o número por 10 até ele zerar? Esse raciocínio funciona para o `0`? Se não, que tipo de laço executa **pelo menos uma vez**?
+
+# Glossário rápido
+
+- **`do-while`** — como o `while`, mas executa o corpo antes de testar a condição.
+- **Caso de borda** — o `0` quebra a lógica "enquanto > 0".
+
+# Pesquise sobre
+
+`java do while` · `java contar dígitos de um número` · `java while vs do while`
+
 # Regras
 
 Implemente o método:

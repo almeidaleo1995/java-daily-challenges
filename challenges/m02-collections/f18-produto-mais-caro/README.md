@@ -15,6 +15,24 @@ Você tem os nomes e os preços dos produtos de um catálogo, na mesma ordem
 (a posição `i` de uma lista corresponde à posição `i` da outra), e quer
 saber qual produto é o mais caro.
 
+# O que vamos trabalhar
+
+Achar o **maior valor** com desempate por posição, sem `Map`: duas **listas paralelas** (nomes e preços).
+
+# Na prática
+
+O índice `i` é a "cola" entre as duas listas. Percorra por índice guardando a melhor posição (ou o melhor preço e o nome). Pergunte-se: o que você compara a cada passo? Com `>` ou `>=`, quem vence um empate?
+
+# Glossário rápido
+
+- **Listas paralelas** — alinhadas por índice.
+- **`List<Double>`** — lista de objetos `Double` (não `double`).
+- **Estado do melhor** — índice (ou valor) do candidato atual.
+
+# Pesquise sobre
+
+`java List get índice for` · `java achar maior valor em lista` · `java List<Double>`
+
 # Regras
 
 Implemente o método:

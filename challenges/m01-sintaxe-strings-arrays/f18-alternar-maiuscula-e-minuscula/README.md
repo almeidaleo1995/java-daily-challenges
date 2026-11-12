@@ -17,6 +17,24 @@ texto: cada letra alterna entre maiúscula e minúscula, começando em
 maiúscula. Caracteres que não são letra (espaço, pontuação) aparecem sem
 alteração e **não contam** pra alternância.
 
+# O que vamos trabalhar
+
+Um `boolean` que **alterna** a cada letra (`liga` → `desliga` → `liga`...), e que **não** muda quando o caractere não é letra.
+
+# Na prática
+
+Só as letras participam da alternância. Pergunte-se: em que momento exato o `boolean` troca de valor? Como inverter um `boolean` numa linha? (dica: operador `!`).
+
+# Glossário rápido
+
+- **`flag = !flag`** — inverte o booleano.
+- **`Character.isLetter`** — filtra o que participa da alternância.
+- **Condicional no laço** — o `if` decide se o caractere entra no estado.
+
+# Pesquise sobre
+
+`java inverter boolean` · `java Character isLetter` · `java alternar maiúscula minúscula string`
+
 # Regras
 
 Implemente o método:

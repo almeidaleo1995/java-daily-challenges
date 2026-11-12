@@ -15,6 +15,24 @@ Você recebe uma expressão só com `(` e `)` e precisa saber se os parênteses
 estão corretamente balanceados: todo `(` tem um `)` correspondente depois
 dele, na ordem certa.
 
+# O que vamos trabalhar
+
+O uso clássico de **pilha**: validar abertura e fechamento de parênteses.
+
+# Na prática
+
+Ao ler `(` algo precisa ser lembrado; ao ler `)` esse algo é "resolvido". Pergunte-se: o que você empilha? O que acontece se aparece um `)` e a pilha está vazia? O que a pilha precisa ter no **final** para o texto estar balanceado?
+
+# Glossário rápido
+
+- **Pilha (stack)** — estrutura LIFO.
+- **`ArrayDeque`** — usada como pilha: `push`, `pop`, `isEmpty`.
+- **`NoSuchElementException`** — o que `pop` lança em pilha vazia.
+
+# Pesquise sobre
+
+`java ArrayDeque como pilha` · `parênteses balanceados pilha algoritmo` · `java NoSuchElementException pop`
+
 # Regras
 
 Implemente o método:

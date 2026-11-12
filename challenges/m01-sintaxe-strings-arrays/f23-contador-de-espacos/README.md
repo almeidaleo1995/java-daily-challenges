@@ -14,6 +14,23 @@ Reforçar `charAt`/`length` combinado com métodos de classificação de
 Você quer saber quantos espaços em branco existem num texto — por exemplo,
 pra estimar quantas palavras ele tem sem usar `split`.
 
+# O que vamos trabalhar
+
+`Character.isWhitespace` — que reconhece espaço, tabulação e quebra de linha, não só o `' '`.
+
+# Na prática
+
+Mesmo laço de sempre; o que muda é o teste. Pergunte-se: por que `isWhitespace` é mais abrangente que `c == ' '`? Qual das duas o enunciado pede?
+
+# Glossário rápido
+
+- **Whitespace** — "espaço em branco": espaço, `\t`, `\n`...
+- **Sequência de escape (`\t`, `\n`)** — como escrever caracteres especiais em texto Java.
+
+# Pesquise sobre
+
+`java Character isWhitespace` · `java sequências de escape \n \t` · `java contar espaços em string`
+
 # Regras
 
 Implemente o método:

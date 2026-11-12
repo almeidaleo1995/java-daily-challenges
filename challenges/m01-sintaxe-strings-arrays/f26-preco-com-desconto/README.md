@@ -2,6 +2,18 @@
 
 **Missão:** Aplicar um desconto percentual a um preço usando `BigDecimal`, nunca `double` — dinheiro não se representa em ponto flutuante.
 
+**O que vamos trabalhar:** **`BigDecimal`** — o tipo certo para dinheiro. `double` não representa `0.1` exatamente (`0.1 + 0.2` dá `0.30000000000000004`). Aqui também: **arredondamento** controlado.
+
+**Na prática:** o desconto é `preco × (100 − percentual) ÷ 100`, mas cada operação de `BigDecimal` é um **método** (não `*` nem `/`) e devolve um objeto **novo**. No fim, fixe 2 casas decimais com o modo de arredondamento pedido. Valide as entradas antes de calcular.
+
+**Glossário rápido**
+- **`BigDecimal`** — decimal exato, imutável; operações com `add`, `subtract`, `multiply`, `divide`.
+- **`new BigDecimal("3.50")`** — crie sempre a partir de `String`, nunca de `double`.
+- **`setScale(2, RoundingMode.HALF_EVEN)`** — 2 casas com arredondamento bancário.
+- **`compareTo`** — compara valores (use no lugar de `equals`, que considera as casas decimais).
+
+**Pesquise sobre:** `java BigDecimal dinheiro por que não usar double` · `java BigDecimal setScale RoundingMode` · `java BigDecimal compareTo equals`
+
 **Implemente:** `challenges.m01.f26.PrecoComDesconto`
 
 ```java

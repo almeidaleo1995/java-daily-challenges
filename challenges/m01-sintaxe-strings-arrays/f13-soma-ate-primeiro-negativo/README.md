@@ -16,6 +16,24 @@ Você está somando valores de um array, mas precisa parar assim que encontrar
 o primeiro número negativo — ele funciona como um sinal de "fim dos dados
 válidos" e não entra na soma.
 
+# O que vamos trabalhar
+
+**parada antecipada** — percorrer um array somando, mas interromper o laço ao achar um valor que sinaliza "fim dos dados".
+
+# Na prática
+
+O valor negativo **não entra** na soma, então a decisão de parar vem **antes** de somar. Pergunte-se: que condição do laço garante parar? Existe uma instrução que sai de um laço no meio (`break`)? Qual das duas formas lhe parece mais legível?
+
+# Glossário rápido
+
+- **`break`** — sai imediatamente do laço.
+- **Condição composta no `while`** — `i < n && numeros[i] >= 0`.
+- **Curto-circuito (`&&`)** — se a primeira condição é falsa, a segunda nem é avaliada (evita acessar índice inexistente).
+
+# Pesquise sobre
+
+`java break em laço` · `java curto-circuito && ||` · `java percorrer array com while`
+
 # Regras
 
 Implemente o método:

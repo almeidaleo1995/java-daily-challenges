@@ -16,6 +16,24 @@ Você quer detectar erros de digitação simples: encontrar o primeiro par de
 caracteres iguais que aparecem **um logo depois do outro** num texto (tipo
 "aa" em "annaa").
 
+# O que vamos trabalhar
+
+Comparar um caractere com o **anterior** dentro do laço e **parar na primeira vez** que forem iguais — devolvendo o caractere ou lançando exceção se nunca acontecer.
+
+# Na prática
+
+Como cada comparação usa `i - 1`, pergunte-se: de qual posição o laço pode começar sem acessar um índice inválido? O que o método faz quando o laço termina sem achar nada?
+
+# Glossário rápido
+
+- **`return` dentro do laço** — encerra o método na hora.
+- **`IndexOutOfBounds`** — erro ao acessar posição que não existe.
+- **Exceção como "não achei"** — decisão de projeto desta fase (a alternativa seria um valor especial).
+
+# Pesquise sobre
+
+`java return dentro de for` · `java StringIndexOutOfBoundsException` · `java comparar char com anterior`
+
 # Regras
 
 Implemente o método:

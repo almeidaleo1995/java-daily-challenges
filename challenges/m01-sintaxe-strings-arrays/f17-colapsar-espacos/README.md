@@ -14,6 +14,24 @@ dessa vez o estado é "o caractere anterior já era um espaço?".
 Você recebe um texto digitado às pressas, com espaços repetidos entre
 palavras, e quer normalizar pra sempre ter só um espaço entre cada uma.
 
+# O que vamos trabalhar
+
+`StringBuilder` + estado "o caractere anterior era espaço?" para normalizar texto.
+
+# Na prática
+
+Copie caracteres normalmente, mas, ao encontrar um espaço, pergunte-se: o que eu acabei de copiar também foi um espaço? Se foi, esse espaço é descartado. Como esse "acabei de copiar" é guardado entre as voltas?
+
+# Glossário rápido
+
+- **Normalizar** — padronizar o formato (aqui, um espaço entre palavras).
+- **Estado anterior** — `boolean` ou `char` guardado fora do laço.
+- **`' '`** — o caractere espaço (aspas simples).
+
+# Pesquise sobre
+
+`java remover espaços duplicados string` · `java StringBuilder append char` · `java char espaço`
+
 # Regras
 
 Implemente o método:

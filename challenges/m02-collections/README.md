@@ -8,5 +8,7 @@
 - **Imutabilidade** — `List.copyOf` e por que uma cópia defensiva evita que quem recebe a lista a estrague.
 - **`SequencedCollection`** (Java 21) — acessar/percorrer uma coleção ordenada do fim para o começo sem recriar nada.
 
+**Pesquise sobre:** `java Collections List Set Map` · `java Comparator` · `java equals hashCode` · `java ArrayDeque PriorityQueue`
+
 **Chefe:** Conta Bancária com Extrato — `Deque` como pilha de "desfazer", `Map` para contagem por tipo, `StringBuilder` para o relatório.
 **Fonte:** https://dev.java/learn/api/collections-and-streams/

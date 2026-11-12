@@ -14,6 +14,25 @@ condicionais (`if`/`else`) em Java.
 Você está construindo um pequeno utilitário que recebe um número inteiro e
 descreve duas coisas sobre ele: o sinal e a paridade.
 
+# O que vamos trabalhar
+
+Decisões com `if`/`else` e operadores. O programa olha para um número e responde duas perguntas independentes: é positivo, negativo ou zero? É par ou ímpar?
+
+# Na prática
+
+São duas decisões separadas que viram duas partes de um texto. Pergunte-se: que operador diz o "resto" de uma divisão? Qual resto distingue par de ímpar? E o zero, é um caso à parte do resto das regras?
+
+# Glossário rápido
+
+- **`if` / `else`** — executa um trecho só se a condição for verdadeira.
+- **Operador relacional (`>`, `<`, `==`)** — compara dois valores e dá `true` ou `false`.
+- **`%` (resto)** — `7 % 2` é `1`; `8 % 2` é `0`.
+- **Concatenação** — juntar textos com `+`.
+
+# Pesquise sobre
+
+`java if else exemplo` · `java operador módulo resto da divisão` · `java concatenar strings`
+
 # Regras
 
 Implemente o método:

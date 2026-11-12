@@ -2,6 +2,19 @@
 
 **Missão:** Comparar dois códigos de produto ignorando espaços nas pontas e diferença de maiúsculas/minúsculas — e nunca comparar `String` com `==`.
 
+**O que vamos trabalhar:** a diferença entre **`==`** (mesmo objeto na memória) e **`equals`** (mesmo conteúdo), e por que comparar `String` com `==` engana. Também `trim` e `equalsIgnoreCase`.
+
+**Na prática:** primeiro trate o `null` (o enunciado diz como). Depois limpe as pontas de cada texto e compare ignorando maiúsculas. Pergunte-se: o que acontece se você chamar um método em uma variável `null`?
+
+**Glossário rápido**
+- **`==` em objetos** — compara *referência* (identidade), não conteúdo.
+- **`equals`** — compara conteúdo; **`equalsIgnoreCase`** ignora maiúsculas.
+- **`trim()` / `strip()`** — removem espaços das pontas.
+- **`NullPointerException`** — chamar método em `null`.
+- **`Objects.equals(a, b)`** — compara tratando `null`.
+
+**Pesquise sobre:** `java == vs equals string` · `java NullPointerException` · `java Objects.equals`
+
 **Implemente:** `challenges.m01.f28.ComparadorDeCodigos`
 
 ```java

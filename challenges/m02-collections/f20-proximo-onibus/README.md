@@ -2,6 +2,18 @@
 
 **Missão:** Achar o próximo horário de ônibus a partir de agora, e o último que já passou, numa lista sempre ordenada.
 
+**O que vamos trabalhar:** **`TreeSet`** — um `Set` **sempre ordenado**, com métodos de **vizinhança** ("o próximo a partir de X", "o anterior a X") sem varrer tudo.
+
+**Na prática:** `horarios` já está ordenado. Duas perguntas: o primeiro horário **maior ou igual** a `agora`, e o último **menor ou igual** a `agora`. Existem métodos prontos no `TreeSet` para ambas. Perceba também que o retorno é `Integer` (objeto), pois pode ser `null`.
+
+**Glossário rápido**
+- **`TreeSet`** — `Set` ordenado (árvore); operações em O(log n).
+- **`ceiling(x)`** — menor elemento `>= x`; **`floor(x)`** — maior elemento `<= x`.
+- **`higher` / `lower`** — as versões estritas (`>` / `<`).
+- **`Integer` vs `int`** — só o objeto pode ser `null`.
+
+**Pesquise sobre:** `java TreeSet ceiling floor` · `java TreeSet higher lower` · `java TreeSet vs HashSet`
+
 **Implemente:** `challenges.m02.f20.ProximoOnibus`
 
 ```java

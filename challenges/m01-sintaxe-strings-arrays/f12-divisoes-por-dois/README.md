@@ -15,6 +15,24 @@ Você quer saber quantas vezes um número pode ser dividido por 2 (divisão
 inteira) até chegar a 0. Mesmo um número que já é 0 conta como 1 divisão —
 você "divide" o 0 e confirma que já chegou lá.
 
+# O que vamos trabalhar
+
+O laço **`do-while`**: ele roda **pelo menos uma vez**, mesmo que a condição de parada já seja verdadeira no começo. Útil para o caso do `0`.
+
+# Na prática
+
+Pergunte-se: por que o número `0` conta como 1 divisão? Em que ponto do laço você conta? E o que a condição de parada testa: o valor antes ou depois de dividir?
+
+# Glossário rápido
+
+- **`do { ... } while (condição);`** — corpo primeiro, teste depois (repare no `;` no fim).
+- **`n /= 2`** — atalho para `n = n / 2`.
+- **Divisão inteira** — descarta a parte decimal.
+
+# Pesquise sobre
+
+`java do while exemplo` · `java divisão inteira por 2` · `java atribuição composta /=`
+
 # Regras
 
 Implemente o método:

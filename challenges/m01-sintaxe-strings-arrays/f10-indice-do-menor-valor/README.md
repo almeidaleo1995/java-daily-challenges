@@ -15,6 +15,24 @@ como no desafio 005 — desta vez buscando um mínimo e devolvendo a
 Você recebe as leituras de um sensor e precisa saber **onde**, na
 sequência, aconteceu a leitura mais baixa — não só qual foi o valor.
 
+# O que vamos trabalhar
+
+Guardar o **índice** (a posição) do melhor valor, não o valor em si. E lançar `IllegalArgumentException` quando a entrada é inválida.
+
+# Na prática
+
+Em vez de guardar "o menor valor até agora", guarde "em que posição ele está". O valor se recupera com `numeros[indice]`. Pergunte-se: com que posição você começa? Um valor *igual* ao menor atual deve substituir a posição guardada? (a regra pede a **primeira** ocorrência).
+
+# Glossário rápido
+
+- **Índice** — posição no array (começa em `0`).
+- **`throw new IllegalArgumentException(...)`** — recusa um argumento inválido.
+- **Comparação estrita (`<`) vs `<=`** — define o que acontece em empate.
+
+# Pesquise sobre
+
+`java IllegalArgumentException quando usar` · `java achar índice do menor valor no array` · `java throw new exception`
+
 # Regras
 
 Implemente o método:

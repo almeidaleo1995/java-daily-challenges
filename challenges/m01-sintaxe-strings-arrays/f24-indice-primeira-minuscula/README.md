@@ -16,6 +16,24 @@ Você quer encontrar a posição da primeira letra minúscula de um texto — po
 exemplo, pra checar se um código de identificação começa só com maiúsculas
 e onde a primeira exceção aparece.
 
+# O que vamos trabalhar
+
+Buscar uma **posição** em texto e usar **exceção** quando não há resultado (mesma ideia da fase 1.10, agora em `String`).
+
+# Na prática
+
+O laço percorre os caracteres e, ao achar a primeira minúscula, devolve o índice na hora. Pergunte-se: o que o método faz se o laço terminar sem achar? Por que lançar exceção é melhor aqui do que devolver `-1`?
+
+# Glossário rápido
+
+- **`Character.isLowerCase`** — `true` para minúsculas.
+- **Valor especial (`-1`)** vs **exceção** — duas formas de dizer "não achei"; o enunciado escolhe a exceção.
+- **Fail fast** — falhar logo, de forma clara, em vez de seguir com dado inválido.
+
+# Pesquise sobre
+
+`java Character isLowerCase` · `java IllegalArgumentException vs retornar -1` · `java return em laço`
+
 # Regras
 
 Implemente o método:

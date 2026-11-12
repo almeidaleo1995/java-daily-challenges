@@ -19,6 +19,25 @@ tipo já aconteceram, consegue montar um extrato, e — a parte nova — consegu
 **desfazer a última operação**, exatamente como um "Ctrl+Z": a mais recente
 é a primeira a ser desfeita.
 
+# O que vamos trabalhar
+
+Juntar o Mundo 2 numa **classe com estado**: `Deque` como pilha de "desfazer", `Map` para contar operações por tipo, `StringBuilder` para o extrato e exceções para validar.
+
+# Na prática
+
+Pense em **o que a conta precisa lembrar**: o saldo, e um histórico das operações para poder desfazer a última (a mais recente primeiro: é uma pilha). Pergunte-se: o que você guarda em cada operação para poder desfazê-la? Quando o histórico está vazio, o que `desfazerUltimaOperacao` deve fazer? Como o extrato lê o histórico sem destruí-lo?
+
+# Glossário rápido
+
+- **Estado do objeto** — campos (`saldo`, histórico, contadores) que sobrevivem entre chamadas.
+- **`Deque` como pilha** — `push` / `pop` / `peek` (olhar sem remover).
+- **`Map.getOrDefault`** — contagem por tipo de operação.
+- **Validação por exceção** — valor inválido ou saldo insuficiente lançam exceção **antes** de alterar o estado.
+
+# Pesquise sobre
+
+`java ArrayDeque push pop peek` · `java desfazer operação pilha undo` · `java StringBuilder extrato`
+
 # Regras
 
 Implemente a classe `challenges.m02.chefe.ContaBancaria`, com:

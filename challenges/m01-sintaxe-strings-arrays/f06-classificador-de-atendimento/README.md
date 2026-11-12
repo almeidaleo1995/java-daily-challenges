@@ -14,6 +14,24 @@ independentes numa única `String`, como no desafio 001.
 Uma recepção quer, para cada pessoa que chega, uma etiqueta com duas
 informações: a faixa etária e o turno do atendimento.
 
+# O que vamos trabalhar
+
+O **operador ternário** (`condição ? se_verdadeiro : se_falso`) — um `if/else` que devolve valor, em uma linha.
+
+# Na prática
+
+Duas decisões independentes (faixa etária e turno), cada uma escolhe entre dois textos, e o resultado é a junção das duas com um espaço. Pergunte-se: qual é o limite de `idade`? O intervalo do turno inclui os dois extremos (6 e 18)?
+
+# Glossário rápido
+
+- **Ternário `?:`** — `idade < 18 ? "menor" : "adulto"`.
+- **Operadores lógicos (`&&`, `||`)** — "e" / "ou" entre condições.
+- **Intervalo inclusivo** — os extremos fazem parte (`>= 6 && <= 18`).
+
+# Pesquise sobre
+
+`java operador ternário` · `java operadores lógicos && ||` · `java intervalo com if`
+
 # Regras
 
 Implemente o método:

@@ -2,6 +2,19 @@
 
 **Missão:** Ordenar uma lista de jogadores por pontuação, sem escrever a comparação à mão com `if`/`else`.
 
+**O que vamos trabalhar:** **`Comparator`** — um objeto que diz **como comparar** dois elementos, para ordenar sem escrever `if`/`else` à mão. Com `comparing`, `reversed` e `thenComparing` você monta o critério por peças.
+
+**Na prática:** o critério tem duas regras: pontuação **decrescente**, depois nome **crescente** em caso de empate. Pergunte-se: como ordenar por um campo do `record`? Como inverter a ordem? Como acrescentar um segundo critério?
+
+**Glossário rápido**
+- **`Comparator.comparing(Jogador::pontuacao)`** — critério por campo.
+- **`.reversed()`** — inverte a ordem.
+- **`.thenComparing(...)`** — critério de desempate.
+- **`List.sort(comparator)`** — ordena a própria lista (**no lugar**).
+- **`record`** — classe de dados enxuta (`jogador.pontuacao()`).
+
+**Pesquise sobre:** `java Comparator comparing thenComparing` · `java List sort Comparator` · `java Comparator reversed`
+
 **Implemente:** `challenges.m02.f19.Ranking`
 
 ```java

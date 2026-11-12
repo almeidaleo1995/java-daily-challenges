@@ -14,6 +14,25 @@ métodos básicos da classe `String` e o tipo `char`.
 Você está escrevendo um utilitário de texto que precisa contar quantas vogais
 aparecem em uma palavra ou frase.
 
+# O que vamos trabalhar
+
+Percorrer uma `String` **caractere por caractere** e contar os que atendem uma regra.
+
+# Na prática
+
+Uma `String` é uma sequência de posições (`0`, `1`, `2`...). Você visita cada posição, olha o caractere e decide se conta. Pergunte-se: como acessar o caractere de uma posição? Como não se preocupar com maiúscula/minúscula?
+
+# Glossário rápido
+
+- **`String.length()` / `charAt(i)`** — tamanho do texto / caractere na posição `i` (começa em `0`).
+- **`char`** — tipo de um único caractere (`'a'`, com aspas simples).
+- **`toLowerCase()`** — devolve o texto em minúsculas.
+- **Contador** — `int` que sobe `+1` a cada acerto.
+
+# Pesquise sobre
+
+`java String charAt length` · `java tipo char` · `java percorrer string com for`
+
 # Regras
 
 Implemente o método:

@@ -14,6 +14,24 @@ Reforçar `LinkedHashMap`, `entrySet` e desempate estrito, como no desafio
 Você tem a lista de marcas compradas por um cliente ao longo do tempo, na
 ordem das compras, e quer saber qual marca ele mais comprou.
 
+# O que vamos trabalhar
+
+A técnica "contar + achar o maior com desempate" (fase 2.03), com `String` como chave.
+
+# Na prática
+
+Boa oportunidade de reconstruir sem olhar a fase 2.03: (1) contar com `LinkedHashMap`; (2) percorrer as entradas guardando a melhor. Pergunte-se: o que você inicializa antes do laço? Qual operador garante que um empate **não** troca a marca vencedora?
+
+# Glossário rápido
+
+- **`Map.Entry`** — par chave/valor (`getKey()`, `getValue()`).
+- **Desempate estrito** — comparação `>` (nunca `>=`).
+- **`IllegalArgumentException`** — para lista vazia.
+
+# Pesquise sobre
+
+`java Map.Entry entrySet` · `java elemento mais frequente com desempate` · `java LinkedHashMap`
+
 # Regras
 
 Implemente o método:

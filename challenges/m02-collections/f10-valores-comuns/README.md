@@ -15,6 +15,24 @@ Você tem duas listas de IDs de cliente (por exemplo, clientes de duas
 campanhas de marketing diferentes) e quer saber quais IDs aparecem nas
 **duas**, sem repetir nenhum no resultado.
 
+# O que vamos trabalhar
+
+**interseção** de duas listas (o que aparece nas duas), usando `Set` para consulta rápida.
+
+# Na prática
+
+Um `Set` serve para testar "este valor está na outra lista?" sem varrer tudo. Pergunte-se: de qual lista você monta o `Set` e qual percorre? Como evitar repetidos no resultado mantendo a ordem de `a`?
+
+# Glossário rápido
+
+- **Interseção** — elementos presentes nos dois conjuntos.
+- **`Set.contains`** — consulta rápida (`HashSet`: em média tempo constante).
+- **`LinkedHashSet`** — resultado sem repetidos e em ordem.
+
+# Pesquise sobre
+
+`java interseção de duas listas` · `java HashSet contains complexidade` · `java Set retainAll`
+
 # Regras
 
 Implemente o método:

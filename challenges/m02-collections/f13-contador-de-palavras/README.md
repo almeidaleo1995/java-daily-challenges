@@ -14,6 +14,24 @@ contando palavras em vez de números.
 Você recebe todas as palavras digitadas na busca de um site, na ordem em
 que aconteceram, e quer saber quantas vezes cada palavra foi buscada.
 
+# O que vamos trabalhar
+
+O mesmo padrão de contagem com `Map`, agora com **`String`** como chave.
+
+# Na prática
+
+Idêntico ao das fases 2.02 e 2.06, mudando só o tipo da chave. Boa hora para perceber o padrão e pensar: o que sempre se repete (ler a contagem atual, somar 1, guardar)? Como `String` se comporta como chave (`equals`/`hashCode`)?
+
+# Glossário rápido
+
+- **Chave de `Map`** — precisa ter `equals`/`hashCode` coerentes; `String` já tem.
+- **`getOrDefault(palavra, 0) + 1`** — idioma clássico de contagem.
+- **`merge`** — alternativa mais compacta (vista no Mundo 3).
+
+# Pesquise sobre
+
+`java contar palavras Map` · `java String equals hashCode chave de HashMap` · `java Map merge contar`
+
 # Regras
 
 Implemente o método:

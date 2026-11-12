@@ -2,6 +2,18 @@
 
 **Missão:** Devolver uma cópia de uma lista que ninguém mais consegue alterar — nem quem recebeu, nem quem mexer na lista original depois.
 
+**O que vamos trabalhar:** **imutabilidade** e **cópia defensiva** — devolver uma lista que ninguém consegue alterar e que **não é afetada** por mudanças na lista original.
+
+**Na prática:** o cuidado é com duas coisas diferentes: (1) quem recebe **não pode** alterar a lista; (2) mudanças posteriores na **original** não podem vazar para a cópia. Existe um método estático em `List` que faz as duas. Pergunte-se: qual a diferença entre `List.of(...)`, `List.copyOf(...)` e `Collections.unmodifiableList(...)`?
+
+**Glossário rápido**
+- **Imutável** — não aceita `add`/`remove`/`set` (lança `UnsupportedOperationException`).
+- **Cópia defensiva** — cópia feita para isolar o estado interno.
+- **`List.copyOf(c)`** — cópia imutável.
+- **`unmodifiableList`** — apenas uma **visão** protegida; se a original muda, ela muda junto.
+
+**Pesquise sobre:** `java List copyOf vs unmodifiableList` · `java cópia defensiva` · `java UnsupportedOperationException lista imutável`
+
 **Implemente:** `challenges.m02.f23.Congelador`
 
 ```java

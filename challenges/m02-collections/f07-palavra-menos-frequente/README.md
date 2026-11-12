@@ -15,6 +15,24 @@ Você recebe as palavras de um texto, na ordem em que aparecem, e quer saber
 qual delas foi a **menos** usada — útil pra encontrar termos raros num
 documento.
 
+# O que vamos trabalhar
+
+O espelho da fase 2.03: agora o **menor**. Duas etapas (contar, escolher) e o mesmo desempate por ordem de aparição.
+
+# Na prática
+
+O que muda é a direção da comparação e o valor inicial. Pergunte-se: com que valor "inicial" você garante que o primeiro candidato sempre vence? Em caso de empate, quem fica? Valide a lista vazia.
+
+# Glossário rápido
+
+- **`Integer.MAX_VALUE`** — ponto de partida natural para buscar um mínimo.
+- **`LinkedHashMap`** — preserva a ordem para o desempate.
+- **Comparação estrita (`<`)** — mantém o primeiro em caso de empate.
+
+# Pesquise sobre
+
+`java LinkedHashMap entrySet` · `java Integer MAX_VALUE valor inicial mínimo` · `java elemento menos frequente`
+
 # Regras
 
 Implemente o método:

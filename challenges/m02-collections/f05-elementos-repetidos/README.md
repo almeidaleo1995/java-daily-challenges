@@ -15,6 +15,24 @@ Você recebe os IDs de cliente extraídos de um log, na ordem em que
 apareceram. Agora você quer saber quais IDs apareceram **mais de uma
 vez** — útil pra detectar duplicidade de cadastro.
 
+# O que vamos trabalhar
+
+O espelho da fase 2.01: em vez de remover repetidos, **detectar quem repete**. Você vai usar `Set` de um jeito novo: "já vi?" decide quem entra no resultado.
+
+# Na prática
+
+Repare na regra de ordem: o valor entra no resultado na **segunda** aparição, e só uma vez. Pergunte-se: quantos `Set`s você precisa (um para "já vi", outro para "já registrei como repetido")? Qual o retorno do `add` quando o valor já está no `Set`?
+
+# Glossário rápido
+
+- **`Set.add`** — devolve `true` se inseriu, `false` se já existia.
+- **`LinkedHashSet`** — mantém a ordem para o resultado.
+- **Segunda aparição** — a posição onde o repetido é "percebido".
+
+# Pesquise sobre
+
+`java Set add retorno false duplicado` · `java achar elementos duplicados em lista` · `java LinkedHashSet`
+
 # Regras
 
 Implemente o método:

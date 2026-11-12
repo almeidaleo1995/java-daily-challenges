@@ -16,6 +16,24 @@ iguais e consecutivos viram o caractere seguido da quantidade de repetições.
 É a ideia por trás do RLE (run-length encoding), usado em formatos de imagem
 antigos como o BMP e o PCX.
 
+# O que vamos trabalhar
+
+**construir uma `String` nova** com `StringBuilder` enquanto o laço lembra do que viu antes (**estado entre iterações**). Esta técnica é o RLE (*run-length encoding*).
+
+# Na prática
+
+Para cada caractere, a pergunta é "é igual ao anterior?". Se for, a sequência continua; se não, uma sequência terminou e precisa ser registrada. Pergunte-se: o que você precisa guardar entre uma volta e outra? O que sobra para registrar depois que o laço acaba?
+
+# Glossário rápido
+
+- **`StringBuilder`** — monta texto aos poucos com `append`, sem criar uma `String` nova a cada passo.
+- **Estado** — variáveis que "lembram" algo de uma volta para a outra (caractere anterior, contador).
+- **Caso de borda** — entradas limite (texto vazio, um só caractere) que costumam quebrar o código.
+
+# Pesquise sobre
+
+`java StringBuilder append` · `java String imutável por que usar StringBuilder` · `run length encoding`
+
 # Regras
 
 Implemente o método:

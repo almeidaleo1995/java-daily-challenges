@@ -16,6 +16,25 @@ aconteceram. Antes você só queria saber quais produtos foram vendidos (sem
 repetição). Agora o gerente quer mais: quantas unidades de cada produto
 saíram.
 
+# O que vamos trabalhar
+
+**`Map`** — uma coleção de pares **chave → valor**. Aqui a chave é o número e o valor é **quantas vezes** ele apareceu.
+
+# Na prática
+
+Para cada número, a pergunta é "qual era a contagem dele até agora?". Se ele ainda não está no `Map`, a contagem é zero. Pergunte-se: que método do `Map` lê um valor **com um padrão** se a chave não existe? Como atualizar a contagem?
+
+# Glossário rápido
+
+- **`Map<K, V>`** — dicionário: `put(chave, valor)`, `get(chave)`.
+- **`HashMap`** — implementação mais comum; não garante ordem das chaves.
+- **`getOrDefault(chave, padrão)`** — lê o valor ou devolve o padrão.
+- **Autoboxing** — `int` vira `Integer` automaticamente nos genéricos.
+
+# Pesquise sobre
+
+`java Map getOrDefault` · `java HashMap contar frequência` · `java autoboxing Integer int`
+
 # Regras
 
 Implemente o método:

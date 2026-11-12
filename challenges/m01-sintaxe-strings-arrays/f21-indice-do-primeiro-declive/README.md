@@ -16,6 +16,24 @@ Você quer encontrar o primeiro ponto de um array onde a sequência "cai": um
 valor maior que o seguinte. É o primeiro sinal de que os dados pararam de
 crescer.
 
+# O que vamos trabalhar
+
+**look-ahead** — comparar o elemento atual com o **próximo** (`numeros[i + 1]`), em vez de guardar o anterior numa variável.
+
+# Na prática
+
+Como cada comparação usa `i + 1`, pergunte-se: até qual `i` o laço pode ir sem estourar o array? O que acontece se o laço terminar sem achar nenhuma queda?
+
+# Glossário rápido
+
+- **Look-ahead** — olhar para frente; o oposto de guardar o anterior.
+- **Limite do laço** — `i < numeros.length - 1` evita acessar além do fim.
+- **`ArrayIndexOutOfBoundsException`** — erro de índice inválido.
+
+# Pesquise sobre
+
+`java ArrayIndexOutOfBoundsException` · `java comparar elemento com o próximo array` · `java for limite length - 1`
+
 # Regras
 
 Implemente o método:

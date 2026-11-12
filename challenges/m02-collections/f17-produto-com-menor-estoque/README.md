@@ -16,6 +16,24 @@ Você recebe o estoque atual de uma loja, já como um `Map` de produto pra
 quantidade, na ordem de cadastro, e quer saber qual produto está mais perto
 de acabar.
 
+# O que vamos trabalhar
+
+Buscar o **menor valor** de um `Map` (aqui o dado já vem pronto, não precisa contar).
+
+# Na prática
+
+Percorra as entradas do `Map` e guarde o produto de menor quantidade. Pergunte-se: como começar a busca? Em empate, quem vence? Por que a ordem do `Map` importa (o enunciado pede `LinkedHashMap`)?
+
+# Glossário rápido
+
+- **`LinkedHashMap`** — iteração na ordem de cadastro.
+- **`entrySet()`** — percorre chave e valor juntos.
+- **Valor sentinela** — ponto de partida seguro para um mínimo.
+
+# Pesquise sobre
+
+`java percorrer Map entrySet` · `java menor valor de um Map` · `java LinkedHashMap ordem`
+
 # Regras
 
 Implemente o método:

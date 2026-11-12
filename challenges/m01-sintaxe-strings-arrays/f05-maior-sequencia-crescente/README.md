@@ -17,6 +17,24 @@ Quer saber qual foi o maior trecho em que o valor só subiu, leitura após
 leitura, sem cair nem repetir. É o mesmo tipo de análise que um gráfico de
 temperatura faz pra destacar "6 dias seguidos de alta".
 
+# O que vamos trabalhar
+
+Percorrer um `int[]` comparando cada elemento com o **anterior** e guardando o **melhor resultado visto até agora**.
+
+# Na prática
+
+Imagine duas variáveis: "tamanho da sequência atual" e "maior tamanho já visto". Quando o valor sobe, a sequência atual cresce; quando não sobe, ela recomeça. Pergunte-se: quando você atualiza o "maior já visto"? Quanto vale a sequência atual com um único elemento? E com array vazio?
+
+# Glossário rápido
+
+- **Array (`int[]`)** — sequência de tamanho fixo; `numeros.length`, `numeros[i]`.
+- **Estritamente crescente** — cada valor é *maior* que o anterior (igual não vale).
+- **Máximo corrente** — variável que guarda o melhor valor encontrado até agora.
+
+# Pesquise sobre
+
+`java array int percorrer` · `java array length` · `maior subsequência crescente consecutiva`
+
 # Regras
 
 Implemente o método:

@@ -18,6 +18,25 @@ esteira são os que serão entregues **por último**, então precisam entrar
 invertidos, pra ficarem no fundo do caminhão. Do pacote seguinte em diante,
 tudo segue a ordem de chegada.
 
+# O que vamos trabalhar
+
+As duas ordens de saída clássicas: **FIFO** (fila: o primeiro que entra é o primeiro que sai) e **LIFO** (pilha: o último que entra é o primeiro que sai). Ambas num `Deque`.
+
+# Na prática
+
+Pense numa esteira de pacotes: um pedaço inicial sai **invertido** (efeito de pilha) e o resto sai na ordem normal (efeito de fila). Pergunte-se: que estrutura inverte uma sequência naturalmente ao ser esvaziada? Valide `primeiros` antes de começar.
+
+# Glossário rápido
+
+- **FIFO / LIFO** — First In First Out / Last In First Out.
+- **`ArrayDeque`** — implementação de `Deque`, serve de pilha (`push`/`pop`) ou fila (`offer`/`poll`).
+- **`push` / `pop`** — empilha / desempilha no topo.
+- **`IllegalArgumentException`** — para `primeiros` fora da faixa.
+
+# Pesquise sobre
+
+`java ArrayDeque pilha push pop` · `java fila FIFO LIFO diferença` · `java Deque interface`
+
 # Regras
 
 Implemente o método:

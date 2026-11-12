@@ -15,6 +15,24 @@ Você quer saber quantas vezes cada caractere aparece num texto, na ordem em
 que cada um apareceu pela primeira vez — útil pra montar um pequeno
 histograma de letras.
 
+# O que vamos trabalhar
+
+Outra forma de percorrer texto: **`toCharArray()`** (converte a `String` em um array de `char`) com for-each, e `LinkedHashMap` para manter a **ordem da primeira aparição**.
+
+# Na prática
+
+Mesma contagem das fases 2.02/2.06, mas o enunciado exige ordem previsível das chaves. Pergunte-se: qual `Map` mantém a ordem em que as chaves entraram? O `for-each` funciona direto em `String`?
+
+# Glossário rápido
+
+- **`toCharArray()`** — `"abc"` → `{'a','b','c'}`.
+- **for-each em array** — `for (char c : texto.toCharArray())`.
+- **`LinkedHashMap`** — iteração na ordem de inserção.
+
+# Pesquise sobre
+
+`java toCharArray for each` · `java LinkedHashMap ordem de inserção` · `java String percorrer caracteres`
+
 # Regras
 
 Implemente o método:

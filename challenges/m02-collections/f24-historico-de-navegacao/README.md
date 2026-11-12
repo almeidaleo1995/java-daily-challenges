@@ -2,6 +2,18 @@
 
 **Missão:** Devolver o histórico de sites visitados do mais recente para o mais antigo, sem duplicatas — usando um recurso novo do Java 21 para inverter uma coleção ordenada.
 
+**O que vamos trabalhar:** **`SequencedCollection`** (novidade do Java 21) — coleções com ordem bem definida ganham operações como `reversed()`, `getFirst()` e `getLast()`.
+
+**Na prática:** `LinkedHashSet` mantém a ordem de visita. Para devolver do mais recente ao mais antigo basta obter a visão **invertida** e copiá-la para uma `List`. Antes do Java 21 isso exigia código manual.
+
+**Glossário rápido**
+- **Sequenced collection** — coleção com ordem de encontro definida (primeiro e último bem definidos).
+- **`reversed()`** — visão da coleção na ordem inversa.
+- **`getFirst()` / `getLast()`** — primeiro e último elementos.
+- **`new ArrayList<>(colecao)`** — copia para uma lista.
+
+**Pesquise sobre:** `java 21 SequencedCollection reversed` · `java LinkedHashSet ordem` · `java ArrayList construtor com coleção`
+
 **Implemente:** `challenges.m02.f24.HistoricoNavegacao`
 
 ```java

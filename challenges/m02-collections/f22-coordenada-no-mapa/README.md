@@ -2,6 +2,18 @@
 
 **Missão:** Fazer duas coordenadas com os mesmos valores serem reconhecidas como "a mesma coordenada" dentro de um `HashSet`/`HashMap` — isso não acontece de graça.
 
+**O que vamos trabalhar:** o **contrato `equals`/`hashCode`**. Coleções de hash (`HashSet`, `HashMap`) só reconhecem dois objetos como "o mesmo" se `equals` **e** `hashCode` forem coerentes. Sem sobrescrever, cada instância é única.
+
+**Na prática:** escreva `equals` (compara `x` e `y`) e `hashCode` (derivado dos mesmos campos). Regra de ouro: **objetos iguais precisam ter o mesmo `hashCode`**. Pergunte-se: o que acontece com `equals` certo e `hashCode` herdado de `Object`?
+
+**Glossário rápido**
+- **`equals(Object)`** — define quando dois objetos são "iguais".
+- **`hashCode()`** — número que o `HashSet`/`HashMap` usa para achar o "balde" do objeto.
+- **`Objects.hash(...)`** / **`Objects.equals(...)`** — utilitários para escrever os dois.
+- **Contrato** — igual ⇒ mesmo `hashCode` (o contrário não é obrigatório).
+
+**Pesquise sobre:** `java equals e hashCode contrato` · `java Objects.hash` · `java HashSet objeto personalizado não encontra`
+
 **Implemente:** `challenges.m02.f22.Coordenada`
 
 ```java

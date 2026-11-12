@@ -2,6 +2,18 @@
 
 **Missão:** Montar uma fila de atendimento onde quem sai primeiro não é quem chegou primeiro — é quem está mais grave.
 
+**O que vamos trabalhar:** **`PriorityQueue`** — uma fila em que quem sai primeiro não é o que chegou primeiro, e sim o "mais prioritário" segundo um `Comparator`.
+
+**Na prática:** você não insere nem remove: só **cria a fila configurada** com o critério certo. O `PriorityQueue` tira primeiro o **menor** pelo comparador, então para sair o mais grave primeiro pense em como inverter a ordem. Desempate: quem chegou antes.
+
+**Glossário rápido**
+- **`PriorityQueue`** — fila de prioridade (heap).
+- **`poll()`** — remove e devolve o próximo; **`peek()`** — só olha.
+- **Construtor com `Comparator`** — `new PriorityQueue<>(comparador)`.
+- **`Comparator.comparingInt(...)`** — comparador para campos `int`.
+
+**Pesquise sobre:** `java PriorityQueue Comparator` · `java PriorityQueue poll peek` · `java Comparator comparingInt reversed`
+
 **Implemente:** `challenges.m02.f21.ProntoSocorro`
 
 ```java

@@ -14,6 +14,24 @@ vez mantendo **dois** candidatos ao mesmo tempo, não só um.
 Você quer saber o segundo maior valor de um array de pontuações, sem
 ordenar o array inteiro só pra achar dois valores.
 
+# O que vamos trabalhar
+
+Acumular **dois** candidatos ao mesmo tempo (o maior e o segundo maior) em uma única passada, sem ordenar o array.
+
+# Na prática
+
+Mantenha duas variáveis. Para cada número, pergunte-se: ele é maior que o "maior"? Se sim, o que acontece com o antigo maior? Se não, ele pode ser o novo "segundo"? Com que valores você inicializa as duas?
+
+# Glossário rápido
+
+- **Uma passada** — percorrer o array uma única vez (O(n)).
+- **`Integer.MIN_VALUE`** — menor `int` possível; ponto de partida seguro para "maior até agora".
+- **Valor sentinela** — valor especial usado como marcador inicial.
+
+# Pesquise sobre
+
+`java Integer MIN_VALUE` · `segundo maior elemento do array sem ordenar` · `java valor sentinela`
+
 # Regras
 
 Implemente o método:

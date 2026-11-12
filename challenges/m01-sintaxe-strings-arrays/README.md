@@ -7,5 +7,7 @@
 - **`==` vs `equals`** — identidade de objeto vs igualdade de valor, e por que `String` engana.
 - **`String.format`** — largura, precisão e `Locale` explícito.
 
+**Pesquise sobre:** `java sintaxe básica if for while` · `java String métodos` · `java BigDecimal dinheiro` · `java switch expression`
+
 **Chefe:** Cupom Fiscal — parsear linhas de itens, aplicar desconto por tipo com `switch`, montar o recibo com `StringBuilder` e `BigDecimal`.
 **Fonte:** https://dev.java/learn/language/constructs/

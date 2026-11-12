@@ -2,6 +2,18 @@
 
 **Missão:** Somar a pontuação de um jogador sem deixar o placar dar a volta silenciosamente quando passar do limite de `int`.
 
+**O que vamos trabalhar:** **overflow** de `int`. Um `int` guarda no máximo `2.147.483.647`; passar disso **não dá erro**, o número "dá a volta" e vira negativo. `Math.addExact` transforma esse bug silencioso em uma exceção.
+
+**Na prática:** em vez de `a + b`, use o método do `Math` que verifica o estouro. O desafio é descobrir que ele existe e o que ele lança. Os testes tentam estourar o limite.
+
+**Glossário rápido**
+- **Overflow** — resultado maior que o tipo aguenta; em `int`, vira negativo sem avisar.
+- **`Integer.MAX_VALUE`** — maior `int` possível.
+- **`Math.addExact`** — soma que lança `ArithmeticException` se estourar.
+- **`ArithmeticException`** — exceção de conta inválida.
+
+**Pesquise sobre:** `java overflow int Math.addExact` · `java Integer MAX_VALUE` · `java ArithmeticException`
+
 **Implemente:** `challenges.m01.f25.PlacarSeguro`
 
 ```java

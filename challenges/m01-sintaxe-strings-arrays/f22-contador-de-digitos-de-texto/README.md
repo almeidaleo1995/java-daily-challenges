@@ -14,6 +14,24 @@ Reforçar `charAt`/`length` combinado com métodos de classificação de
 Você quer saber quantos dígitos existem num texto — por exemplo, pra
 validar se uma senha tem números suficientes.
 
+# O que vamos trabalhar
+
+A classe `Character` e seus métodos de classificação (`isDigit`). Atenção: aqui os "dígitos" estão num **texto**, não num número (diferente da fase 1.07).
+
+# Na prática
+
+Mesmo esqueleto de percorrer `String` das fases anteriores, trocando só a pergunta feita a cada caractere. Pergunte-se: o que `Character.isDigit` devolve? Ele serve para qualquer caractere de `0` a `9`?
+
+# Glossário rápido
+
+- **`Character.isDigit(c)`** — `true` se `c` é um dígito.
+- **Métodos estáticos** — chamados pela classe, não por um objeto (`Character.isDigit`, não `c.isDigit`).
+- **`char` vs `int`** — `'5'` é o **caractere** cinco, não o número 5.
+
+# Pesquise sobre
+
+`java Character isDigit` · `java char vs int diferença` · `java métodos estáticos`
+
 # Regras
 
 Implemente o método:

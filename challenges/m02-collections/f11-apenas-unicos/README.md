@@ -16,6 +16,24 @@ Você recebe os códigos de produto de todas as vendas do dia e quer saber
 quais produtos venderam **uma única unidade** — candidatos a "baixo giro",
 diferente de saber só quais produtos venderam (isso já é o desafio 006).
 
+# O que vamos trabalhar
+
+Diferença entre **"valores distintos"** (fase 2.01) e **"valores que aparecem exatamente uma vez"**. A segunda precisa de **contagem**.
+
+# Na prática
+
+Quem aparece uma só vez só se sabe depois de olhar o texto todo. Pergunte-se: o que você precisa saber de cada valor antes de decidir? Existe uma estrutura que já responde "quantas vezes"? Como manter a ordem original no resultado?
+
+# Glossário rápido
+
+- **Distinto** — aparece pelo menos uma vez, listado sem repetir.
+- **Único** — aparece **exatamente** uma vez.
+- **Duas passadas** — primeira para contar, segunda para escolher.
+
+# Pesquise sobre
+
+`java elementos que aparecem apenas uma vez na lista` · `java Map contar ocorrências` · `java duas passadas sobre lista`
+
 # Regras
 
 Implemente o método:

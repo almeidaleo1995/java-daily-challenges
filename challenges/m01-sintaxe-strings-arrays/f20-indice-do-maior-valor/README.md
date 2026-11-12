@@ -15,6 +15,23 @@ Você quer saber **onde** está o maior valor de um array, não só qual é o
 valor — por exemplo, pra saber em qual posição do dia aconteceu o pico de
 temperatura.
 
+# O que vamos trabalhar
+
+Guardar o **índice** do maior valor (espelho da fase 1.10, que buscava o menor). Atenção ao critério de empate: a **primeira** ocorrência.
+
+# Na prática
+
+Mesma ideia da 1.10 com a comparação invertida. Pergunte-se: com que índice você começa? Usar `>` ou `>=` na comparação muda qual ocorrência fica guardada em caso de empate?
+
+# Glossário rápido
+
+- **Índice vs valor** — `numeros[indice]` é o valor; `indice` é a posição.
+- **Comparação estrita** — `>` só substitui se for realmente maior.
+
+# Pesquise sobre
+
+`java índice do maior valor array` · `java operadores relacionais > >=` · `java array de int`
+
 # Regras
 
 Implemente o método:

@@ -2,6 +2,18 @@
 
 **Missão:** Montar a linha de uma etiqueta de prateleira com nome alinhado à esquerda e preço alinhado à direita, sempre no mesmo formato de número (independente do idioma da máquina).
 
+**O que vamos trabalhar:** **`String.format`** — montar texto com **largura** e **precisão** fixas (alinhamento à esquerda/direita, casas decimais) e `Locale` explícito para que o separador decimal seja sempre `.`.
+
+**Na prática:** o "molde" do texto usa marcadores como `%-20s` (texto, 20 colunas, à esquerda) e `%8.2f` (número, 8 colunas, 2 decimais). Desafio: escrever o molde certo para a etiqueta. A linha separadora é só repetir um caractere.
+
+**Glossário rápido**
+- **`%s`, `%d`, `%f`** — marcadores para texto, inteiro e decimal.
+- **`%-20s`** — alinhado à esquerda em 20 colunas; **`%8.2f`** — 8 colunas, 2 casas, alinhado à direita.
+- **`Locale.ROOT`** — formato neutro (ponto decimal), independente do idioma do computador.
+- **`"-".repeat(n)`** — repete um texto `n` vezes.
+
+**Pesquise sobre:** `java String.format largura precisão` · `java Locale.ROOT String.format` · `java String repeat`
+
 **Implemente:** `challenges.m01.f29.EtiquetaFormatada`
 
 ```java

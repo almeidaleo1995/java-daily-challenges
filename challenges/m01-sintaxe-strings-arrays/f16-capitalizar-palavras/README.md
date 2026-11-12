@@ -15,6 +15,24 @@ Você recebe um texto todo em minúsculas e quer capitalizar a primeira letra
 de cada palavra, deixando o resto minúsculo — como um corretor de "Título
 De Texto" bem simples.
 
+# O que vamos trabalhar
+
+`StringBuilder` com um estado diferente: "o próximo caractere começa uma palavra?".
+
+# Na prática
+
+Guarde um `boolean` que diz "a próxima letra deve ser maiúscula". Pergunte-se: quando ele vira `true`? Quando volta a `false`? O que acontece no primeiro caractere do texto?
+
+# Glossário rápido
+
+- **Flag (`boolean`)** — variável de controle que liga/desliga um comportamento.
+- **`Character.toUpperCase` / `toLowerCase`** — convertem um `char`.
+- **`append(char)`** — o `StringBuilder` aceita `char` diretamente.
+
+# Pesquise sobre
+
+`java Character toUpperCase` · `java boolean flag em laço` · `java capitalizar primeira letra de cada palavra`
+
 # Regras
 
 Implemente o método:

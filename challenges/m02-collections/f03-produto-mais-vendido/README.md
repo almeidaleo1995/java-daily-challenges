@@ -18,6 +18,25 @@ dois produtos empatarem em vendas, ele quer saber qual dos dois vendeu
 primeiro no dia — isso desempata a decisão de qual produto ganha destaque na
 vitrine.
 
+# O que vamos trabalhar
+
+Usar uma contagem (`Map`) para responder uma pergunta nova — qual valor é o **mais frequente** — e decidir um critério de **desempate** (quem apareceu primeiro).
+
+# Na prática
+
+Duas etapas: (1) contar; (2) escolher o maior. O desempate pede que você lembre da **ordem de chegada**. Pergunte-se: que `Map` preserva a ordem de inserção? Quando dois valores empatam, o que você faz para não trocar o "campeão" atual?
+
+# Glossário rápido
+
+- **`LinkedHashMap`** — `Map` que mantém a ordem de inserção das chaves.
+- **`entrySet()`** — percorre pares chave/valor (`Map.Entry`, com `getKey()` e `getValue()`).
+- **Desempate estrito** — só troca o campeão se o novo for *maior* (`>`), nunca em empate.
+- **Valor sentinela** — valor inicial seguro para "maior até agora".
+
+# Pesquise sobre
+
+`java LinkedHashMap` · `java Map entrySet getKey getValue` · `java elemento mais frequente da lista`
+
 # Regras
 
 Implemente o método:

@@ -15,6 +15,24 @@ Você tem uma lista de categorias e uma lista de valores gastos, na mesma
 ordem (a posição `i` de uma corresponde à posição `i` da outra), e quer
 saber o total gasto em cada categoria.
 
+# O que vamos trabalhar
+
+Em vez de somar `+1`, **acumular um valor** associado à chave: `Map<String, Integer>` de total por categoria. Duas listas paralelas (mesma posição = mesmo item).
+
+# Na prática
+
+Percorra as duas listas pelo **índice**, pois a posição `i` de uma corresponde à posição `i` da outra. Pergunte-se: o que lê do `Map` (o total até agora)? O que escreve de volta?
+
+# Glossário rápido
+
+- **Listas paralelas** — duas listas alinhadas por posição.
+- **`List.get(i)`** — lê o elemento da posição `i`.
+- **Acumulador por chave** — o `Map` guarda um total para cada categoria.
+
+# Pesquise sobre
+
+`java percorrer duas listas ao mesmo tempo índice` · `java Map somar valores por chave` · `java List get`
+
 # Regras
 
 Implemente o método:

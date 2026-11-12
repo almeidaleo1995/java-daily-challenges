@@ -14,6 +14,24 @@ como no desafio 003.
 Você precisa saber quantas letras maiúsculas existem num texto — por
 exemplo, pra detectar se alguém digitou com Caps Lock ligado sem querer.
 
+# O que vamos trabalhar
+
+Percorrer uma `String` (como na fase 1.03), agora contando letras **maiúsculas** com uma comparação de intervalo de caracteres.
+
+# Na prática
+
+Em Java, `char` é um número por baixo dos panos, então `'A' <= c && c <= 'Z'` funciona. Pergunte-se: qual é a condição "o caractere está entre A e Z"? E se você quisesse usar um método pronto da classe `Character`?
+
+# Glossário rápido
+
+- **`char` como número** — cada caractere tem um código (`'A'` = 65).
+- **`Character.isUpperCase(c)`** — método pronto que faz o teste.
+- **Operador `&&`** — as duas condições precisam ser verdadeiras.
+
+# Pesquise sobre
+
+`java Character isUpperCase` · `java char tabela ASCII Unicode` · `java comparar char`
+
 # Regras
 
 Implemente o método:

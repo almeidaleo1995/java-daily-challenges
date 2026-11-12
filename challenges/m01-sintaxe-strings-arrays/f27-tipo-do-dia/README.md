@@ -2,6 +2,18 @@
 
 **Missão:** Classificar um dia da semana usando `switch` expression — sem `break`, sem variável de retorno mutável.
 
+**O que vamos trabalhar:** **`switch` expression** (moderno): usa `->`, não precisa de `break` e **devolve valor** diretamente. Aplicado a um `enum` (`DayOfWeek`).
+
+**Na prática:** cada `case` mapeia um (ou vários) dia(s) a um texto. Vários valores no mesmo `case` se separam por vírgula. Pergunte-se: como cobrir "qualquer outro" sem listar todos os dias? Precisa de `default` quando os valores do enum já estão cobertos?
+
+**Glossário rápido**
+- **`switch` expression** — `String r = switch (x) { case A -> "..."; default -> "..."; };`
+- **`enum`** — conjunto fixo de constantes; `DayOfWeek.MONDAY`.
+- **`case A, B ->`** — vários valores no mesmo ramo.
+- **Fall-through** — bug do `switch` antigo (esquecer o `break`); a seta `->` elimina.
+
+**Pesquise sobre:** `java switch expression seta` · `java enum DayOfWeek` · `java switch fall-through break`
+
 **Implemente:** `challenges.m01.f27.TipoDoDia`
 
 ```java

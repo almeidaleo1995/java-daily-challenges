@@ -15,6 +15,24 @@ Você tem uma lista de IDs e uma lista de bloqueio (IDs banidos) e quer uma
 nova lista só com os IDs que **não** estão bloqueados, mantendo a ordem e
 qualquer repetição que já existisse.
 
+# O que vamos trabalhar
+
+Usar um `Set` como **lista de bloqueio** (blacklist): filtrar uma lista sem alterar a original.
+
+# Na prática
+
+Percorra `numeros` e mantenha só o que **não** estiver em `paraRemover`. Repetições e ordem são preservadas. Pergunte-se: por que a consulta em `Set` é melhor que numa `List`? Como não modificar a lista recebida?
+
+# Glossário rápido
+
+- **Blacklist / lista de exclusão** — conjunto de valores banidos.
+- **`Set.contains`** — decide rápido se o valor é banido.
+- **Não mutar parâmetros** — devolva uma lista **nova**.
+
+# Pesquise sobre
+
+`java filtrar lista com set` · `java não modificar parâmetro lista` · `java Set contains vs List contains`
+
 # Regras
 
 Implemente o método:

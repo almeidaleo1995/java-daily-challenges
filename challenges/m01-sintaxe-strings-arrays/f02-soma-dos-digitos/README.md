@@ -15,6 +15,24 @@ repetidamente.
 Você está construindo um utilitário que recebe um número inteiro e retorna
 a soma dos seus dígitos.
 
+# O que vamos trabalhar
+
+Laço (`while`/`for`) repetindo as operações `%` e `/` para **separar um número em dígitos**, sem transformá-lo em texto.
+
+# Na prática
+
+O resto da divisão por 10 revela o último dígito. E dividir por 10 (divisão inteira) "joga fora" esse dígito. Pergunte-se: o que você repete? Qual condição diz que acabaram os dígitos?
+
+# Glossário rápido
+
+- **`while`** — repete enquanto a condição for verdadeira.
+- **Divisão inteira** — com `int`, `123 / 10` vale `12` (descarta a parte decimal).
+- **Acumulador** — variável que vai somando resultados a cada volta do laço.
+
+# Pesquise sobre
+
+`java while loop` · `java divisão inteira int` · `java acumulador em laço`
+
 # Regras
 
 Implemente o método:

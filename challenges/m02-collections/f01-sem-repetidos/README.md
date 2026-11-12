@@ -16,6 +16,25 @@ Você recebe os IDs de cliente extraídos de um arquivo de log, na ordem em que
 apareceram. IDs podem se repetir várias vezes ao longo do arquivo, mas você só
 quer a lista de IDs distintos, na ordem da primeira vez que cada um apareceu.
 
+# O que vamos trabalhar
+
+Primeira coleção do mundo: **`Set`** — uma coleção que **não aceita repetidos** — e `List` (sequência com ordem). Para "já vi este valor?", o `Set` responde rápido, sem varrer a lista inteira.
+
+# Na prática
+
+Você percorre a lista de entrada e decide, para cada número, se ele entra no resultado. Pergunte-se: que estrutura te ajuda a lembrar "o que eu já vi"? Qual `Set` **preserva a ordem de inserção**? O que o método `add` do `Set` devolve quando o valor já existia?
+
+# Glossário rápido
+
+- **`List`** — sequência ordenada que aceita repetidos (`ArrayList`).
+- **`Set`** — conjunto sem repetidos (`HashSet`, `LinkedHashSet`).
+- **`LinkedHashSet`** — `Set` que mantém a ordem de inserção; `HashSet` não garante ordem.
+- **for-each** — `for (int n : numeros)`, percorre sem usar índice.
+
+# Pesquise sobre
+
+`java List vs Set diferença` · `java LinkedHashSet ordem de inserção` · `java Set add retorna boolean`
+
 # Regras
 
 Implemente o método:

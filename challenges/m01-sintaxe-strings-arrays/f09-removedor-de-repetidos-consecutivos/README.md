@@ -16,6 +16,24 @@ Você recebe um texto onde, por erro de digitação, algumas letras se
 repetiram seguidas (`"aaabccca"`). Quer devolver o texto com cada sequência
 de caracteres iguais e consecutivos reduzida a um único caractere.
 
+# O que vamos trabalhar
+
+`StringBuilder` + estado (o caractere anterior), como na fase 1.04, mas agora para **remover** repetições em vez de contá-las.
+
+# Na prática
+
+Em cada volta, a pergunta é "este caractere é igual ao último que eu coloquei no resultado?". Pergunte-se: o que decide se um caractere entra? O primeiro caractere do texto precisa de tratamento especial?
+
+# Glossário rápido
+
+- **`StringBuilder.append`** — adiciona ao final.
+- **`StringBuilder.length()` / `charAt`** — dá para olhar o que já foi construído.
+- **Consecutivo** — um logo depois do outro (`"aabbaa"` → `"aba"`).
+
+# Pesquise sobre
+
+`java StringBuilder charAt length` · `java remover caracteres repetidos consecutivos` · `java String toCharArray`
+
 # Regras
 
 Implemente o método:

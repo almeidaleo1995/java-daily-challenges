@@ -1,6 +1,6 @@
 # Progresso
 
-**Título:** Júnior · **XP:** 1170 · **Chefes:** 2/15
+**Título:** Júnior · **XP:** 1210 · **Chefes:** 2/15
 
 ## Mundo 1 — Sintaxe, Strings e Arrays ✅ concluído
 
@@ -65,8 +65,8 @@
 
 ## Mundo 3 — POO ▶ em andamento
 
-- [ ] [3.01 Temperatura](m03-poo/f01-temperatura/README.md) ⭐⭐☆☆☆ +20 XP
-- [ ] [3.02 Produto](m03-poo/f02-produto/README.md) ⭐⭐☆☆☆ +20 XP
+- [x] [3.01 Temperatura](m03-poo/f01-temperatura/README.md) ⭐⭐☆☆☆ +20 XP
+- [x] [3.02 Produto](m03-poo/f02-produto/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] [3.03 Formas](m03-poo/f03-formas/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] [3.04 Calculadora de Enum](m03-poo/f04-calculadora-de-enum/README.md) ⭐⭐☆☆☆ +20 XP
 - [ ] [3.05 Pedágio](m03-poo/f05-pedagio/README.md) ⭐⭐☆☆☆ +20 XP

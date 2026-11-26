@@ -8,7 +8,7 @@ public record Produto(String nome, BigDecimal preco) {
     if (preco == null || preco.compareTo(BigDecimal.ZERO) < 0) {
       throw new IllegalArgumentException("Preço inválido");
     }
-    if (nome == null ||nome.isBlank()) {
+    if (nome == null || nome.isBlank()) {
       throw new IllegalArgumentException("Nome inválido");
     }
   }

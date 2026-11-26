@@ -2,17 +2,22 @@ package challenges.m03.f03;
 
 public final class Circulo implements Forma {
 
+  private final double raio;
+
   public Circulo(double raio) {
-    throw new UnsupportedOperationException("TODO: implementar");
+    if (raio <= 0.0) {
+      throw new IllegalArgumentException("O raio não pode ser menor/igual que zero.");
+    }
+    this.raio = raio;
   }
 
   @Override
   public double area() {
-    throw new UnsupportedOperationException("TODO: implementar");
+    return Math.PI * Math.pow(raio, 2);
   }
 
   @Override
   public double perimetro() {
-    throw new UnsupportedOperationException("TODO: implementar");
+    return 2 * Math.PI * raio;
   }
 }
